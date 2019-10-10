@@ -3,10 +3,10 @@
     $user = 'root';
     $pass_word = '';
     $database = 'evote';
-    $conn = connection($url, $user, $pass_word, $database);
+    $conn = mysqli_connect($url, $user, $pass_word, $database);
 
     if($conn){
-        echo "Connection Successfully";
+        //  echo "Connection Successfully";
     }else{
         echo "Connection Failed";
     }

@@ -1,3 +1,6 @@
+<?php
+    include_once('phpScript/votedb.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +18,7 @@
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
   <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-  <title>Forms Layouts | Materialize - Material Design Admin Template</title>
+  <title>REGISTER STUDENT | ELECTRONIC VOTING SYSTEM</title>
 
   <!-- Favicons-->
   <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
@@ -213,46 +216,46 @@
                                     <div class="card-content">
                                         <a class="btn-floating btn-move-up waves-effect waves-light darken-2 right"><i class="mdi-content-add activator"></i></a>
                                         <div class="col s12 m12 l12">
-                                           
+                                           <p style="font-size:20px; font-weight: Bold;  " id="displayStudent"><marquee></marquee></p>
                                         </div>
                                         <div class="col s12 m12 l12">
                                            
                                             <div class="row">
-                                              <form class="col s12">
+                                              <form action="" method="POST" id="formID" class="col s12">
                                                 <div class="row">
                                                   <div class="input-field col s12">
-                                                    <input id="name" type="text">
+                                                    <input id="first_name" name="first_name" type="text">
                                                     <label for="first_name">Name</label>
                                                   </div>
                                                 </div>
                                                 <div class="row">
                                                   <div class="input-field col s12">
-                                                    <input id="email" type="email">
-                                                    <label for="email">Account NO.</label>
+                                                    <input id="accountNo" name="accountNo" type="text">
+                                                    <label for="accountNo">Account NO.</label>
                                                   </div>
                                                 </div>
                                                 <div class="row">
                                                   <div class="input-field col s12">
-                                                    <input id="password" type="password">
-                                                    <label for="password">Password</label>
+                                                    <input id="pass_word" name="pass_word" type="text">
+                                                    <label for="pass_word">Password</label>
                                                   </div>
                                                 </div>
                                                 <div class="row">
                                                   <div class="input-field col s12">
-                                                    <input id="password" type="password">
-                                                    <label for="password">Form</label>
+                                                    <input id="class_form" name="class_form" type="text">
+                                                    <label for="class_form">Form/Class</label>
                                                   </div>
                                                 </div>
                                                 <div class="row">
                                                   <div class="input-field col s12">
-                                                    <input id="password" type="password">
-                                                    <label for="password">Program</label>
+                                                    <input id="course_program" name="course_program"  type="text">
+                                                    <label for="course_program">Program</label>
                                                   </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="input-field col s12">
-                                                      <select>
-                                                        <option value="" disabled selected>Select your Status</option>
+                                                      <select id="student_status" name="student_status">
+                                                        <option selected>Select your Status</option>
                                                         <option value="day">Day</option>
                                                         <option value="boarding">Boarding</option>
                                                         
@@ -264,9 +267,9 @@
                                                   
                                                   <!-- <div class="row"> -->
                                                     <div class="input-field col s12">
-                                                      <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Register
+                                                      <button class="btn cyan waves-effect waves-light right" type="button" name="action" id="action" value="action">Register
                                                         <i class="mdi-content-send right"></i>
-                                                      </button>
+                                                     </button>
                                                     </div>
                                                   <!-- </div> -->
                                                 </div>
@@ -295,92 +298,34 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>January</td>
-                                                    <td>January</td>
-                                                    <td>January</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>February</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>March</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4</td>
-                                                    <td>April</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>5</td>
-                                                    <td>May</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>6</td>
-                                                    <td>June</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>7</td>
-                                                    <td>July</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>8</td>
-                                                    <td>August</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>9</td>
-                                                    <td>Septmber</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>10</td>
-                                                    <td>Octomber</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>11</td>
-                                                    <td>November</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>12</td>
-                                                    <td>December</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
+                                                <?php
+                                                    $displayRegisteredStudent='';
+                                                    $countRegisteredStudent=1;
+                                                    $registeredStudentSQL = "SELECT * FROM student_registration Order By full_name ASC";
+                                                    $registeredStudentRESULT = mysqli_query($conn, $registeredStudentSQL);
+                                                    if(mysqli_num_rows($registeredStudentRESULT)>0){
+                                                        while($registeredStudentROW = mysqli_fetch_array($registeredStudentRESULT)){
+                                                            $displayRegisteredStudent .='
+                                                                <tr>
+                                                                    <td>'.$countRegisteredStudent++.'</td>
+                                                                    <td>'.$registeredStudentROW['full_name'].'</td>
+                                                                    <td>'.$registeredStudentROW['account_number'].'</td>
+                                                                    <td>'.$registeredStudentROW['password'].'</td>
+                                                                    <td>'.$registeredStudentROW['class_form'].'</td>
+                                                                    <td>'.$registeredStudentROW['program'].'</td>
+                                                                    <td>'.$registeredStudentROW['status'].'</td>
+                                                                </tr>
+                                                            ';
+                                                        }
+                                                    }else{
+                                                        $displayRegisteredStudent .='
+                                                                <tr>
+                                                                    <td colspan="7">Sorry No Student Registered Yet</td> 
+                                                                </tr>
+                                                            ';
+                                                    }
+                                                ?>
+                                                <?php echo $displayRegisteredStudent; ?>
                                             </tbody>
                                         </table>
                                     </div>
@@ -393,8 +338,17 @@
                                 <div class="card">
                                     <div class="card-move-up teal waves-effect waves-block waves-light">
                                         <div class="move-up">
-                                            <p class="margin white-text">Names of Voters (Total)</p>
-                                            <!-- <canvas id="trending-radar-chart" height="114"></canvas> -->
+                                            <?php
+                                                $checkTotalMessage='';
+                                                $checkTotalSQL = "SELECT count(full_name) AS total FROM student_registration";
+                                                $checkTotalRESULT = mysqli_query($conn, $checkTotalSQL);
+                                                $checkTotalRow = mysqli_fetch_array($checkTotalRESULT);
+                                                $checkTotalMessage = $checkTotalRow['total'];
+                                                
+                                            ?>
+                                            <p class="margin white-text">Names of Voters (<?php if($checkTotalMessage <=0){ $checkTotalMessage = 0; echo $checkTotalMessage;}else{ echo $checkTotalMessage;};?> Registered Voters.)</p>
+                                            <hr/>
+                                            <div id="displayNamesOfVoters"></div>
                                         </div>
                                     </div>
                                     <div class="card-content  teal darken-2">
@@ -473,6 +427,74 @@
     <!--custom-script.js - Add your own theme custom JS-->
     <script type="text/javascript" src="js/custom-script.js"></script>
     
+    
 </body>
 
 </html>
+<script>
+    $(document).ready(function(){
+        RegisterStudent();
+        function RegisterStudent() {
+            document.getElementById('action').addEventListener('click', registerStudent);
+            let show = document.querySelector('#displayStudent marquee');
+
+            function registerStudent() {
+                let fullNameText = document.getElementById('first_name').value;
+                let accountText = document.getElementById('accountNo').value;
+                let passwordText = document.getElementById('pass_word').value;
+                let form_classText = document.getElementById('class_form').value;
+                let programText = document.getElementById('course_program').value;
+                let statusSelect = document.getElementById('student_status').value;
+                let registerBtn = document.getElementById('action').value;
+                if(fullNameText === ''){
+                    alert(`Name Field can't be empty`);
+                }else if(accountText === ''){
+                    alert(`Account Number Field can't be empty`);
+                }else if(passwordText === ''){
+                    alert(`Password Field can't be empty`);
+                }else if(form_classText === ''){
+                    alert(`Class/Form Field can't be empty`);
+                }else if(programText === ''){
+                    alert(`Program Field can't be empty`);
+                }else if(statusSelect === 'Select your Status'){
+                    alert(`Sorry Change the Status`);
+                }else{
+                    $.ajax({
+                    url:'phpScript/registrations.php',
+                    method:'POST',
+                    data:{fullNameText:fullNameText, accountText:accountText, passwordText:passwordText, form_classText:form_classText, programText:programText, statusSelect:statusSelect, registerBtn:registerBtn },
+                    success:function(data){ 
+                         show.innerHTML = data;
+                        setTimeout(() => {
+                            show.remove();
+                            document.querySelector('#formID').reset();
+                            showNamesOfVoters();
+                        }, 5000);
+                        
+                    }
+                });
+                }
+                
+            }
+        }
+
+/*===================================================================================
+
+                            SHOW NAMES OF VOTERS FUNCTION
+======================================================================================*/
+showNamesOfVoters();
+    function showNamesOfVoters(){
+       let displayNamesOfVotersLabel = document.querySelector('#displayNamesOfVoters');
+       let showNames = "Show";
+       $.ajax({
+           url:'phpScript/registrations.php',
+           method:'POST',
+           data:{showNames:showNames},
+            success:function(data){ 
+                displayNamesOfVotersLabel.innerHTML = data;    
+                        
+            }
+        });
+    }
+    })
+</script>
