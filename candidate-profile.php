@@ -68,8 +68,7 @@
                 <div class="nav-wrapper">
                     <ul class="left">
                         <li>
-                            <h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img
-                                        src="images/materialize-logo.png" alt="materialize logo"></a> <span
+                            <h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="images/materialize-logo.png" alt="materialize logo"></a> <span
                                     class="logo-text">Electronic
                                     Voting System</span></h1>
                         </li>

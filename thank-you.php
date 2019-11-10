@@ -1,3 +1,7 @@
+<?php
+    include_once('phpScript/votedb.php');
+    include('session.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -92,66 +96,17 @@
                 <!--start container-->
                 <div class="container">
                     <div class="section">
-                        <div class="right">user name</div>
-                        <p class="caption text-center"><strong>COMPOUND PREFECT VOTE PAGE</strong></p>
-                        <p>Please note all actions are irreversible. To vote simply click on the image</p>
+                        <div class="right"><?php echo $login_session; ?></div>
+                        <p class="caption text-center"><strong>END OF VOTE PAGE</strong></p>
+                        <p>Please click on the <strong>Red Button</strong> to logout of the vote page.</p>
 
                         <div class="divider"></div>
 
                     </div>
-                    <div class="row">
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="thank-you.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
+                    <h1 style="font-size: 90px;">THANK YOU FOR YOUR VOTE</h1>
+                    <div class="input-field col s12">
+                        <a class="btn red waves-effect waves-light" href="vote-logout.php">CLICK TO LOGOUT OF PAGE</a>
 
-                            </div>
-                        </div>
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="thank-you.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="thank-you.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="thank-you.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <!--end container-->

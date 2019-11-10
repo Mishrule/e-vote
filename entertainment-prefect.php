@@ -1,10 +1,15 @@
+<?php
+    include_once('phpScript/votedb.php');
+    include('session.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <!--================================================================================
 	Item Name: ELECTRONIC VOTING APP FOR SENIOR HIGH SCHOOL
 	Version: 1.0
-	Author: KYEI ERNEST NKRUMAH
+	Author: KYEI ERNEST NKRUMAH 
 	Author URL: NULL
 ================================================================================ -->
 
@@ -92,7 +97,7 @@
                 <!--start container-->
                 <div class="container">
                     <div class="section">
-                        <div class="right">user name</div>
+                        <div class="right" id="entertainment_session"><?php echo $login_session; ?></div>
                         <p class="caption text-center"><strong>ENTERTAINMENT PREFECT VOTE PAGE</strong></p>
                         <p>Please note all actions are irreversible. To vote simply click on the image</p>
 
@@ -100,58 +105,29 @@
 
                     </div>
                     <div class="row">
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="prep-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
+                        <?php
+                            $entertainmentPrefectDisplayOUTPUT = '';
+                            $entertainmentPrefectDisplaySQL = "SELECT * FROM candidate_registration WHERE position = 'entertainment_prefect'";
+                            $entertainmentPrefectDisplayRESULT = mysqli_query($conn, $entertainmentPrefectDisplaySQL);
+                            while($entertainmentPrefectDisplayROW = mysqli_fetch_array($entertainmentPrefectDisplayRESULT)){
+                                $entertainmentPrefectDisplayOUTPUT .='
+                                <div class="col s12 m3">
+                                    <div class="card vote" id="'.$entertainmentPrefectDisplayROW['voter_id'].'">
+                                        <div class="card-image">
+                                            <img style="height:90%; width:90%;" src="images/'.$entertainmentPrefectDisplayROW['image'].'">
+                                            <span class="card-title" style="color:black; font-weight:bold;">'.$entertainmentPrefectDisplayROW['full_name'].'</span>
+                                        </div>
+                                        <div class="card-content">
+                                            <h6><strong>'.$entertainmentPrefectDisplayROW['program'].'</strong></h6>
+                                            <p>'.$entertainmentPrefectDisplayROW['voter_id'].'</p>
+                                        </div>
 
-                            </div>
-                        </div>
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="prep-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
+                                    </div>
                                 </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="prep-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="prep-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div>
+                                ';
+                            }
+                            echo $entertainmentPrefectDisplayOUTPUT;
+                        ?>
                     </div>
                 </div>
                 <!--end container-->
@@ -210,3 +186,21 @@
 </body>
 
 </html>
+<script>
+    $(document).ready(function(){
+        $(document).on('click', '.vote', function(){
+            var entertainment_id = $(this).attr('id');
+            var entertainmentSession = document.getElementById('entertainment_session').textContent;
+            // alert(entertainmentSession);
+            $.ajax({
+                url:'phpScript/voteScript.php',
+                method:'POST',
+                data:{entertainment_id:entertainment_id, entertainmentSession:entertainmentSession},
+                success:function(data){
+                    // alert(data);
+                    window.location = 'prep-prefect.php' ;
+                }
+            })
+        });
+    });
+</script>

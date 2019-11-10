@@ -2,7 +2,7 @@
     $msg = '';
     include_once('phpScript/votedb.php');
     if(isset($_POST['action'])){
- 
+        $voterID = mysqli_real_escape_string($conn, $_POST['voterID']);
         $first_nameText = mysqli_real_escape_string($conn, $_POST['first_name']);
         $accountNumberText = mysqli_real_escape_string($conn, $_POST['accountNumber']);
         $choosePrefectText = mysqli_real_escape_string($conn, $_POST['choosePrefect']);
@@ -12,14 +12,14 @@
         $imageText = $_FILES['prefectImage']['name'];
         $Target = "images/".basename($_FILES['prefectImage']['name']);
         
-        $registerPrefectSQL = "INSERT INTO candidate_registration VALUES('$accountNumberText','$first_nameText','$choosePrefectText','$form_classText ','$programTex','$chooseStatusText','$imageText')";
+        $registerPrefectSQL = "INSERT INTO candidate_registration VALUES('$voterID','$accountNumberText','$first_nameText','$choosePrefectText','$form_classText ','$programTex','$chooseStatusText','$imageText')";
 
         $registerPrefectRESULT = mysqli_query($conn, $registerPrefectSQL);
         move_uploaded_file($_FILES['prefectImage']['tmp_name'], $Target);
         if($registerPrefectRESULT){
-            $msg = $choosePrefectText." is Prefect Registered Successfully";
+            $msg = $first_nameText ." is Registered under ".$choosePrefectText." Successfully";
         }else{
-           $msg = $choosePrefectText." is already registered";
+           $msg = $first_nameText." is already registered";
         }
         // mysqli_close($conn);
     }
@@ -270,6 +270,12 @@
                                            
                                             <div class="row">
                                                 <form class="col s12" action="<?php $_PHP_SELF ?>" id="prefectForm"  method="POST" enctype="multipart/form-data">
+                                                <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <input id="voterID" name="voterID" type="text" required>
+                                                            <label for="voterID">Voter ID</label>
+                                                        </div>
+                                                    </div>
                                                     <div class="row">
                                                         <div class="input-field col s12">
                                                             <input id="first_name" name="first_name" type="text" required>
@@ -382,7 +388,7 @@
                                                                     <td>'.$countRegisteredStudent++.'</td>
                                                                     <td><img class="circle responsive-img" src="images/'.$registeredStudentROW['image'].'" width="50px";</td>
                                                                     <td>'.$registeredStudentROW['full_name'].'</td>
-                                                                    <td>'.$registeredStudentROW['account_number'].'</td>
+                                                                    <td>'.$registeredStudentROW['voter_id'].'</td>
                                                                     <td>'.$registeredStudentROW['position'].'</td>
                                                                     <td>'.$registeredStudentROW['Form_class'].'</td>
                                                                     <td>'.$registeredStudentROW['program'].'</td>
@@ -762,14 +768,13 @@
 <script>
     $(document).ready(function(){
         let cleaStatusBTN = document.getElementById('removeStatus');
+         
         clearStatus();
        
        function clearStatus(){
-           
-            cleaStatusBTN.addEventListener('click', clearPrefect);
-       
-
-            function clearPrefect(e){
+           cleaStatusBTN.addEventListener('click', clearPrefect);
+ 
+            function clearPrefect(){
                 // e.preventDefault();
                  document.querySelector('#removeStatus').remove();
             //    setTimeout(() => {

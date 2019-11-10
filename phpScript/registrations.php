@@ -1,4 +1,5 @@
 <?php
+//============================================| SHOW REGISTRATED |=============================================
     if(isset($_POST['registerBtn'])){
         include_once('votedb.php');
         $fullNameText = mysqli_real_escape_string($conn, $_POST['fullNameText']);
@@ -18,7 +19,7 @@
         }
         // mysqli_close($conn);
     }
-
+//============================================| SHOW REGISTRATED |=============================================
     if(isset($_POST['showNames'])){
         include_once('votedb.php');
         $displayShowNames='';
@@ -45,4 +46,31 @@
         ';
         echo $displayShowNames;
     }
+
+    //============================================| SHOW PREFECT REGISTRATION |=============================================
+    if(isset($_POST['action'])){
+        include_once('votedb.php');
+    
+        $first_nameText = mysqli_real_escape_string($conn, $_POST['first_nameText']);
+        $accountNumberText = mysqli_real_escape_string($conn, $_POST['accountNumberText']);
+        $choosePrefectText = mysqli_real_escape_string($conn, $_POST['choosePrefectText']);
+        $form_classText = mysqli_real_escape_string($conn, $_POST['form_classText']);
+        $programTex = mysqli_real_escape_string($conn, $_POST['programTex']);
+        $chooseStatusText = mysqli_real_escape_string($conn, $_POST['chooseStatusText']);
+        $imageText = $_FILES['imageText']['name'];
+        $Target = "images/".basename($_FILES['imageText']['name']);
+        
+        $registerPrefectSQL = "INSERT INTO candidate_registration VALUES('$accountNumberText','$first_nameText','$choosePrefectText','$form_classText ','$programTex','$chooseStatusText','$imageText')";
+
+        $registerPrefectRESULT = mysqli_query($conn, $registerPrefectSQL);
+        move_uploaded_file($_FILES['imageText']['name'], $Target);
+        if($registerPrefectRESULT){
+            echo $choosePrefectText." is Prefect Registered Successfully";
+        }else{
+            echo $choosePrefectText." is already registered";
+        }
+        // mysqli_close($conn);
+    }
+
+
 ?>

@@ -1,3 +1,6 @@
+<?php
+  include_once('phpScript/votedb.php')
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +20,7 @@
     content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
   <meta name="keywords"
     content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-  <title>Electronic Voting | Verification Page</title>
+  <title>VERIFICATION | Verification Page</title>
 
   <!-- Favicons-->
   <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
@@ -68,55 +71,57 @@
         </div>
         <div class="row margin">
 
-          <table>
+          <table class="responsive-table">
             <tr>
               <td>
                 <div class="input-field col s12">
                   <i class="mdi-social-person-outline prefix"></i>
-                  <input id="accountNumber" type="text">
-                  <label for="accountNumber" class="center-align">Account Number</label>
+                  <input id="accountNumber" name="accountNumber" type="text">
+                  <label for="accountNumber" >Account No.</label>
                 </div>
               </td>
               <td>
                 <div class="input-field col s12">
-                  <a href="index.html" class="btn waves-effect waves-light col s12">Check</a>
+                  <button type="button" id="checkActionBtn" name="checkActionBtn" value="checkAction" class="btn waves-effect waves-light col s12">Check</button>
+                   
                 </div>
               </td>
             </tr>
           </table>
         </div>
-        <div class="row margin">
+        <div id="show"></div>
+        <!-- <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-social-person-outline prefix"></i>
-            <input id="verifyName" type="text" disabled>
+            <input id="verifyName" name="verifyName" type="text" disabled>
             <label for="verifyName">Student Name</label>
           </div>
         </div>
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-social-person-outline prefix"></i>
-            <input id="verifyName" type="text" disabled>
-            <label for="verifyName">Form/Class</label>
+            <input id="verifyClass" name="verifyClass" type="text" disabled>
+            <label for="verifyClass">Form/Class</label>
           </div>
         </div>
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-social-person-outline prefix"></i>
-            <input id="verifyName" type="text" disabled>
-            <label for="verifyName">Status</label>
+            <input id="verifyStatus" name="verifyStatus"  type="text" disabled>
+            <label for="verifyStatus">Status</label>
           </div>
-        </div>
+        </div> -->
         <!-- <div class="row">
           <div class="input-field col s12 m12 l12  login-text">
             <input type="checkbox" id="remember-me" />
             <label for="remember-me">Remember me</label>
           </div>
         </div> -->
-        <div class="row">
+        <!-- <div class="row">
           <div class="input-field col s12">
             <a href="index.html" class="btn waves-effect waves-light col s12">VERIFY</a>
           </div>
-        </div>
+        </div> -->
         <!-- <div class="row">
           <div class="input-field col s6 m6 l6">
             <p class="margin medium-small"><a href="page-register.html">Register Now!</a></p>
@@ -154,3 +159,51 @@
 </body>
 
 </html>
+<script>
+
+
+
+    // $(document).ready(function(){
+      $(document).on('click', '#checkActionBtn', function(){
+        var accountText = $('#accountNumber').val();
+        var actionBTN = $('#checkActionBtn').val();
+        // console.log(accountText);
+        $.ajax({
+        url:'phpScript/verificationScript.php',
+          method:'POST',
+          data:{actionBTN:actionBTN, accountText:accountText},
+          // dataType:'json',
+          success:function(data){
+            $('#show').html(data);
+          }
+        });
+      });
+//====================================================================
+      $(document).on('click', '#verifyBTN', function(){
+
+        let account_Number = document.querySelector('#accountNumber').value;
+        let full_name = document.querySelector('#fullName').textContent;
+        let class_form = document.querySelector('#classForm').textContent;
+        let student_Status = document.querySelector('#studentStatus').textContent;
+        let student_Password = document.querySelector('#studentPassword').textContent;
+        let verify_BTN = $(this).val();
+          // console.log(verify_BTN);
+        $.ajax({
+          url:'phpScript/verificationScript.php',
+          method:'POST',
+          data:{account_Number:account_Number, full_name:full_name, class_form:class_form, student_Status:student_Status, student_Password:student_Password, verify_BTN:verify_BTN},
+         
+          success:function(data){
+            document.querySelector('.showVerify').innerHTML = data;
+            setTimeout(() => {
+              document.querySelector('.showVerify').remove();
+              document.querySelector('#verifyBTN').remove();
+              document.querySelector('#accountNumber').value='';
+            }, 5000);
+          }
+        });
+
+      })
+      
+    // });
+</script>

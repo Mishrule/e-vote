@@ -1,10 +1,14 @@
+<?php
+    include_once('phpScript/votedb.php');
+    include('session.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <!--================================================================================
 	Item Name: ELECTRONIC VOTING APP FOR SENIOR HIGH SCHOOL
 	Version: 1.0
-	Author: KYEI ERNEST NKRUMAH
+	Author: KYEI ERNEST NKRUMAH 
 	Author URL: NULL
 ================================================================================ -->
 
@@ -92,66 +96,38 @@
                 <!--start container-->
                 <div class="container">
                     <div class="section">
-                        <div class="right">user name</div>
-                        <p class="caption text-center"><strong>HEALTH PREFECT VOTE PAGE</strong></p>
+                        <div class="right"id="compound_session"><?php echo $login_session; ?></div>
+                        <p class="caption text-center"><strong>COMPOUND PREFECT VOTE PAGE</strong></p>
                         <p>Please note all actions are irreversible. To vote simply click on the image</p>
 
                         <div class="divider"></div>
 
                     </div>
                     <div class="row">
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="entertainment-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
+                         <?php
+                            $compoundPrefectDisplayOUTPUT = '';
+                            $compoundPrefectDisplaySQL = "SELECT * FROM candidate_registration WHERE position = 'compound_prefect'";
+                            $compoundPrefectDisplayRESULT = mysqli_query($conn, $compoundPrefectDisplaySQL);
+                            while($compoundPrefectDisplayROW = mysqli_fetch_array($compoundPrefectDisplayRESULT)){
+                                $compoundPrefectDisplayOUTPUT .='
+                                <div class="col s12 m3">
+                                    <div class="card vote" id="'.$compoundPrefectDisplayROW['voter_id'].'">
+                                        <div class="card-image">
+                                            <img style="height:90%; width:90%;" class="responsive-img" src="images/'.$compoundPrefectDisplayROW['image'].'">
+                                            <span class="card-title" style="color:black; font-weight:bold;">'.$compoundPrefectDisplayROW['full_name'].'</span>
+                                        </div>
+                                        <div class="card-content">
+                                            <h6><strong>'.$compoundPrefectDisplayROW['program'].'</strong></h6>
+                                            <p>'.$compoundPrefectDisplayROW['voter_id'].'</p>
+                                        </div>
 
-                            </div>
-                        </div>
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="entertainment-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
+                                    </div>
                                 </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="entertainment-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="entertainment-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div>
+                                ';
+                            }
+                            echo $compoundPrefectDisplayOUTPUT;
+                        ?>
+                       
                     </div>
                 </div>
                 <!--end container-->
@@ -210,3 +186,21 @@
 </body>
 
 </html>
+<script>
+    $(document).ready(function(){
+        $(document).on('click', '.vote', function(){
+            var compound_id = $(this).attr('id');
+            var compoundSession = document.getElementById('compound_session').textContent;
+            // alert(compoundSession);
+            $.ajax({
+                url:'phpScript/voteScript.php',
+                method:'POST',
+                data:{compound_id:compound_id, compoundSession:compoundSession},
+                success:function(data){
+                    // alert(data);
+                    window.location = 'thank-you.php' ;
+                }
+            })
+        });
+    });
+</script>

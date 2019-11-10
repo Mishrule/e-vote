@@ -98,7 +98,9 @@
                         <div class="divider"></div>
 
                     </div>
-                    <h1 style="font-size: 160px;">400 outof 600 VOTES</h1>
+                    <h4 id="voteState" style="font-size: 110px;">400</h4>
+                    <h4 style="font-size: 100px;">OUT OF</h4>
+                    <h4 style="font-size: 110px;">600 VOTES</h4>
 
                 </div>
                 <!--end container-->
@@ -157,3 +159,19 @@
 </body>
 
 </html>
+<script>
+    $(document).ready(function () {
+        showVoteProgress();
+        function showVoteProgress() {
+            var state = "Yes";
+            $.ajax({
+                url: 'phpScript/voteProgress.php',
+                method: 'POST',
+                data: { state: state },
+                success: function (data) {
+                    document.getElementById('voteState').textContent = data;
+                }
+            })
+        }
+    });
+</script>

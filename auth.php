@@ -1,3 +1,39 @@
+<?php
+//session_start();
+$error='';
+include_once('phpScript/votedb.php');
+  session_start();
+
+
+
+
+
+  if($_SERVER["REQUEST_METHOD"]=="POST"){
+    $myUserName = mysqli_real_escape_string($conn, $_POST['username']);
+    $myUserPassword = mysqli_real_escape_string($conn, $_POST['password']);
+    // $password = md5($myUserPassword);
+
+    $sql = "SELECT * FROM verifystudent WHERE account_number ='$myUserName' AND pass = '$myUserPassword'";
+    $checkVoterSQL  = "SELECT * FROM vote WHERE voterid ='$myUserName'";
+
+    $voteRESULT = mysqli_query($conn, $checkVoterSQL); 
+    $result = mysqli_query($conn, $sql);
+
+    $row = mysqli_fetch_array($result);
+    $voteROW = mysqli_fetch_array($voteRESULT);
+
+    $count = mysqli_num_rows($result);
+
+    if($count == 1 && $voteROW['school_prefect']=='null'){
+
+      $_SESSION['login_user']= $myUserName;
+      header("location:school-prefect.php");
+    }else{
+      $error = "Your Login Name or Password is invalid OR You have already voted";
+    }
+  } 
+	 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +53,7 @@
         content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
     <meta name="keywords"
         content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-    <title>Login Page | Materialize - Material Design Admin Template</title>
+    <title>AUTH | ELECTRONIC VOTING APP</title>
 
     <!-- Favicons-->
     <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
@@ -57,7 +93,7 @@
 
     <div id="login-page" class="row">
         <div class="col s12 z-depth-4 card-panel">
-            <form class="login-form">
+            <form class="login-form" id="formLogIn" method="POST" action="<?php $_PHP_SELF;?>">
                 <div class="row">
                     <div class="input-field col s12 center">
                         <img src="images/login-logo.png" alt=""
@@ -68,14 +104,14 @@
                 <div class="row margin">
                     <div class="input-field col s12">
                         <i class="mdi-social-person-outline prefix"></i>
-                        <input id="username" type="text">
+                        <input id="username" name="username" type="text">
                         <label for="username" class="center-align">Account No.</label>
                     </div>
                 </div>
                 <div class="row margin">
                     <div class="input-field col s12">
                         <i class="mdi-action-lock-outline prefix"></i>
-                        <input id="password" type="password">
+                        <input id="password" name="password" type="password">
                         <label for="password">Password</label>
                     </div>
                 </div>
@@ -87,7 +123,11 @@
                 </div> -->
                 <div class="row">
                     <div class="input-field col s12">
-                        <a href="index.html" class="btn waves-effect waves-light col s12">PROCEED TO VOTING PAGE</a>
+                        <button type="submit" id="logVoter" name="logVoter" value="logVoter" class="btn waves-effect waves-light col s12">PROCEED TO VOTING PAGE</button>
+                    </div>
+                </div><div class="row">
+                    <div class="input-field col s12">
+                        <p class="center-align"><?php echo $error; ?></p>
                     </div>
                 </div>
                 <!-- <div class="row">

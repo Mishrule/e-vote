@@ -1,3 +1,7 @@
+<?php
+    include_once('phpScript/votedb.php');
+    include('session.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,8 +21,7 @@
         content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
     <meta name="keywords"
         content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-    <title>Page Blank | Materialize - Material Design Admin Template</title>
-
+    <title>SCHOOL-PREFECT VOTE  | ELECTRONIC VOTING APP</title>
     <!-- Favicons-->
     <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
     <!-- Favicons-->
@@ -92,19 +95,77 @@
                 <!--start container-->
                 <div class="container">
                     <div class="section">
-                        <div class="right">user name</div>
-                        <p class="caption text-center"><strong>END OF VOTE PAGE</strong></p>
-                        <p>Please click on the <strong>Red Button</strong> to logout of the vote page.</p>
+                        <div class="right" id="student_session" ><?php echo $login_session; ?></div>
+                        <p class="caption text-center"><strong>SCHOOL PREFECT VOTE PAGE</strong></p>
+                        <p>Please note all actions are irreversible. To vote simply click on the image</p>
 
                         <div class="divider"></div>
 
                     </div>
-                    <h1 style="font-size: 90px;">THANK YOU FOR YOUR VOTE</h1>
-                    <div class="input-field col s12">
-                        <button class="btn red waves-effect waves-light" type="submit" name="action"><a
-                                href="auth.html">CLICK TO LOGOUT OF PAGE</a>
-                            <i class="mdi-content-send right"></i>
-                        </button>
+                    <div class="row">
+                        <?php
+                            $schoolPrefectDisplayOUTPUT = '';
+                            $schoolPrefectDisplaySQL = "SELECT * FROM candidate_registration WHERE position = 'school_prefect'";
+                            $schoolPrefectDisplayRESULT = mysqli_query($conn, $schoolPrefectDisplaySQL);
+                            while($schoolPrefectDisplayROW = mysqli_fetch_array($schoolPrefectDisplayRESULT)){
+                                $schoolPrefectDisplayOUTPUT .='
+                                <div class="col s12 m3">
+                                    <div class="card vote" id="'.$schoolPrefectDisplayROW['voter_id'].'">
+                                        <div class="card-image" >
+                                            <img class="responsive-img " style="height:90%; width:90%;" src="images/'.$schoolPrefectDisplayROW['image'].'" >
+                                            <span class="card-title" style="color:black; font-weight:bold;">'.$schoolPrefectDisplayROW['full_name'].'</span>
+                                        </div>
+                                        <div class="card-content">
+                                            <h6><strong>'.$schoolPrefectDisplayROW['program'].'</strong></h6>
+                                            <p>'.$schoolPrefectDisplayROW['voter_id'].'</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                ';
+                            }
+                            echo $schoolPrefectDisplayOUTPUT;
+                        ?>
+                        
+                        <!-- <div class="col s12 m3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <a href="dinning-hall-prefect.html"><img src="images/sample-1.jpg"></a>
+                                    <span class="card-title">Card Title</span>
+                                </div>
+                                <div class="card-content">
+                                    <h6><strong>Name Of Prefect Here</strong></h6>
+                                    <p>Program</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col s12 m3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <a href="dinning-hall-prefect.html"><img src="images/sample-1.jpg"></a>
+                                    <span class="card-title">Card Title</span>
+                                </div>
+                                <div class="card-content">
+                                    <h6><strong>Name Of Prefect Here</strong></h6>
+                                    <p>Program</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col s12 m3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <a href="dinning-hall-prefect.html"><img src="images/sample-1.jpg"></a>
+                                    <span class="card-title">Card Title</span>
+                                </div>
+                                <div class="card-content">
+                                    <h6><strong>Name Of Prefect Here</strong></h6>
+                                    <p>Program</p>
+                                </div>
+
+                            </div>
+                        </div> -->
                     </div>
                 </div>
                 <!--end container-->
@@ -163,3 +224,21 @@
 </body>
 
 </html>
+<script>
+    $(document).ready(function(){
+        $(document).on('click', '.vote', function(){
+            var student_id = $(this).attr('id');
+            var studentSession = document.getElementById('student_session').textContent;
+            // alert(studentSession);
+            $.ajax({
+                url:'phpScript/voteScript.php',
+                method:'POST',
+                data:{student_id:student_id, studentSession:studentSession},
+                success:function(data){
+                    // alert(data);
+                    window.location = 'dinning-hall-prefect.php' ;
+                }
+            })
+        });
+    });
+</script>

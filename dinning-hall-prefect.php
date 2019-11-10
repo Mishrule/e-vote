@@ -1,10 +1,14 @@
+<?php
+    include_once('phpScript/votedb.php');
+    include('session.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <!--================================================================================
 	Item Name: ELECTRONIC VOTING APP FOR SENIOR HIGH SCHOOL
 	Version: 1.0
-	Author: KYEI ERNEST NKRUMAH
+	Author: KYEI ERNEST NKRUMAH 
 	Author URL: NULL
 ================================================================================ -->
 
@@ -92,18 +96,41 @@
                 <!--start container-->
                 <div class="container">
                     <div class="section">
-                        <div class="right">user name</div>
-                        <p class="caption text-center"><strong>PREP PREFECT VOTE PAGE</strong></p>
+                        <div class="right" id="dinningHall_session"><?php echo $login_session; ?></div>
+                        <p class="caption text-center"><strong>DINNING HALL PREFECT VOTE PAGE</strong></p>
                         <p>Please note all actions are irreversible. To vote simply click on the image</p>
 
                         <div class="divider"></div>
 
                     </div>
                     <div class="row">
-                        <div class="col s12 m3">
+                        <?php
+                            $dinningHallPrefectDisplayOUTPUT = '';
+                            $dinningHallPrefectDisplaySQL = "SELECT * FROM candidate_registration WHERE position = 'dinning_hall_prefect'";
+                            $dinningHallPrefectDisplayRESULT = mysqli_query($conn, $dinningHallPrefectDisplaySQL);
+                            while($dinningHallPrefectDisplayROW = mysqli_fetch_array($dinningHallPrefectDisplayRESULT)){
+                                $dinningHallPrefectDisplayOUTPUT .='
+                                <div class="col s12 m3">
+                                    <div class="card vote" id="'.$dinningHallPrefectDisplayROW['voter_id'].'">
+                                        <div class="card-image">
+                                            <img style="height:90%; width:90%;" src="images/'.$dinningHallPrefectDisplayROW['image'].'">
+                                            <span class="card-title" style="color:black; font-weight:bold;">'.$dinningHallPrefectDisplayROW['full_name'].'</span>
+                                        </div>
+                                        <div class="card-content">
+                                            <h6><strong>'.$dinningHallPrefectDisplayROW['program'].'</strong></h6>
+                                            <p>'.$dinningHallPrefectDisplayROW['voter_id'].'</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                ';
+                            }
+                            echo $dinningHallPrefectDisplayOUTPUT;
+                        ?>
+                        <!-- <div class="col s12 m3">
                             <div class="card">
                                 <div class="card-image">
-                                    <a href="library-prefect.html"><img src="images/sample-1.jpg"></a>
+                                    <a href="health-prefect.html"><img src="images/sample-1.jpg"></a>
                                     <span class="card-title">Card Title</span>
                                 </div>
                                 <div class="card-content">
@@ -116,7 +143,7 @@
                         <div class="col s12 m3">
                             <div class="card">
                                 <div class="card-image">
-                                    <a href="library-prefect.html"><img src="images/sample-1.jpg"></a>
+                                    <a href="health-prefect.html"><img src="images/sample-1.jpg"></a>
                                     <span class="card-title">Card Title</span>
                                 </div>
                                 <div class="card-content">
@@ -129,7 +156,7 @@
                         <div class="col s12 m3">
                             <div class="card">
                                 <div class="card-image">
-                                    <a href="library-prefect.html"><img src="images/sample-1.jpg"></a>
+                                    <a href="health-prefect.html"><img src="images/sample-1.jpg"></a>
                                     <span class="card-title">Card Title</span>
                                 </div>
                                 <div class="card-content">
@@ -142,7 +169,7 @@
                         <div class="col s12 m3">
                             <div class="card">
                                 <div class="card-image">
-                                    <a href="library-prefect.html"><img src="images/sample-1.jpg"></a>
+                                    <a href="health-prefect.html"><img src="images/sample-1.jpg"></a>
                                     <span class="card-title">Card Title</span>
                                 </div>
                                 <div class="card-content">
@@ -151,7 +178,7 @@
                                 </div>
 
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <!--end container-->
@@ -210,3 +237,21 @@
 </body>
 
 </html>
+<script>
+    $(document).ready(function(){
+        $(document).on('click', '.vote', function(){
+            var dinningHall_id = $(this).attr('id');
+            var dinningHallSession = document.getElementById('dinningHall_session').textContent;
+            // alert(dinningHallSession);
+            $.ajax({
+                url:'phpScript/voteScript.php',
+                method:'POST',
+                data:{dinningHall_id:dinningHall_id, dinningHallSession:dinningHallSession},
+                success:function(data){
+                    // alert(data);
+                    window.location = 'health-prefect.php' ;
+                }
+            })
+        });
+    });
+</script>
