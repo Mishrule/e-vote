@@ -120,26 +120,26 @@
                             PREFECTS RESULTS</a>
                     </li>
 
-                    <li class="bold active"><a href="school-prefect-results.html" class="waves-effect waves-cyan"><i
-                                class="mdi-communication-email"></i> SCHOOL PREFECT RESULTS</a>
+                    <li class="bold"><a href="school-prefect-result.php" class="waves-effect waves-cyan"><i
+                                class="mdi-action-assignment"></i> SCHOOL PREFECT RESULTS</a>
                     </li>
-                    <li class="bold"><a href="health_hall-prefect-result.html" class="waves-effect waves-cyan"><i
-                                class="mdi-communication-email"></i> health_HALL PREFECT RESULTS</a>
+                    <li class="bold"><a href="dinning-hall-prefect-result.php" class="waves-effect waves-cyan"><i
+                                class="mdi-action-assignment"></i> DINNING HALL PREFECT RESULTS</a>
                     </li>
-                    <li class="bold"><a href="health-prefect-result.html" class="waves-effect waves-cyan"><i
-                                class="mdi-communication-email"></i> HEALTH PREFECT RESULTS</a>
+                    <li class="bold"><a href="health-prefect-result.php" class="waves-effect waves-cyan"><i
+                                class="mdi-action-assignment"></i> HEALTH PREFECT RESULTS</a>
                     </li>
-                    <li class="bold"><a href="entertainment-results.html" class="waves-effect waves-cyan"><i
-                                class="mdi-communication-email"></i> ENTERTAINMENT PREFECT RESULTS</a>
+                    <li class="bold"><a href="entertainment-prefect-result.php" class="waves-effect waves-cyan"><i
+                                class="mdi-action-assignment"></i> ENTERTAINMENT PREFECT RESULTS</a>
                     </li>
-                    <li class="bold"><a href="prep-prefect-result.html" class="waves-effect waves-cyan"><i
-                                class="mdi-communication-email"></i> PREP PREFECT RESULTS</a>
+                    <li class="bold"><a href="prep-prefect-result.php" class="waves-effect waves-cyan"><i
+                                class="mdi-action-assignment"></i> PREP PREFECT RESULTS</a>
                     </li>
-                    <li class="bold"><a href="library-prefect-result.html" class="waves-effect waves-cyan"><i
-                                class="mdi-communication-email"></i> LIBRARY PREFECT RESULTS</a>
+                    <li class="bold  active"><a href="library-prefect-result.php" class="waves-effect waves-cyan"><i
+                                class="mdi-action-assignment"></i> LIBRARY PREFECT RESULTS</a>
                     </li>
-                    <li class="bold"><a href="compound-prefect-result.html" class="waves-effect waves-cyan"><i
-                                class="mdi-communication-email"></i> COMPOUND PREFECT RESULTS</a>
+                    <li class="bold"><a href="compound-prefect-result.php" class="waves-effect waves-cyan"><i
+                                class="mdi-action-assignment"></i> COMPOUND PREFECT RESULTS</a>
                     </li>
                     <!-- <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> PROCEED TO VOTE</a>
                 </li> -->
@@ -297,7 +297,7 @@
                 // if(health_prefectZero){
                 //    alert(health_prefectZero);
                 //     $.ajax({
-                //         url: 'phpScript/displayVoteResults.php',
+                //         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                 //         method: 'POST',
                 //         data: { health_prefectZero: health_prefectZero },
                 //         success: function (data) {
@@ -310,7 +310,7 @@
                 if(library_prefectOne){
                    alert(library_prefectOne);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
                         data: { library_prefectOne: library_prefectOne },
                         success: function (data) {
@@ -324,7 +324,7 @@
                 if(library_prefectTwo){
                     alert(library_prefectTwo);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
                         data: { library_prefectTwo: library_prefectTwo },
                         success: function (data) {
@@ -339,7 +339,7 @@
                 if(library_prefectThree){
                     alert(library_prefectThree);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
                         data: { library_prefectThree: library_prefectThree },
                         success: function (data) {
@@ -353,7 +353,7 @@
                 if(library_prefectFour){
                     alert(library_prefectFour);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
                         data: { library_prefectFour: library_prefectFour },
                         success: function (data) {
@@ -367,7 +367,7 @@
                 if(library_prefectFive){
                     alert(library_prefectFive);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
                         data: { library_prefectFive: library_prefectFive },
                         success: function (data) {
@@ -381,7 +381,7 @@
                 if(library_prefectSix){
                     alert(library_prefectSix);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
                         data: { library_prefectSix: library_prefectSix },
                         success: function (data) {
@@ -397,7 +397,7 @@
                 if(library_prefectSeven){
                     alert(library_prefectSeven);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
                         data: { library_prefectSeven: library_prefectSeven },
                         success: function (data) {
@@ -411,7 +411,7 @@
                 if(library_prefectEight){
                     alert(library_prefectEight);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
                         data: { library_prefectEight: library_prefectEight },
                         success: function (data) {
@@ -425,7 +425,7 @@
                 if(library_prefectNine){
                     alert(library_prefectNine);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
                         data: { library_prefectNine: library_prefectNine },
                         success: function (data) {
@@ -439,7 +439,7 @@
                 if(library_prefectTen){
                     alert(library_prefectTen);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
                         data: { library_prefectTen: library_prefectTen },
                         success: function (data) {

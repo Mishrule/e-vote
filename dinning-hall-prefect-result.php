@@ -120,28 +120,28 @@
                             PREFECTS RESULTS</a>
                     </li>
 
-                    <li class="bold active"><a href="school-prefect-results.html" class="waves-effect waves-cyan"><i
-                                class="mdi-communication-email"></i> SCHOOL PREFECT RESULTS</a>
+                    <li class="bold"><a href="school-prefect-result.php" class="waves-effect waves-cyan"><i
+                                class="mdi-action-assignment"></i> SCHOOL PREFECT RESULTS</a>
                     </li>
-                    <li class="bold"><a href="dinning-hall-prefect-result.html" class="waves-effect waves-cyan"><i
-                                class="mdi-communication-email"></i> DINNING HALL PREFECT RESULTS</a>
+                    <li class="bold active"><a href="dinning-hall-prefect-result.php" class="waves-effect waves-cyan"><i
+                                class="mdi-action-assignment"></i> DINNING HALL PREFECT RESULTS</a>
                     </li>
-                    <li class="bold"><a href="health-prefect-result.html" class="waves-effect waves-cyan"><i
-                                class="mdi-communication-email"></i> HEALTH PREFECT RESULTS</a>
+                    <li class="bold"><a href="health-prefect-result.php" class="waves-effect waves-cyan"><i
+                                class="mdi-action-assignment"></i> HEALTH PREFECT RESULTS</a>
                     </li>
-                    <li class="bold"><a href="entertainment-results.html" class="waves-effect waves-cyan"><i
-                                class="mdi-communication-email"></i> ENTERTAINMENT PREFECT RESULTS</a>
+                    <li class="bold"><a href="entertainment-prefect-result.php" class="waves-effect waves-cyan"><i
+                                class="mdi-action-assignment"></i> ENTERTAINMENT PREFECT RESULTS</a>
                     </li>
-                    <li class="bold"><a href="prep-prefect-result.html" class="waves-effect waves-cyan"><i
-                                class="mdi-communication-email"></i> PREP PREFECT RESULTS</a>
+                    <li class="bold"><a href="prep-prefect-result.php" class="waves-effect waves-cyan"><i
+                                class="mdi-action-assignment"></i> PREP PREFECT RESULTS</a>
                     </li>
-                    <li class="bold"><a href="library-prefect-result.html" class="waves-effect waves-cyan"><i
-                                class="mdi-communication-email"></i> LIBRARY PREFECT RESULTS</a>
+                    <li class="bold"><a href="library-prefect-result.php" class="waves-effect waves-cyan"><i
+                                class="mdi-action-assignment"></i> LIBRARY PREFECT RESULTS</a>
                     </li>
-                    <li class="bold"><a href="compound-prefect-result.html" class="waves-effect waves-cyan"><i
-                                class="mdi-communication-email"></i> COMPOUND PREFECT RESULTS</a>
+                    <li class="bold"><a href="compound-prefect-result.php" class="waves-effect waves-cyan"><i
+                                class="mdi-action-assignment"></i> COMPOUND PREFECT RESULTS</a>
                     </li>
-                    <!-- <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> PROCEED TO VOTE</a>
+                    <!-- <li class="bold"><a href="app-calendar.php" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> PROCEED TO VOTE</a>
                 </li> -->
 
                     <li class="li-hover">
@@ -297,7 +297,7 @@
                 // if(dinning_prefectZero){
                 //    alert(dinning_prefectZero);
                 //     $.ajax({
-                //         url: 'phpScript/displayVoteResults.php',
+                //         url: 'phpScript/resultPHP/dinningHallResult.php',
                 //         method: 'POST',
                 //         data: { dinning_prefectZero: dinning_prefectZero },
                 //         success: function (data) {
@@ -310,7 +310,7 @@
                 if(dinning_prefectOne){
                    alert(dinning_prefectOne);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
                         data: { dinning_prefectOne: dinning_prefectOne },
                         success: function (data) {
@@ -324,7 +324,7 @@
                 if(dinning_prefectTwo){
                     alert(dinning_prefectTwo);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
                         data: { dinning_prefectTwo: dinning_prefectTwo },
                         success: function (data) {
@@ -339,7 +339,7 @@
                 if(dinning_prefectThree){
                     alert(dinning_prefectThree);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
                         data: { dinning_prefectThree: dinning_prefectThree },
                         success: function (data) {
@@ -353,7 +353,7 @@
                 if(dinning_prefectFour){
                     alert(dinning_prefectFour);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
                         data: { dinning_prefectFour: dinning_prefectFour },
                         success: function (data) {
@@ -367,7 +367,7 @@
                 if(dinning_prefectFive){
                     alert(dinning_prefectFive);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
                         data: { dinning_prefectFive: dinning_prefectFive },
                         success: function (data) {
@@ -381,7 +381,7 @@
                 if(dinning_prefectSix){
                     alert(dinning_prefectSix);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
                         data: { dinning_prefectSix: dinning_prefectSix },
                         success: function (data) {
@@ -397,7 +397,7 @@
                 if(dinning_prefectSeven){
                     alert(dinning_prefectSeven);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
                         data: { dinning_prefectSeven: dinning_prefectSeven },
                         success: function (data) {
@@ -411,7 +411,7 @@
                 if(dinning_prefectEight){
                     alert(dinning_prefectEight);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
                         data: { dinning_prefectEight: dinning_prefectEight },
                         success: function (data) {
@@ -425,7 +425,7 @@
                 if(dinning_prefectNine){
                     alert(dinning_prefectNine);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
                         data: { dinning_prefectNine: dinning_prefectNine },
                         success: function (data) {
@@ -439,7 +439,7 @@
                 if(dinning_prefectTen){
                     alert(dinning_prefectTen);
                     $.ajax({
-                        url: 'phpScript/displayVoteResults.php',
+                        url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
                         data: { dinning_prefectTen: dinning_prefectTen },
                         success: function (data) {
