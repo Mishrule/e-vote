@@ -2,7 +2,7 @@
     $msg = '';
     include_once('phpScript/votedb.php');
     if(isset($_POST['action'])){
-        $voterID = mysqli_real_escape_string($conn, $_POST['voterID']);
+        // $voterID = mysqli_real_escape_string($conn, $_POST['voterID']);
         $first_nameText = mysqli_real_escape_string($conn, $_POST['first_name']);
         $accountNumberText = mysqli_real_escape_string($conn, $_POST['accountNumber']);
         $choosePrefectText = mysqli_real_escape_string($conn, $_POST['choosePrefect']);
@@ -12,7 +12,7 @@
         $imageText = $_FILES['prefectImage']['name'];
         $Target = "images/".basename($_FILES['prefectImage']['name']);
         
-        $registerPrefectSQL = "INSERT INTO candidate_registration VALUES('$voterID','$accountNumberText','$first_nameText','$choosePrefectText','$form_classText ','$programTex','$chooseStatusText','$imageText')";
+        $registerPrefectSQL = "INSERT INTO candidate_registration VALUES('','$accountNumberText','$first_nameText','$choosePrefectText','$form_classText ','$programTex','$chooseStatusText','$imageText')";
 
         $registerPrefectRESULT = mysqli_query($conn, $registerPrefectSQL);
         move_uploaded_file($_FILES['prefectImage']['tmp_name'], $Target);
@@ -271,10 +271,10 @@
                                             <div class="row">
                                                 <form class="col s12" action="<?php $_PHP_SELF ?>" id="prefectForm"  method="POST" enctype="multipart/form-data">
                                                 <div class="row">
-                                                        <div class="input-field col s12">
+                                                        <!-- <div class="input-field col s12">
                                                             <input id="voterID" name="voterID" type="text" required>
                                                             <label for="voterID">Voter ID</label>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                     <div class="row">
                                                         <div class="input-field col s12">
