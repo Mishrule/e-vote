@@ -446,8 +446,718 @@
                             document.getElementById('library_Vote10').innerHTML = data;
                         }
                     });
+                };
+                //==================================LIBRARY_PREFECT 11
+                var library_prefect11 = $('.vNum11').text();
+                if(library_prefect11){
+                   alert(library_prefect11);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect11: library_prefect11 },
+                        success: function (data) {
+                            document.getElementById('library_Vote11').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 12
+
+                var library_prefect12 = $('.vNum12').text();
+                if(library_prefect12){
+                    alert(library_prefect12);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect12: library_prefect12 },
+                        success: function (data) {
+                            document.getElementById('library_Vote12').innerHTML = data;
+                        }
+                    });
+                };                
+
+                //==================================library_PREFECT THREE
+
+                var library_prefect13 = $('.vNum13').text();
+                if(library_prefect13){
+                    alert(library_prefect13);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect13: library_prefect13 },
+                        success: function (data) {
+                            document.getElementById('library_Vote13').innerHTML = data;
+                        }
+                    });
                 }
-            })
+                //==================================library_PREFECT 14
+
+                var library_prefect14 = $('.vNum14').text();
+                if(library_prefect14){
+                    alert(library_prefect14);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect14: library_prefect14 },
+                        success: function (data) {
+                            document.getElementById('library_Vote14').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================library_PREFECT 15
+
+                var library_prefect15 = $('.vNum15').text();
+                if(library_prefect15){
+                    alert(library_prefect15);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect15: library_prefect15 },
+                        success: function (data) {
+                            document.getElementById('library_Vote15').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================library_PREFECT SIX
+
+                var library_prefect16 = $('.vNum16').text();
+                if(library_prefect16){
+                    alert(library_prefect16);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect16: library_prefect16 },
+                        success: function (data) {
+                            document.getElementById('library_Vote16').innerHTML = data;
+                        }
+                    });
+                }
+                
+                
+                // //==================================library_PREFECT SEVEN
+
+                var library_prefect17 = $('.vNum17').text();
+                if(library_prefect17){
+                    alert(library_prefect17);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect17: library_prefect17 },
+                        success: function (data) {
+                            document.getElementById('library_Vote17').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================library_PREFECT EIGHT
+
+                var library_prefect18 = $('.vNum18').text();
+                if(library_prefect18){
+                    alert(library_prefect18);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect18: library_prefect18 },
+                        success: function (data) {
+                            document.getElementById('library_Vote18').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================library_PREFECT NINE
+
+                var library_prefect19 = $('.vNum19').text();
+                if(library_prefect19){
+                    alert(library_prefect19);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect19: library_prefect19 },
+                        success: function (data) {
+                            document.getElementById('library_Vote19').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================library_PREFECT 20
+
+                var library_prefect20 = $('.vNum20').text();
+                if(library_prefect20){
+                    alert(library_prefect20);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect20: library_prefectTen },
+                        success: function (data) {
+                            document.getElementById('library_Vote20').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================LIBRARY_PREFECT 21
+                var library_prefect21 = $('.vNum21').text();
+                if(library_prefect21){
+                   alert(library_prefect21);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect21: library_prefect21 },
+                        success: function (data) {
+                            document.getElementById('library_Vote21').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================library_PREFECT 22
+
+                var library_prefect22 = $('.vNum22').text();
+                if(library_prefect22){
+                    alert(library_prefect22);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect22: library_prefect22 },
+                        success: function (data) {
+                            document.getElementById('library_Vote22').innerHTML = data;
+                        }
+                    });
+                }                
+
+                //==================================library_PREFECT 23
+
+                var library_prefect23 = $('.vNum23').text();
+                if(library_prefect23){
+                    alert(library_prefect23);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect23: library_prefect23 },
+                        success: function (data) {
+                            document.getElementById('library_Vote23').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================library_PREFECT 24
+
+                var library_prefect24 = $('.vNum24').text();
+                if(library_prefect24){
+                    alert(library_prefect24);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect24: library_prefect24 },
+                        success: function (data) {
+                            document.getElementById('library_Vote24').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================library_PREFECT 25
+
+                var library_prefect25 = $('.vNum25').text();
+                if(library_prefect25){
+                    alert(library_prefect25);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect25: library_prefect25 },
+                        success: function (data) {
+                            document.getElementById('library_Vote25').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================library_PREFECT 26
+
+                var library_prefect26 = $('.vNum26').text();
+                if(library_prefect26){
+                    alert(library_prefect26);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect26: library_prefect26 },
+                        success: function (data) {
+                            document.getElementById('library_Vote26').innerHTML = data;
+                        }
+                    });
+                }
+                
+                
+                // //==================================library_PREFECT 27
+
+                var library_prefect27 = $('.vNum27').text();
+                if(library_prefect27){
+                    alert(library_prefect27);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect27: library_prefect27 },
+                        success: function (data) {
+                            document.getElementById('library_Vote27').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================library_PREFECT 28
+
+                var library_prefect28 = $('.vNum28').text();
+                if(library_prefect28){
+                    alert(library_prefect28);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect28: library_prefect28 },
+                        success: function (data) {
+                            document.getElementById('library_Vote28').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================library_PREFECT 29
+
+                var library_prefect29 = $('.vNum29').text();
+                if(library_prefect29){
+                    alert(library_prefect29);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect29: library_prefect29 },
+                        success: function (data) {
+                            document.getElementById('library_Vote29').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================library_PREFECT 30
+
+                var library_prefect30 = $('.vNum30').text();
+                if(library_prefect30){
+                    alert(library_prefect30);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect30: library_prefect30 },
+                        success: function (data) {
+                            document.getElementById('library_Vote30').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================LIBRARY_PREFECT 31
+                var library_prefect31 = $('.vNum31').text();
+                if(library_prefect31){
+                   alert(library_prefect31);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect31: library_prefect31 },
+                        success: function (data) {
+                            document.getElementById('library_Vote31').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================library_PREFECT 32
+
+                var library_prefect32 = $('.vNum32').text();
+                if(library_prefect32){
+                    alert(library_prefect32);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect32: library_prefect32 },
+                        success: function (data) {
+                            document.getElementById('library_Vote32').innerHTML = data;
+                        }
+                    });
+                }                
+
+                //==================================library_PREFECT 33
+
+                var library_prefect33 = $('.vNum33').text();
+                if(library_prefect33){
+                    alert(library_prefect33);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect33: library_prefect33 },
+                        success: function (data) {
+                            document.getElementById('library_Vote33').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================library_PREFECT 34
+
+                var library_prefect34 = $('.vNum34').text();
+                if(library_prefect34){
+                    alert(library_prefect34);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect34: library_prefect34 },
+                        success: function (data) {
+                            document.getElementById('library_Vote34').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================library_PREFECT 25
+
+                var library_prefect25 = $('.vNum25').text();
+                if(library_prefect25){
+                    alert(library_prefect25);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect25: library_prefect25 },
+                        success: function (data) {
+                            document.getElementById('library_Vote25').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 26
+
+                var library_prefect26 = $('.vNum26').text();
+                if(library_prefect26){
+                    alert(library_prefect26);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect26: library_prefect26 },
+                        success: function (data) {
+                            document.getElementById('library_Vote26').innerHTML = data;
+                        }
+                    });
+                };
+                
+                
+                // //==================================library_PREFECT 27
+
+                var library_prefect27 = $('.vNum27').text();
+                if(library_prefect27){
+                    alert(library_prefect27);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect27: library_prefect27 },
+                        success: function (data) {
+                            document.getElementById('library_Vote27').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 28
+
+                var library_prefect28 = $('.vNum28').text();
+                if(library_prefect28){
+                    alert(library_prefect28);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect28: library_prefect28 },
+                        success: function (data) {
+                            document.getElementById('library_Vote28').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 29
+
+                var library_prefect29 = $('.vNum29').text();
+                if(library_prefect29){
+                    alert(library_prefect29);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect29: library_prefect29 },
+                        success: function (data) {
+                            document.getElementById('library_Vote29').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 30
+
+                var library_prefect30 = $('.vNum30').text();
+                if(library_prefect30){
+                    alert(library_prefect30);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect30: library_prefect30 },
+                        success: function (data) {
+                            document.getElementById('library_Vote30').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================LIBRARY_PREFECT 31
+                var library_prefect31 = $('.vNum31').text();
+                if(library_prefect31){
+                   alert(library_prefect31);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect31: library_prefect31 },
+                        success: function (data) {
+                            document.getElementById('library_Vote31').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 32
+
+                var library_prefect32 = $('.vNum32').text();
+                if(library_prefect32){
+                    alert(library_prefect32);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect32: library_prefect32 },
+                        success: function (data) {
+                            document.getElementById('library_Vote32').innerHTML = data;
+                        }
+                    });
+                };                
+
+                //==================================library_PREFECT 33
+
+                var library_prefect33 = $('.vNum33').text();
+                if(library_prefect33){
+                    alert(library_prefect33);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect33: library_prefect33 },
+                        success: function (data) {
+                            document.getElementById('library_Vote33').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 34
+
+                var library_prefect34 = $('.vNum34').text();
+                if(library_prefect34){
+                    alert(library_prefect34);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect34: library_prefect34 },
+                        success: function (data) {
+                            document.getElementById('library_Vote34').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================library_PREFECT 35
+
+                var library_prefect35 = $('.vNum35').text();
+                if(library_prefect35){
+                    alert(library_prefect35);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect35: library_prefect35 },
+                        success: function (data) {
+                            document.getElementById('library_Vote35').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 36
+
+                var library_prefect36 = $('.vNum36').text();
+                if(library_prefect36){
+                    alert(library_prefect36);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect36: library_prefect36 },
+                        success: function (data) {
+                            document.getElementById('library_Vote36').innerHTML = data;
+                        }
+                    });
+                };
+                
+                
+                // //==================================library_PREFECT 37
+
+                var library_prefect37 = $('.vNum37').text();
+                if(library_prefect37){
+                    alert(library_prefect37);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect37: library_prefect37 },
+                        success: function (data) {
+                            document.getElementById('library_Vote37').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 38
+
+                var library_prefect38 = $('.vNum38').text();
+                if(library_prefect38){
+                    alert(library_prefect38);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect38: library_prefect38 },
+                        success: function (data) {
+                            document.getElementById('library_Vote38').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 39
+
+                var library_prefect39 = $('.vNum39').text();
+                if(library_prefect39){
+                    alert(library_prefect39);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect39: library_prefect39 },
+                        success: function (data) {
+                            document.getElementById('library_Vote39').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 40
+
+                var library_prefect40 = $('.vNum40').text();
+                if(library_prefect40){
+                    alert(library_prefect40);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect40: library_prefect40 },
+                        success: function (data) {
+                            document.getElementById('library_Vote40').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================LIBRARY_PREFECT 41
+                var library_prefect41 = $('.vNum41').text();
+                if(library_prefect41){
+                   alert(library_prefect41);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect41: library_prefect41 },
+                        success: function (data) {
+                            document.getElementById('library_Vote41').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 42
+
+                var library_prefect42 = $('.vNum42').text();
+                if(library_prefect42){
+                    alert(library_prefect42);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect42: library_prefect42 },
+                        success: function (data) {
+                            document.getElementById('library_Vote42').innerHTML = data;
+                        }
+                    });
+                };               
+
+                //==================================library_PREFECT THREE
+
+                var library_prefectThree = $('.vNum43').text();
+                if(library_prefectThree){
+                    alert(library_prefectThree);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefectThree: library_prefectThree },
+                        success: function (data) {
+                            document.getElementById('library_Vote43').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 44
+
+                var library_prefect44 = $('.vNum44').text();
+                if(library_prefect44){
+                    alert(library_prefect44);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect44: library_prefect44 },
+                        success: function (data) {
+                            document.getElementById('library_Vote44').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 45
+
+                var library_prefect45 = $('.vNum45').text();
+                if(library_prefect45){
+                    alert(library_prefect45);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect45: library_prefect45 },
+                        success: function (data) {
+                            document.getElementById('library_Vote45').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 46
+
+                var library_prefect46 = $('.vNum46').text();
+                if(library_prefect46){
+                    alert(library_prefect46);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect46: library_prefect46 },
+                        success: function (data) {
+                            document.getElementById('library_Vote46').innerHTML = data;
+                        }
+                    });
+                };
+                
+                
+                // //==================================library_PREFECT 47
+
+                var library_prefect47 = $('.vNum47').text();
+                if(library_prefect47){
+                    alert(library_prefect47);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect47: library_prefect47 },
+                        success: function (data) {
+                            document.getElementById('library_Vote47').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 48
+
+                var library_prefect48 = $('.vNum48').text();
+                if(library_prefect48){
+                    alert(library_prefect48);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect48: library_prefect48 },
+                        success: function (data) {
+                            document.getElementById('library_Vote48').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 49
+
+                var library_prefect49 = $('.vNum49').text();
+                if(library_prefect49){
+                    alert(library_prefect49);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect49: library_prefect49 },
+                        success: function (data) {
+                            document.getElementById('library_Vote49').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================library_PREFECT 50
+
+                var library_prefect50 = $('.vNum50').text();
+                if(library_prefect50){
+                    alert(library_prefect50);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/libraryPrefecResult.php',
+                        method: 'POST',
+                        data: { library_prefect50: library_prefect50 },
+                        success: function (data) {
+                            document.getElementById('library_Vote50').innerHTML = data;
+                        }
+                    });
+                };
+            });
         };
 
     })
