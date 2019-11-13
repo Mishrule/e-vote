@@ -292,13 +292,13 @@
         showSchoolPrefectTotalVotes();
         function showSchoolPrefectTotalVotes() {
             $(window).on('load', function () {
-                var prefectOne = $('.vNum1').text();
-                if(prefectOne){
-                //    alert(prefectOne);
+                var prefect1 = $('.vNum1').text();
+                if(prefect1){
+                //    alert(prefect1);
                     $.ajax({
                         url: 'phpScript/resultPHP/schoolPrefectResult.php',
                         method: 'POST',
-                        data: { prefectOne: prefectOne },
+                        data: { prefect1: prefect1 },
                         success: function (data) {
                             document.getElementById('prefVote1').innerHTML = data;
                         }
@@ -306,13 +306,13 @@
                 }
                 //==================================PREFECT TWO
 
-                var prefectTwo = $('.vNum2').text();
-                if(prefectTwo){
-                    // alert(prefectTwo);
+                var prefect2 = $('.vNum2').text();
+                if(prefect2){
+                    // alert(prefect2);
                     $.ajax({
                         url: 'phpScript/resultPHP/schoolPrefectResult.php',
                         method: 'POST',
-                        data: { prefectTwo: prefectTwo },
+                        data: { prefect2: prefect2 },
                         success: function (data) {
                             document.getElementById('prefVote2').innerHTML = data;
                         }
@@ -321,13 +321,13 @@
 
                 //==================================PREFECT THREE
 
-                var prefectThree = $('.vNum3').text();
-                if(prefectThree){
-                    // alert(prefectThree);
+                var prefect3 = $('.vNum3').text();
+                if(prefect3){
+                    // alert(prefect3);
                     $.ajax({
                         url: 'phpScript/resultPHP/schoolPrefectResult.php',
                         method: 'POST',
-                        data: { prefectThree: prefectThree },
+                        data: { prefect3: prefect3 },
                         success: function (data) {
                             document.getElementById('prefVote3').innerHTML = data;
                         }
@@ -335,13 +335,13 @@
                 }
                 //==================================PREFECT FOUR
 
-                var prefectFour = $('.vNum4').text();
-                if(prefectFour){
-                    // alert(prefectFour);
+                var prefect4 = $('.vNum4').text();
+                if(prefect4){
+                    // alert(prefect4);
                     $.ajax({
                         url: 'phpScript/resultPHP/schoolPrefectResult.php',
                         method: 'POST',
-                        data: { prefectFour: prefectFour },
+                        data: { prefect4: prefect4 },
                         success: function (data) {
                             document.getElementById('prefVote4').innerHTML = data;
                         }
@@ -349,13 +349,13 @@
                 }
                 //==================================PREFECT FIVE
 
-                var prefectFive = $('.vNum5').text();
-                if(prefectFive){
-                    // alert(prefectFive);
+                var prefect5 = $('.vNum5').text();
+                if(prefect5){
+                    // alert(prefect5);
                     $.ajax({
                         url: 'phpScript/resultPHP/schoolPrefectResult.php',
                         method: 'POST',
-                        data: { prefectFive: prefectFive },
+                        data: { prefect5: prefect5 },
                         success: function (data) {
                             document.getElementById('prefVote5').innerHTML = data;
                         }
@@ -363,13 +363,13 @@
                 }
                 //==================================PREFECT SIX
 
-                var prefectSix = $('.vNum6').text();
-                if(prefectSix){
-                    // alert(prefectSix);
+                var prefect6 = $('.vNum6').text();
+                if(prefect6){
+                    // alert(prefect6);
                     $.ajax({
                         url: 'phpScript/resultPHP/schoolPrefectResult.php',
                         method: 'POST',
-                        data: { prefectSix: prefectSix },
+                        data: { prefect6: prefect6 },
                         success: function (data) {
                             document.getElementById('prefVote6').innerHTML = data;
                         }
@@ -379,13 +379,13 @@
                 
                 // //==================================PREFECT SEVEN
 
-                var prefectSeven = $('.vNum7').text();
-                if(prefectSeven){
-                    // alert(prefectSeven);
+                var prefect7 = $('.vNum7').text();
+                if(prefect7){
+                    // alert(prefect7);
                     $.ajax({
                         url: 'phpScript/resultPHP/schoolPrefectResult.php',
                         method: 'POST',
-                        data: { prefectSeven: prefectSeven },
+                        data: { prefect7: prefect7 },
                         success: function (data) {
                             document.getElementById('prefVote7').innerHTML = data;
                         }
@@ -393,13 +393,13 @@
                 }
                 //==================================PREFECT EIGHT
 
-                var prefectEight = $('.vNum8').text();
-                if(prefectEight){
-                    // alert(prefectEight);
+                var prefect8 = $('.vNum8').text();
+                if(prefect8){
+                    // alert(prefect8);
                     $.ajax({
                         url: 'phpScript/resultPHP/schoolPrefectResult.php',
                         method: 'POST',
-                        data: { prefectEight: prefectEight },
+                        data: { prefect8: prefect8 },
                         success: function (data) {
                             document.getElementById('prefVote8').innerHTML = data;
                         }
@@ -407,13 +407,13 @@
                 }
                 //==================================PREFECT NINE
 
-                var prefectNine = $('.vNum9').text();
-                if(prefectNine){
-                    // alert(prefectNine);
+                var prefect9 = $('.vNum9').text();
+                if(prefect9){
+                    // alert(prefect9);
                     $.ajax({
                         url: 'phpScript/resultPHP/schoolPrefectResult.php',
                         method: 'POST',
-                        data: { prefectNine: prefectNine },
+                        data: { prefect9: prefect9 },
                         success: function (data) {
                             document.getElementById('prefVote9').innerHTML = data;
                         }
@@ -421,13 +421,13 @@
                 }
                 //==================================PREFECT TEN
 
-                var prefectTen = $('.vNum10').text();
-                if(prefectTen){
-                    // alert(prefectTen);
+                var prefect10 = $('.vNum10').text();
+                if(prefect10){
+                    // alert(prefect10);
                     $.ajax({
                         url: 'phpScript/resultPHP/schoolPrefectResult.php',
                         method: 'POST',
-                        data: { prefectTen: prefectTen },
+                        data: { prefect10: prefect10 },
                         success: function (data) {
                             document.getElementById('prefVote10').innerHTML = data;
                         }

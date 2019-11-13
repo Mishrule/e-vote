@@ -7,129 +7,129 @@
      * 
      */
     //==============================| First SCHOOL PREFECT
-    if(isset($_POST['prefectOne'])){
-        $schoolPrefectOne = mysqli_real_escape_string($conn, $_POST['prefectOne']);
-        $schoolPrefectOneSQL = "SELECT COUNT(school_prefect) AS schoolprefectone FROM vote WHERE school_prefect = '$schoolPrefectOne'";
-        $schoolPrefectOneRESULT = mysqli_query($conn, $schoolPrefectOneSQL);
-        while($schoolPrefectOneROW = mysqli_fetch_array($schoolPrefectOneRESULT)){
-            echo $schoolPrefectOneROW['schoolprefectone'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect1'])){
+        $schoolPrefect1 = mysqli_real_escape_string($conn, $_POST['prefect1']);
+        $schoolPrefect1SQL = "SELECT COUNT(school_prefect) AS schoolprefect1 FROM vote WHERE school_prefect = '$schoolPrefect1'";
+        $schoolPrefect1RESULT = mysqli_query($conn, $schoolPrefect1SQL);
+        while($schoolPrefect1ROW = mysqli_fetch_array($schoolPrefect1RESULT)){
+            echo $schoolPrefect1ROW['schoolprefect1'].' <h6>VOTE(S)</h6>';
         }
     }
         //==============================| SECOND SCHOOL PREFECT
-    if(isset($_POST['prefectTwo'])){
-        $schoolPrefectTwo = mysqli_real_escape_string($conn, $_POST['prefectTwo']);
-        $schoolPrefectTwoSQL = "SELECT COUNT(school_prefect) AS schoolprefectTwo FROM vote WHERE school_prefect = '$schoolPrefectTwo'";
-        $schoolPrefectTwoRESULT = mysqli_query($conn, $schoolPrefectTwoSQL);
-        while($schoolPrefectTwoROW = mysqli_fetch_array($schoolPrefectTwoRESULT)){
-            echo $schoolPrefectTwoROW['schoolprefectTwo'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect2'])){
+        $schoolPrefect2 = mysqli_real_escape_string($conn, $_POST['prefect2']);
+        $schoolPrefect2SQL = "SELECT COUNT(school_prefect) AS schoolprefect2 FROM vote WHERE school_prefect = '$schoolPrefect2'";
+        $schoolPrefect2RESULT = mysqli_query($conn, $schoolPrefect2SQL);
+        while($schoolPrefect2ROW = mysqli_fetch_array($schoolPrefect2RESULT)){
+            echo $schoolPrefect2ROW['schoolprefect2'].' <h6>VOTE(S)</h6>';
         }
     }
        //==============================| THIRD SCHOOL PREFECT
-    if(isset($_POST['prefectThree'])){
-        $schoolPrefectThree = mysqli_real_escape_string($conn, $_POST['prefectThree']);
-        $schoolPrefectThreeSQL = "SELECT COUNT(school_prefect) AS schoolprefectThree FROM vote WHERE school_prefect = '$schoolPrefectThree'";
-        $schoolPrefectThreeRESULT = mysqli_query($conn, $schoolPrefectThreeSQL);
-        while($schoolPrefectThreeROW = mysqli_fetch_array($schoolPrefectThreeRESULT)){
-            echo $schoolPrefectThreeROW['schoolprefectThree'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect3'])){
+        $schoolPrefect3 = mysqli_real_escape_string($conn, $_POST['prefect3']);
+        $schoolPrefect3SQL = "SELECT COUNT(school_prefect) AS schoolprefect3 FROM vote WHERE school_prefect = '$schoolPrefect3'";
+        $schoolPrefect3RESULT = mysqli_query($conn, $schoolPrefect3SQL);
+        while($schoolPrefect3ROW = mysqli_fetch_array($schoolPrefect3RESULT)){
+            echo $schoolPrefect3ROW['schoolprefect3'].' <h6>VOTE(S)</h6>';
         }
     }
        //==============================| FOURTH SCHOOL PREFECT
-    if(isset($_POST['prefectFour'])){
-        $schoolPrefectFour = mysqli_real_escape_string($conn, $_POST['prefectFour']);
-        $schoolPrefectFourSQL = "SELECT COUNT(school_prefect) AS schoolprefectFour FROM vote WHERE school_prefect = '$schoolPrefectFour'";
-        $schoolPrefectFourRESULT = mysqli_query($conn, $schoolPrefectFourSQL);
-        while($schoolPrefectFourROW = mysqli_fetch_array($schoolPrefectFourRESULT)){
-            echo $schoolPrefectFourROW['schoolprefectFour'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect4'])){
+        $schoolPrefect4 = mysqli_real_escape_string($conn, $_POST['prefect4']);
+        $schoolPrefect4SQL = "SELECT COUNT(school_prefect) AS schoolprefect4 FROM vote WHERE school_prefect = '$schoolPrefect4'";
+        $schoolPrefect4RESULT = mysqli_query($conn, $schoolPrefect4SQL);
+        while($schoolPrefect4ROW = mysqli_fetch_array($schoolPrefect4RESULT)){
+            echo $schoolPrefect4ROW['schoolprefect4'].' <h6>VOTE(S)</h6>';
         }
     }
        //==============================| FIFTH SCHOOL PREFECT
-    if(isset($_POST['prefectFive'])){
-        $schoolPrefectFive = mysqli_real_escape_string($conn, $_POST['prefectFive']);
-        $schoolPrefectFiveSQL = "SELECT COUNT(school_prefect) AS schoolprefectFive FROM vote WHERE school_prefect = '$schoolPrefectFive'";
-        $schoolPrefectFiveRESULT = mysqli_query($conn, $schoolPrefectFiveSQL);
-        while($schoolPrefectFiveROW = mysqli_fetch_array($schoolPrefectFiveRESULT)){
-            echo $schoolPrefectFiveROW['schoolprefectFive'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect5'])){
+        $schoolPrefect5 = mysqli_real_escape_string($conn, $_POST['prefect5']);
+        $schoolPrefect5SQL = "SELECT COUNT(school_prefect) AS schoolprefect5 FROM vote WHERE school_prefect = '$schoolPrefect5'";
+        $schoolPrefect5RESULT = mysqli_query($conn, $schoolPrefect5SQL);
+        while($schoolPrefect5ROW = mysqli_fetch_array($schoolPrefect5RESULT)){
+            echo $schoolPrefect5ROW['schoolprefect5'].' <h6>VOTE(S)</h6>';
         }
     }
        //==============================| SIXTH SCHOOL PREFECT
-    if(isset($_POST['prefectSix'])){
-        $schoolPrefectSix = mysqli_real_escape_string($conn, $_POST['prefectSix']);
-        $schoolPrefectSixSQL = "SELECT COUNT(school_prefect) AS schoolprefectSix FROM vote WHERE school_prefect = '$schoolPrefectSix'";
-        $schoolPrefectSixRESULT = mysqli_query($conn, $schoolPrefectSixSQL);
-        while($schoolPrefectSixROW = mysqli_fetch_array($schoolPrefectSixRESULT)){
-            echo $schoolPrefectSixROW['schoolprefectSix'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect6'])){
+        $schoolPrefect6 = mysqli_real_escape_string($conn, $_POST['prefect6']);
+        $schoolPrefect6SQL = "SELECT COUNT(school_prefect) AS schoolprefect6 FROM vote WHERE school_prefect = '$schoolPrefect6'";
+        $schoolPrefect6RESULT = mysqli_query($conn, $schoolPrefect6SQL);
+        while($schoolPrefect6ROW = mysqli_fetch_array($schoolPrefect6RESULT)){
+            echo $schoolPrefect6ROW['schoolprefect6'].' <h6>VOTE(S)</h6>';
         }
     }
        //==============================| SEVEN SCHOOL PREFECT
-    if(isset($_POST['prefectSeven'])){
-        $schoolPrefectSeven = mysqli_real_escape_string($conn, $_POST['prefectSeven']);
-        $schoolPrefectSevenSQL = "SELECT COUNT(school_prefect) AS schoolprefectSeven FROM vote WHERE school_prefect = '$schoolPrefectSeven'";
-        $schoolPrefectSevenRESULT = mysqli_query($conn, $schoolPrefectSevenSQL);
-        while($schoolPrefectSevenROW = mysqli_fetch_array($schoolPrefectSevenRESULT)){
-            echo $schoolPrefectSevenROW['schoolprefectSeven'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect7'])){
+        $schoolPrefect7 = mysqli_real_escape_string($conn, $_POST['prefect7']);
+        $schoolPrefect7SQL = "SELECT COUNT(school_prefect) AS schoolprefect7 FROM vote WHERE school_prefect = '$schoolPrefect7'";
+        $schoolPrefect7RESULT = mysqli_query($conn, $schoolPrefect7SQL);
+        while($schoolPrefect7ROW = mysqli_fetch_array($schoolPrefect7RESULT)){
+            echo $schoolPrefect7ROW['schoolprefect7'].' <h6>VOTE(S)</h6>';
         }
     }
        //==============================| EIGHT SCHOOL PREFECT
-    if(isset($_POST['prefectEight'])){
-        $schoolPrefectEight = mysqli_real_escape_string($conn, $_POST['prefectEight']);
-        $schoolPrefectEightSQL = "SELECT COUNT(school_prefect) AS schoolprefectEight FROM vote WHERE school_prefect = '$schoolPrefectEight'";
-        $schoolPrefectEightRESULT = mysqli_query($conn, $schoolPrefectEightSQL);
-        while($schoolPrefectEightROW = mysqli_fetch_array($schoolPrefectEightRESULT)){
-            echo $schoolPrefectEightROW['schoolprefectEight'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect8'])){
+        $schoolPrefect8 = mysqli_real_escape_string($conn, $_POST['prefect8']);
+        $schoolPrefect8SQL = "SELECT COUNT(school_prefect) AS schoolprefect8 FROM vote WHERE school_prefect = '$schoolPrefect8'";
+        $schoolPrefect8RESULT = mysqli_query($conn, $schoolPrefect8SQL);
+        while($schoolPrefect8ROW = mysqli_fetch_array($schoolPrefect8RESULT)){
+            echo $schoolPrefect8ROW['schoolprefect8'].' <h6>VOTE(S)</h6>';
         }
     }
        //==============================| NINE SCHOOL PREFECT
-    if(isset($_POST['prefectNine'])){
-        $schoolPrefectNine = mysqli_real_escape_string($conn, $_POST['prefectNine']);
-        $schoolPrefectNineSQL = "SELECT COUNT(school_prefect) AS schoolprefectNine FROM vote WHERE school_prefect = '$schoolPrefectNine'";
-        $schoolPrefectNineRESULT = mysqli_query($conn, $schoolPrefectNineSQL);
-        while($schoolPrefectNineROW = mysqli_fetch_array($schoolPrefectNineRESULT)){
-            echo $schoolPrefectNineROW['schoolprefectNine'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect9'])){
+        $schoolPrefect9 = mysqli_real_escape_string($conn, $_POST['prefect9']);
+        $schoolPrefect9SQL = "SELECT COUNT(school_prefect) AS schoolprefect9 FROM vote WHERE school_prefect = '$schoolPrefect9'";
+        $schoolPrefect9RESULT = mysqli_query($conn, $schoolPrefect9SQL);
+        while($schoolPrefect9ROW = mysqli_fetch_array($schoolPrefect9RESULT)){
+            echo $schoolPrefect9ROW['schoolprefect9'].' <h6>VOTE(S)</h6>';
         }
     }
        //==============================| TEN SCHOOL PREFECT
-    if(isset($_POST['prefectTen'])){
-        $schoolPrefectTen = mysqli_real_escape_string($conn, $_POST['prefectTen']);
-        $schoolPrefectTenSQL = "SELECT COUNT(school_prefect) AS schoolprefectTen FROM vote WHERE school_prefect = '$schoolPrefectTen'";
-        $schoolPrefectTenRESULT = mysqli_query($conn, $schoolPrefectTenSQL);
-        while($schoolPrefectTenROW = mysqli_fetch_array($schoolPrefectTenRESULT)){
-            echo $schoolPrefectTenROW['schoolprefectTen'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect10'])){
+        $schoolPrefect10 = mysqli_real_escape_string($conn, $_POST['prefect10']);
+        $schoolPrefect10SQL = "SELECT COUNT(school_prefect) AS schoolprefect10 FROM vote WHERE school_prefect = '$schoolPrefect10'";
+        $schoolPrefect10RESULT = mysqli_query($conn, $schoolPrefect10SQL);
+        while($schoolPrefect10ROW = mysqli_fetch_array($schoolPrefect10RESULT)){
+            echo $schoolPrefect10ROW['schoolprefect10'].' <h6>VOTE(S)</h6>';
         }
     }
     //==============================| 11 SCHOOL PREFECT
-    if(isset($_POST['prefectEleven'])){
-        $schoolPrefectEleven = mysqli_real_escape_string($conn, $_POST['prefectEleven']);
-        $schoolPrefectElevenSQL = "SELECT COUNT(school_prefect) AS schoolprefectEleven FROM vote WHERE school_prefect = '$schoolPrefectEleven'";
-        $schoolPrefectElevenRESULT = mysqli_query($conn, $schoolPrefectElevenSQL);
-        while($schoolPrefectElevenROW = mysqli_fetch_array($schoolPrefectElevenRESULT)){
-            echo $schoolPrefectElevenROW['schoolprefectEleven'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect11'])){
+        $schoolPrefect11 = mysqli_real_escape_string($conn, $_POST['prefect11']);
+        $schoolPrefect11SQL = "SELECT COUNT(school_prefect) AS schoolprefect11 FROM vote WHERE school_prefect = '$schoolPrefect11'";
+        $schoolPrefect11RESULT = mysqli_query($conn, $schoolPrefect11SQL);
+        while($schoolPrefect11ROW = mysqli_fetch_array($schoolPrefect11RESULT)){
+            echo $schoolPrefect11ROW['schoolprefect11'].' <h6>VOTE(S)</h6>';
         }
     }
         //==============================| 12 SCHOOL PREFECT
-    if(isset($_POST['prefectTwelve'])){
-        $schoolPrefectTwelve = mysqli_real_escape_string($conn, $_POST['prefectTwelve']);
-        $schoolPrefectTwelveSQL = "SELECT COUNT(school_prefect) AS schoolprefectTwelve FROM vote WHERE school_prefect = '$schoolPrefectTwelve'";
-        $schoolPrefectTwelveRESULT = mysqli_query($conn, $schoolPrefectTwelveSQL);
-        while($schoolPrefectTwelveROW = mysqli_fetch_array($schoolPrefectTwelveRESULT)){
-            echo $schoolPrefectTwelveROW['schoolprefectTwelve'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect12'])){
+        $schoolPrefect12 = mysqli_real_escape_string($conn, $_POST['prefect12']);
+        $schoolPrefect12SQL = "SELECT COUNT(school_prefect) AS schoolprefect12 FROM vote WHERE school_prefect = '$schoolPrefect12'";
+        $schoolPrefect12RESULT = mysqli_query($conn, $schoolPrefect12SQL);
+        while($schoolPrefect12ROW = mysqli_fetch_array($schoolPrefect12RESULT)){
+            echo $schoolPrefect12ROW['schoolprefect12'].' <h6>VOTE(S)</h6>';
         }
     }
        //==============================| 13 SCHOOL PREFECT
-    if(isset($_POST['prefectThirteen'])){
-        $schoolPrefectThirteen = mysqli_real_escape_string($conn, $_POST['prefectThirteen']);
-        $schoolPrefectThirteenSQL = "SELECT COUNT(school_prefect) AS schoolprefectThirteen FROM vote WHERE school_prefect = '$schoolPrefectThirteen'";
-        $schoolPrefectThirteenRESULT = mysqli_query($conn, $schoolPrefectThirteenSQL);
-        while($schoolPrefectThirteenROW = mysqli_fetch_array($schoolPrefectThirteenRESULT)){
-            echo $schoolPrefectThirteenROW['schoolprefectThirteen'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect13'])){
+        $schoolPrefect13 = mysqli_real_escape_string($conn, $_POST['prefect13']);
+        $schoolPrefect13SQL = "SELECT COUNT(school_prefect) AS schoolprefect13 FROM vote WHERE school_prefect = '$schoolPrefect13'";
+        $schoolPrefect13RESULT = mysqli_query($conn, $schoolPrefect13SQL);
+        while($schoolPrefect13ROW = mysqli_fetch_array($schoolPrefect13RESULT)){
+            echo $schoolPrefect13ROW['schoolprefect13'].' <h6>VOTE(S)</h6>';
         }
     }
        //==============================| 14 SCHOOL PREFECT
-    if(isset($_POST['prefectFourteen'])){
-        $schoolPrefectFourteen = mysqli_real_escape_string($conn, $_POST['prefectFourteen']);
-        $schoolPrefectFourteenSQL = "SELECT COUNT(school_prefect) AS schoolprefectFourteen FROM vote WHERE school_prefect = '$schoolPrefectFourteen'";
-        $schoolPrefectFourteenRESULT = mysqli_query($conn, $schoolPrefectFourteenSQL);
-        while($schoolPrefectFourteenROW = mysqli_fetch_array($schoolPrefectFourteenRESULT)){
-            echo $schoolPrefectFourteenROW['schoolprefectFourteen'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect14'])){
+        $schoolPrefect14 = mysqli_real_escape_string($conn, $_POST['prefect14']);
+        $schoolPrefect14SQL = "SELECT COUNT(school_prefect) AS schoolprefect14 FROM vote WHERE school_prefect = '$schoolPrefect14'";
+        $schoolPrefect14RESULT = mysqli_query($conn, $schoolPrefect14SQL);
+        while($schoolPrefect14ROW = mysqli_fetch_array($schoolPrefect14RESULT)){
+            echo $schoolPrefect14ROW['schoolprefect14'].' <h6>VOTE(S)</h6>';
         }
     }
        //==============================| 15 SCHOOL PREFECT
@@ -142,39 +142,39 @@
         }
     }
        //==============================| 16 SCHOOL PREFECT
-    if(isset($_POST['prefectSixteen'])){
-        $schoolPrefectSixteen = mysqli_real_escape_string($conn, $_POST['prefectSixteen']);
-        $schoolPrefectSixteenSQL = "SELECT COUNT(school_prefect) AS schoolprefectSixteen FROM vote WHERE school_prefect = '$schoolPrefectSixteen'";
-        $schoolPrefectSixteenRESULT = mysqli_query($conn, $schoolPrefectSixteenSQL);
-        while($schoolPrefectSixteenROW = mysqli_fetch_array($schoolPrefectSixteenRESULT)){
-            echo $schoolPrefectSixteenROW['schoolprefectSixteen'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect16'])){
+        $schoolPrefect16 = mysqli_real_escape_string($conn, $_POST['prefect16']);
+        $schoolPrefect16SQL = "SELECT COUNT(school_prefect) AS schoolprefect16 FROM vote WHERE school_prefect = '$schoolPrefect16'";
+        $schoolPrefect16RESULT = mysqli_query($conn, $schoolPrefect16SQL);
+        while($schoolPrefect16ROW = mysqli_fetch_array($schoolPrefect16RESULT)){
+            echo $schoolPrefect16ROW['schoolprefect16'].' <h6>VOTE(S)</h6>';
         }
     }
        //==============================| 17 SCHOOL PREFECT
-    if(isset($_POST['prefectSeventeen'])){
-        $schoolPrefectSeventeen = mysqli_real_escape_string($conn, $_POST['prefectSeventeen']);
-        $schoolPrefectSeventeenSQL = "SELECT COUNT(school_prefect) AS schoolprefectSeventeen FROM vote WHERE school_prefect = '$schoolPrefectSeventeen'";
-        $schoolPrefectSeventeenRESULT = mysqli_query($conn, $schoolPrefectSeventeenSQL);
-        while($schoolPrefectSeventeenROW = mysqli_fetch_array($schoolPrefectSeventeenRESULT)){
-            echo $schoolPrefectSeventeenROW['schoolprefectSeventeen'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect17'])){
+        $schoolPrefect17 = mysqli_real_escape_string($conn, $_POST['prefect17']);
+        $schoolPrefect17SQL = "SELECT COUNT(school_prefect) AS schoolprefect17 FROM vote WHERE school_prefect = '$schoolPrefect17'";
+        $schoolPrefect17RESULT = mysqli_query($conn, $schoolPrefect17SQL);
+        while($schoolPrefect17ROW = mysqli_fetch_array($schoolPrefect17RESULT)){
+            echo $schoolPrefect17ROW['schoolprefect17'].' <h6>VOTE(S)</h6>';
         }
     }
        //==============================| 18 SCHOOL PREFECT
-    if(isset($_POST['prefectEighteen'])){
-        $schoolPrefectEighteen = mysqli_real_escape_string($conn, $_POST['prefectEighteen']);
-        $schoolPrefectEighteenSQL = "SELECT COUNT(school_prefect) AS schoolprefectEighteen FROM vote WHERE school_prefect = '$schoolPrefectEighteen'";
-        $schoolPrefectEighteenRESULT = mysqli_query($conn, $schoolPrefectEighteenSQL);
-        while($schoolPrefectEighteenROW = mysqli_fetch_array($schoolPrefectEighteenRESULT)){
-            echo $schoolPrefectEighteenROW['schoolprefectEighteen'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect18'])){
+        $schoolPrefect18 = mysqli_real_escape_string($conn, $_POST['prefect18']);
+        $schoolPrefect18SQL = "SELECT COUNT(school_prefect) AS schoolprefect18 FROM vote WHERE school_prefect = '$schoolPrefect18'";
+        $schoolPrefect18RESULT = mysqli_query($conn, $schoolPrefect18SQL);
+        while($schoolPrefect18ROW = mysqli_fetch_array($schoolPrefect18RESULT)){
+            echo $schoolPrefect18ROW['schoolprefect18'].' <h6>VOTE(S)</h6>';
         }
     }
        //==============================| 19 SCHOOL PREFECT
-    if(isset($_POST['prefectNineteen'])){
-        $schoolPrefectNineteen = mysqli_real_escape_string($conn, $_POST['prefectNineteen']);
-        $schoolPrefectNineteenSQL = "SELECT COUNT(school_prefect) AS schoolprefectNineteen FROM vote WHERE school_prefect = '$schoolPrefectNineteen'";
-        $schoolPrefectNineteenRESULT = mysqli_query($conn, $schoolPrefectNineteenSQL);
-        while($schoolPrefectNineteenROW = mysqli_fetch_array($schoolPrefectNineteenRESULT)){
-            echo $schoolPrefectNineteenROW['schoolprefectNineteen'].' <h6>VOTE(S)</h6>';
+    if(isset($_POST['prefect19'])){
+        $schoolPrefect19 = mysqli_real_escape_string($conn, $_POST['prefect19']);
+        $schoolPrefect19SQL = "SELECT COUNT(school_prefect) AS schoolprefect19 FROM vote WHERE school_prefect = '$schoolPrefect19'";
+        $schoolPrefect19RESULT = mysqli_query($conn, $schoolPrefect19SQL);
+        while($schoolPrefect19ROW = mysqli_fetch_array($schoolPrefect19RESULT)){
+            echo $schoolPrefect19ROW['schoolprefect19'].' <h6>VOTE(S)</h6>';
         }
     }
        //==============================| 20 SCHOOL PREFECT
