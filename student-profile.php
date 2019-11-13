@@ -66,7 +66,7 @@
                 <div class="nav-wrapper">
                     <ul class="left">
                         <li>
-                            <h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img
+                            <h1 class="logo-wrapper"><a href="#" class="brand-logo darken-1"><img
                                         src="images/materialize-logo.png" alt="materialize logo"></a> <span
                                     class="logo-text">Electronic
                                     Voting System</span></h1>
@@ -116,7 +116,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="bold active"><a href="dashboard.html" class="waves-effect waves-cyan"><i
+                    <li class="bold"><a href="dashboard.html" class="waves-effect waves-cyan"><i
                                 class="mdi-action-dashboard"></i> Dashboard</a>
                     </li>
                     <li class="no-padding">
@@ -141,13 +141,13 @@
 
                     <li class="no-padding">
                         <ul class="collapsible collapsible-accordion">
-                            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i
+                            <li class="bold active"><a class="collapsible-header waves-effect waves-cyan"><i
                                         class="mdi-action-invert-colors"></i> PROFILE</a>
                                 <div class="collapsible-body">
                                     <ul>
-                                        <li><a href="student-profile.html">STUDENT PROFILE</a>
+                                        <li class="active"><a href="student-profile.php">STUDENT PROFILE</a>
                                         </li>
-                                        <li><a href="candidate-profile.html">CANDIDATE PROFILE</a>
+                                        <li><a href="candidate-profile.php">CANDIDATE PROFILE</a>
                                         </li>
 
                                     </ul>
@@ -157,12 +157,11 @@
                                         class="mdi-image-palette"></i> VOTE PROCESS</a>
                                 <div class="collapsible-body">
                                     <ul>
-                                        <li><a href="verification.html">VERIFICATION</a>
+                                        <li><a href="verification.php" target="_blank">VERIFICATION</a>
                                         </li>
-                                        <li><a href="auth.html">AUTHENTICATION</a>
+                                        <li><a href="auth.php" target="_blank">AUTHENTICATION</a>
                                         </li>
-                                        <li><a href="verification.html">PROCEED TO VOTE</a>
-                                        </li>
+                                        
 
                                     </ul>
                                 </div>
@@ -172,13 +171,11 @@
                                     <!--<span class="new badge"></span>--></a>
                                 <div class="collapsible-body">
                                     <ul>
-                                        <li><a href="vote-progress.html">VOTE PROGRESS</a>
+                                        <li><a href="vote-progress.html" target="_blank">VOTE PROGRESS</a>
                                         </li>
-                                        <li><a href="display-result.html">DISPLAY RESULT</a>
+                                        <li><a href="school-prefect-result.php" target="_blank">DISPLAY RESULT</a>
                                         </li>
-                                        <li><a href="declare-results.html">DECLARE RESULT</a>
-                                        </li>
-
+                                        
                                     </ul>
                                 </div>
                             </li>
@@ -257,7 +254,7 @@
                                                     </tr>
                                                 </table>
                                             </div>
-                                            
+                                             
                                             <div class="col s12 m4 l4">
                                                
                                                 <div class="input-field col s12">

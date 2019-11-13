@@ -1,3 +1,6 @@
+'<?php
+    include_once('phpScript/votedb.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -100,7 +103,18 @@
                     </div>
                     <h4 id="voteState" style="font-size: 110px;">400</h4>
                     <h4 style="font-size: 100px;">OUT OF</h4>
-                    <h4 style="font-size: 110px;">600 VOTES</h4>
+                    <h4 style="font-size: 110px;">
+                    <?php
+                        $totalVotersSQL = "SELECT COUNT(account_number) AS totalCount FROM student_registration";
+                        $totalVoterResult = mysqli_query($conn, $totalVotersSQL);
+
+                        while($totalVolterRow = mysqli_fetch_array($totalVoterResult)){
+                            echo $totalVolterRow['totalCount'];
+                        }
+                    ?>
+                   
+                    </h4>
+                    <h4 style="font-size: 80px;"> Vote(s)</h4>
 
                 </div>
                 <!--end container-->

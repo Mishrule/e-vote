@@ -4,10 +4,6 @@ $error='';
 include_once('phpScript/votedb.php');
   session_start();
 
-
-
-
-
   if($_SERVER["REQUEST_METHOD"]=="POST"){
     $myUserName = mysqli_real_escape_string($conn, $_POST['username']);
     $myUserPassword = mysqli_real_escape_string($conn, $_POST['password']);
@@ -143,7 +139,6 @@ include_once('phpScript/votedb.php');
             </form>
         </div>
     </div>
-
 
 
     <!-- ================================================

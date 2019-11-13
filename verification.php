@@ -162,7 +162,6 @@
 <script>
 
 
-
     // $(document).ready(function(){
       $(document).on('click', '#checkActionBtn', function(){
         var accountText = $('#accountNumber').val();
