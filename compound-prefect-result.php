@@ -447,7 +447,575 @@
                         }
                     });
                 }
-            })
+                //==================================LIBRARY_PREFECT 11
+                var compound_prefect11 = $('.vNum11').text();
+                if(compound_prefect11){
+                   alert(compound_prefect11);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect11: compound_prefect11 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote11').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================compound_PREFECT 12
+
+                var compound_prefect12 = $('.vNum12').text();
+                if(compound_prefect12){
+                    alert(compound_prefect12);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect12: compound_prefect12 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote12').innerHTML = data;
+                        }
+                    });
+                }                
+
+                //==================================compound_PREFECT 13
+
+                var compound_prefect13 = $('.vNum13').text();
+                if(compound_prefect13){
+                    alert(compound_prefect13);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect13: compound_prefect13 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote13').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================compound_PREFECT 14
+
+                var compound_prefect14 = $('.vNum14').text();
+                if(compound_prefect14){
+                    alert(compound_prefect14);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect14: compound_prefect14 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote14').innerHTML = data;
+                        }
+                    })
+                };
+                //==================================compound_PREFECT 15
+
+                var compound_prefect15 = $('.vNum15').text();
+                if(compound_prefect15){
+                    alert(compound_prefect15);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect15: compound_prefect15 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote15').innerHTML = data;
+                        }
+                    })
+                };
+                //==================================compound_PREFECT 16
+
+                var compound_prefect16 = $('.vNum16').text();
+                if(compound_prefect16){
+                    alert(compound_prefect16);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect16: compound_prefect16 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote16').innerHTML = data;
+                        }
+                    })
+                };
+                
+                
+                // //==================================compound_PREFECT 17
+
+                var compound_prefect17 = $('.vNum17').text();
+                if(compound_prefect17){
+                    alert(compound_prefect17);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect17: compound_prefect17 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote17').innerHTML = data;
+                        }
+                    })
+                };
+                //==================================compound_PREFECT 18
+
+                var compound_prefect18 = $('.vNum18').text();
+                if(compound_prefect18){
+                    alert(compound_prefect18);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect18: compound_prefect18 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote18').innerHTML = data;
+                        }
+                    })
+                };
+                //==================================compound_PREFECT 19
+
+                var compound_prefect19 = $('.vNum19').text();
+                if(compound_prefect19){
+                    alert(compound_prefect19);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect19: compound_prefect19 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote19').innerHTML = data;
+                        }
+                    })
+                };
+                //==================================compound_PREFECT 20
+
+                var compound_prefect20 = $('.vNum20').text();
+                if(compound_prefect20){
+                    alert(compound_prefect20);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect20: compound_prefect20 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote20').innerHTML = data;
+                        }
+                    })
+                };
+                //==================================LIBRARY_PREFECT 21
+                var compound_prefect21 = $('.vNum21').text();
+                if(compound_prefect21){
+                   alert(compound_prefect21);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect21: compound_prefect21 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote21').innerHTML = data;
+                        }
+                    })
+                };
+                //==================================compound_PREFECT 22
+
+                var compound_prefect22 = $('.vNum22').text();
+                if(compound_prefect22){
+                    alert(compound_prefect22);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect22: compound_prefect22 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote22').innerHTML = data;
+                        }
+                    })
+                };                
+
+                //==================================compound_PREFECT 23
+
+                var compound_prefect23 = $('.vNum23').text();
+                if(compound_prefect23){
+                    alert(compound_prefect23);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect23: compound_prefect23 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote23').innerHTML = data;
+                        }
+                    })
+                };
+                //==================================compound_PREFECT 24
+
+                var compound_prefect24 = $('.vNum24').text();
+                if(compound_prefect24){
+                    alert(compound_prefect24);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect24: compound_prefect24 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote24').innerHTML = data;
+                        }
+                    })
+                };
+                //==================================compound_PREFECT 25
+
+                var compound_prefect25 = $('.vNum25').text();
+                if(compound_prefect25){
+                    alert(compound_prefect25);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect25: compound_prefect25 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote25').innerHTML = data;
+                        }
+                    })
+                };
+                //==================================compound_PREFECT 26
+
+                var compound_prefect26 = $('.vNum26').text();
+                if(compound_prefect26){
+                    alert(compound_prefect26);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect26: compound_prefect26 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote26').innerHTML = data;
+                        }
+                    })
+                };
+                
+                
+                // //==================================compound_PREFECT 27
+
+                var compound_prefect27 = $('.vNum27').text();
+                if(compound_prefect27){
+                    alert(compound_prefect27);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect27: compound_prefect27 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote27').innerHTML = data;
+                        }
+                    })
+                };
+                //==================================compound_PREFECT 28
+
+                var compound_prefect28 = $('.vNum28').text();
+                if(compound_prefect28){
+                    alert(compound_prefect28);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect28: compound_prefect28 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote28').innerHTML = data;
+                        }
+                    })
+                };
+                //==================================compound_PREFECT 29
+
+                var compound_prefect29 = $('.vNum29').text();
+                if(compound_prefect29){
+                    alert(compound_prefect29);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect29: compound_prefect29 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote29').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================compound_PREFECT 30
+
+                var compound_prefect30 = $('.vNum30').text();
+                if(compound_prefect30){
+                    alert(compound_prefect30);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect30: compound_prefect30 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote30').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================LIBRARY_PREFECT 31
+                var compound_prefect31 = $('.vNum31').text();
+                if(compound_prefect31){
+                   alert(compound_prefect31);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect31: compound_prefect31 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote31').innerHTML = data;
+                        }
+                    });
+                }
+                //==================================compound_PREFECT 32
+
+                var compound_prefect32 = $('.vNum32').text();
+                if(compound_prefect32){
+                    alert(compound_prefect32);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect32: compound_prefect32 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote32').innerHTML = data;
+                        }
+                    });
+                };                
+
+                //==================================compound_PREFECT 33
+
+                var compound_prefect33 = $('.vNum33').text();
+                if(compound_prefect33){
+                    alert(compound_prefect33);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect33: compound_prefect33 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote33').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================compound_PREFECT 34
+
+                var compound_prefect34 = $('.vNum34').text();
+                if(compound_prefect34){
+                    alert(compound_prefect34);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect34: compound_prefect34 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote34').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================compound_PREFECT 35
+
+                var compound_prefect35 = $('.vNum35').text();
+                if(compound_prefect35){
+                    alert(compound_prefect35);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect35: compound_prefect35 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote35').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================compound_PREFECT 36
+
+                var compound_prefect36 = $('.vNum36').text();
+                if(compound_prefect36){
+                    alert(compound_prefect36);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect36: compound_prefect36 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote36').innerHTML = data;
+                        }
+                    })
+                };
+                
+                
+                // //==================================compound_PREFECT 37
+
+                var compound_prefect37 = $('.vNum37').text();
+                if(compound_prefect37){
+                    alert(compound_prefect37);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect37: compound_prefect37 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote37').innerHTML = data;
+                        }
+                    })
+                };
+                //==================================compound_PREFECT 38
+
+                var compound_prefect38 = $('.vNum38').text();
+                if(compound_prefect38){
+                    alert(compound_prefect38);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect38: compound_prefect38 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote38').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================compound_PREFECT 39
+
+                var compound_prefect39 = $('.vNum39').text();
+                if(compound_prefect39){
+                    alert(compound_prefect39);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect39: compound_prefect39 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote39').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================compound_PREFECT 40
+
+                var compound_prefect40 = $('.vNum40').text();
+                if(compound_prefect40){
+                    alert(compound_prefect40);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect40: compound_prefect40 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote40').innerHTML = data;
+                        }
+                    })
+                };
+                //==================================LIBRARY_PREFECT 41
+                var compound_prefect41 = $('.vNum41').text();
+                if(compound_prefect41){
+                   alert(compound_prefect41);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect41: compound_prefect41 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote41').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================compound_PREFECT 42
+
+                var compound_prefect42 = $('.vNum42').text();
+                if(compound_prefect42){
+                    alert(compound_prefect42);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect42: compound_prefect42 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote42').innerHTML = data;
+                        }
+                    });
+                };               
+
+                //==================================compound_PREFECT 43
+
+                var compound_prefect43 = $('.vNum43').text();
+                if(compound_prefect43){
+                    alert(compound_prefect43);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect43: compound_prefect43 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote43').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================compound_PREFECT 44
+
+                var compound_prefect44 = $('.vNum44').text();
+                if(compound_prefect44){
+                    alert(compound_prefect44);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect44: compound_prefect44 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote44').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================compound_PREFECT 45
+
+                var compound_prefect45 = $('.vNum45').text();
+                if(compound_prefect45){
+                    alert(compound_prefect45);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect45: compound_prefect45 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote45').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================compound_PREFECT 46
+
+                var compound_prefect46 = $('.vNum46').text();
+                if(compound_prefect46){
+                    alert(compound_prefect46);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect46: compound_prefect46 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote46').innerHTML = data;
+                        }
+                    });
+                };
+                
+                
+                // //==================================compound_PREFECT 47
+
+                var compound_prefect47 = $('.vNum47').text();
+                if(compound_prefect47){
+                    alert(compound_prefect47);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect47: compound_prefect47 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote47').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================compound_PREFECT 48
+
+                var compound_prefect48 = $('.vNum48').text();
+                if(compound_prefect48){
+                    alert(compound_prefect48);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect48: compound_prefect48 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote48').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================compound_PREFECT 49
+
+                var compound_prefect49 = $('.vNum49').text();
+                if(compound_prefect49){
+                    alert(compound_prefect49);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect49: compound_prefect49 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote49').innerHTML = data;
+                        }
+                    });
+                };
+                //==================================compound_PREFECT 50
+
+                var compound_prefect50 = $('.vNum50').text();
+                if(compound_prefect50){
+                    alert(compound_prefect50);
+                    $.ajax({
+                        url: 'phpScript/resultPHP/compoundPrefectResult.php',
+                        method: 'POST',
+                        data: { compound_prefect50: compound_prefect50 },
+                        success: function (data) {
+                            document.getElementById('compound_Vote50').innerHTML = data;
+                        }
+                    });
+                };
+            });
         };
 
     })
