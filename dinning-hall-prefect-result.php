@@ -67,7 +67,7 @@
                 <div class="nav-wrapper">
                     <ul class="left">
                         <li>
-                            <h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img
+                            <h1 class="logo-wrapper"><a href="#" class="brand-logo darken-1"><img
                                         src="images/materialize-logo.png" alt="materialize logo"></a> <span
                                     class="logo-text">Electronic Voting System</span></h1>
                         </li>
@@ -190,7 +190,7 @@
                                             <div class="card">
                                                 <div class="card-image">
                                                     <img src="images/'.$dinning_hall_PrefectVoteResultROW['image'].'" width="100%">
-                                                    <span class="card-title">dinning_hall_ PREFECT</span>
+                                                    <span class="card-title" style="color: black; font-weight: bold; font-size: 15px;">DINNING HALL PREFECT</span>
                                                 </div>
                                                 <div class="card-content">
                                                     <h5>'.$dinning_hall_PrefectVoteResultROW['full_name'].'</h5>

@@ -119,9 +119,11 @@ include_once('phpScript/votedb.php');
                 </div> -->
                 <div class="row">
                     <div class="input-field col s12">
-                        <button type="submit" id="logVoter" name="logVoter" value="logVoter" class="btn waves-effect waves-light col s12">PROCEED TO VOTING PAGE</button>
+                        <button type="submit" id="logVoter" name="logVoter" value="logVoter"
+                            class="btn waves-effect waves-light col s12">PROCEED TO VOTING PAGE</button>
                     </div>
-                </div><div class="row">
+                </div>
+                <div class="row">
                     <div class="input-field col s12">
                         <p class="center-align"><?php echo $error; ?></p>
                     </div>
