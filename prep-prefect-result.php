@@ -308,7 +308,7 @@
                 //==================================health_PREFECT ONE
                 var prep_prefectOne = $('.vNum1').text();
                 if(prep_prefectOne){
-                   alert(prep_prefectOne);
+                //    alert(prep_prefectOne);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -322,7 +322,7 @@
 
                 var prep_prefectTwo = $('.vNum2').text();
                 if(prep_prefectTwo){
-                    alert(prep_prefectTwo);
+                    // alert(prep_prefectTwo);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -337,7 +337,7 @@
 
                 var prep_prefectThree = $('.vNum3').text();
                 if(prep_prefectThree){
-                    alert(prep_prefectThree);
+                    // alert(prep_prefectThree);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -351,7 +351,7 @@
 
                 var prep_prefectFour = $('.vNum4').text();
                 if(prep_prefectFour){
-                    alert(prep_prefectFour);
+                    // alert(prep_prefectFour);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -365,7 +365,7 @@
 
                 var prep_prefectFive = $('.vNum5').text();
                 if(prep_prefectFive){
-                    alert(prep_prefectFive);
+                    // alert(prep_prefectFive);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -379,7 +379,7 @@
 
                 var prep_prefectSix = $('.vNum6').text();
                 if(prep_prefectSix){
-                    alert(prep_prefectSix);
+                    // alert(prep_prefectSix);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -395,7 +395,7 @@
 
                 var prep_prefectSeven = $('.vNum7').text();
                 if(prep_prefectSeven){
-                    alert(prep_prefectSeven);
+                    // alert(prep_prefectSeven);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -409,7 +409,7 @@
 
                 var prep_prefectEight = $('.vNum8').text();
                 if(prep_prefectEight){
-                    alert(prep_prefectEight);
+                    // alert(prep_prefectEight);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -423,7 +423,7 @@
 
                 var prep_prefectNine = $('.vNum9').text();
                 if(prep_prefectNine){
-                    alert(prep_prefectNine);
+                    // alert(prep_prefectNine);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -437,7 +437,7 @@
 
                 var prep_prefectTen = $('.vNum10').text();
                 if(prep_prefectTen){
-                    alert(prep_prefectTen);
+                    // alert(prep_prefectTen);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -450,7 +450,7 @@
                 //==================================health_PREFECT 11
                 var prep_prefect11 = $('.vNum11').text();
                 if(prep_prefect11){
-                   alert(prep_prefect11);
+                //    alert(prep_prefect11);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -464,7 +464,7 @@
 
                 var prep_prefect12 = $('.vNum12').text();
                 if(prep_prefect12){
-                    alert(prep_prefect12);
+                    // alert(prep_prefect12);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -479,7 +479,7 @@
 
                 var prep_prefect13 = $('.vNum13').text();
                 if(prep_prefect13){
-                    alert(prep_prefect13);
+                    // alert(prep_prefect13);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -493,7 +493,7 @@
 
                 var prep_prefect14 = $('.vNum14').text();
                 if(prep_prefect14){
-                    alert(prep_prefect14);
+                    // alert(prep_prefect14);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -507,7 +507,7 @@
 
                 var prep_prefect15 = $('.vNum15').text();
                 if(prep_prefect15){
-                    alert(prep_prefect15);
+                    // alert(prep_prefect15);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -521,7 +521,7 @@
 
                 var prep_prefect16 = $('.vNum16').text();
                 if(prep_prefect16){
-                    alert(prep_prefect16);
+                    // alert(prep_prefect16);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -537,7 +537,7 @@
 
                 var prep_prefect17 = $('.vNum17').text();
                 if(prep_prefect17){
-                    alert(prep_prefect17);
+                    // alert(prep_prefect17);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -551,7 +551,7 @@
 
                 var prep_prefect18 = $('.vNum18').text();
                 if(prep_prefect18){
-                    alert(prep_prefect18);
+                    // alert(prep_prefect18);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -565,7 +565,7 @@
 
                 var prep_prefect19 = $('.vNum19').text();
                 if(prep_prefect19){
-                    alert(prep_prefect19);
+                    // alert(prep_prefect19);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -579,7 +579,7 @@
 
                 var prep_prefect20 = $('.vNum20').text();
                 if(prep_prefect20){
-                    alert(prep_prefect20);
+                    // alert(prep_prefect20);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -592,7 +592,7 @@
                 //==================================health_PREFECT 21
                 var prep_prefect21 = $('.vNum21').text();
                 if(prep_prefect21){
-                   alert(prep_prefect21);
+                //    alert(prep_prefect21);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -606,7 +606,7 @@
 
                 var prep_prefect22 = $('.vNum22').text();
                 if(prep_prefect22){
-                    alert(prep_prefect22);
+                    // alert(prep_prefect22);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -621,7 +621,7 @@
 
                 var prep_prefect23 = $('.vNum23').text();
                 if(prep_prefect23){
-                    alert(prep_prefect23);
+                    // alert(prep_prefect23);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -635,7 +635,7 @@
 
                 var prep_prefect24 = $('.vNum24').text();
                 if(prep_prefect24){
-                    alert(prep_prefect24);
+                    // alert(prep_prefect24);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -649,7 +649,7 @@
 
                 var prep_prefect25 = $('.vNum25').text();
                 if(prep_prefect25){
-                    alert(prep_prefect25);
+                    // alert(prep_prefect25);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -663,7 +663,7 @@
 
                 var prep_prefect26 = $('.vNum26').text();
                 if(prep_prefect26){
-                    alert(prep_prefect26);
+                    // alert(prep_prefect26);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -679,7 +679,7 @@
 
                 var prep_prefect27 = $('.vNum27').text();
                 if(prep_prefect27){
-                    alert(prep_prefect27);
+                    // alert(prep_prefect27);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -693,7 +693,7 @@
 
                 var prep_prefect28 = $('.vNum28').text();
                 if(prep_prefect28){
-                    alert(prep_prefect28);
+                    // alert(prep_prefect28);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -707,7 +707,7 @@
 
                 var prep_prefect29 = $('.vNum29').text();
                 if(prep_prefect29){
-                    alert(prep_prefect29);
+                    // alert(prep_prefect29);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -721,7 +721,7 @@
 
                 var prep_prefect30 = $('.vNum30').text();
                 if(prep_prefect30){
-                    alert(prep_prefect30);
+                    // alert(prep_prefect30);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -734,7 +734,7 @@
                  //==================================health_PREFECT 31
                 var prep_prefect31 = $('.vNum31').text();
                 if(prep_prefect31){
-                   alert(prep_prefect31);
+                //    alert(prep_prefect31);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -748,7 +748,7 @@
 
                 var prep_prefect32 = $('.vNum32').text();
                 if(prep_prefect32){
-                    alert(prep_prefect32);
+                    // alert(prep_prefect32);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -763,7 +763,7 @@
 
                 var prep_prefect33 = $('.vNum33').text();
                 if(prep_prefect33){
-                    alert(prep_prefect33);
+                    // alert(prep_prefect33);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -777,7 +777,7 @@
 
                 var prep_prefect34 = $('.vNum34').text();
                 if(prep_prefect34){
-                    alert(prep_prefect34);
+                    // alert(prep_prefect34);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -791,7 +791,7 @@
 
                 var prep_prefect35 = $('.vNum35').text();
                 if(prep_prefect35){
-                    alert(prep_prefect35);
+                    // alert(prep_prefect35);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -805,7 +805,7 @@
 
                 var prep_prefect36 = $('.vNum36').text();
                 if(prep_prefect36){
-                    alert(prep_prefect36);
+                    // alert(prep_prefect36);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -821,7 +821,7 @@
 
                 var prep_prefect37 = $('.vNum37').text();
                 if(prep_prefect37){
-                    alert(prep_prefect37);
+                    // alert(prep_prefect37);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -835,7 +835,7 @@
 
                 var prep_prefect38 = $('.vNum38').text();
                 if(prep_prefect38){
-                    alert(prep_prefect38);
+                    // alert(prep_prefect38);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -849,7 +849,7 @@
 
                 var prep_prefect39 = $('.vNum39').text();
                 if(prep_prefect39){
-                    alert(prep_prefect39);
+                    // alert(prep_prefect39);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -863,7 +863,7 @@
 
                 var prep_prefect40 = $('.vNum40').text();
                 if(prep_prefect40){
-                    alert(prep_prefect40);
+                    // alert(prep_prefect40);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -876,7 +876,7 @@
                 //==================================health_PREFECT 41
                 var prep_prefect41 = $('.vNum41').text();
                 if(prep_prefect41){
-                   alert(prep_prefect41);
+                //    alert(prep_prefect41);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -890,7 +890,7 @@
 
                 var prep_prefect42 = $('.vNum42').text();
                 if(prep_prefect42){
-                    alert(prep_prefect42);
+                    // alert(prep_prefect42);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -905,7 +905,7 @@
 
                 var prep_prefect43 = $('.vNum43').text();
                 if(prep_prefect43){
-                    alert(prep_prefect43);
+                    // alert(prep_prefect43);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -919,7 +919,7 @@
 
                 var prep_prefect44 = $('.vNum44').text();
                 if(prep_prefect44){
-                    alert(prep_prefect44);
+                    // alert(prep_prefect44);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -933,7 +933,7 @@
 
                 var prep_prefect45 = $('.vNum45').text();
                 if(prep_prefect45){
-                    alert(prep_prefect45);
+                    // alert(prep_prefect45);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -947,7 +947,7 @@
 
                 var prep_prefect46 = $('.vNum46').text();
                 if(prep_prefect46){
-                    alert(prep_prefect46);
+                    // alert(prep_prefect46);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -963,7 +963,7 @@
 
                 var prep_prefect47 = $('.vNum47').text();
                 if(prep_prefect47){
-                    alert(prep_prefect47);
+                    // alert(prep_prefect47);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -977,7 +977,7 @@
 
                 var prep_prefect48 = $('.vNum48').text();
                 if(prep_prefect48){
-                    alert(prep_prefect48);
+                    // alert(prep_prefect48);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -991,7 +991,7 @@
 
                 var prep_prefect49 = $('.vNum49').text();
                 if(prep_prefect49){
-                    alert(prep_prefect49);
+                    // alert(prep_prefect49);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',
@@ -1005,7 +1005,7 @@
 
                 var prep_prefect50 = $('.vNum50').text();
                 if(prep_prefect50){
-                    alert(prep_prefect50);
+                    // alert(prep_prefect50);
                     $.ajax({
                         url: 'phpScript/resultPHP/prepPrefectResult.php',
                         method: 'POST',

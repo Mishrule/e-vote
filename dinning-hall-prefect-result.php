@@ -308,7 +308,7 @@
                 //==================================dinning_PREFECT ONE
                 var dinning_prefectOne = $('.vNum1').text();
                 if(dinning_prefectOne){
-                   alert(dinning_prefectOne);
+                //    alert(dinning_prefectOne);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -322,7 +322,7 @@
 
                 var dinning_prefectTwo = $('.vNum2').text();
                 if(dinning_prefectTwo){
-                    alert(dinning_prefectTwo);
+                    // alert(dinning_prefectTwo);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -337,7 +337,7 @@
 
                 var dinning_prefectThree = $('.vNum3').text();
                 if(dinning_prefectThree){
-                    alert(dinning_prefectThree);
+                    // alert(dinning_prefectThree);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -351,7 +351,7 @@
 
                 var dinning_prefectFour = $('.vNum4').text();
                 if(dinning_prefectFour){
-                    alert(dinning_prefectFour);
+                    // alert(dinning_prefectFour);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -365,7 +365,7 @@
 
                 var dinning_prefectFive = $('.vNum5').text();
                 if(dinning_prefectFive){
-                    alert(dinning_prefectFive);
+                    // alert(dinning_prefectFive);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -379,7 +379,7 @@
 
                 var dinning_prefectSix = $('.vNum6').text();
                 if(dinning_prefectSix){
-                    alert(dinning_prefectSix);
+                    // alert(dinning_prefectSix);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -395,7 +395,7 @@
 
                 var dinning_prefectSeven = $('.vNum7').text();
                 if(dinning_prefectSeven){
-                    alert(dinning_prefectSeven);
+                    // alert(dinning_prefectSeven);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -409,7 +409,7 @@
 
                 var dinning_prefectEight = $('.vNum8').text();
                 if(dinning_prefectEight){
-                    alert(dinning_prefectEight);
+                    // alert(dinning_prefectEight);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -423,7 +423,7 @@
 
                 var dinning_prefectNine = $('.vNum9').text();
                 if(dinning_prefectNine){
-                    alert(dinning_prefectNine);
+                    // alert(dinning_prefectNine);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -437,7 +437,7 @@
 
                 var dinning_prefectTen = $('.vNum10').text();
                 if(dinning_prefectTen){
-                    alert(dinning_prefectTen);
+                    // alert(dinning_prefectTen);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -450,7 +450,7 @@
                  //==================================dinning_PREFECT 11
                 var dinning_prefect11 = $('.vNum11').text();
                 if(dinning_prefect11){
-                   alert(dinning_prefect11);
+                //    alert(dinning_prefect11);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -464,7 +464,7 @@
 
                 var dinning_prefect12 = $('.vNum12').text();
                 if(dinning_prefect12){
-                    alert(dinning_prefect12);
+                    // alert(dinning_prefect12);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -479,7 +479,7 @@
 
                 var dinning_prefect13 = $('.vNum13').text();
                 if(dinning_prefect13){
-                    alert(dinning_prefect13);
+                    // alert(dinning_prefect13);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -493,7 +493,7 @@
 
                 var dinning_prefect14 = $('.vNum14').text();
                 if(dinning_prefect14){
-                    alert(dinning_prefect14);
+                    // alert(dinning_prefect14);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -507,7 +507,7 @@
 
                 var dinning_prefect15 = $('.vNum15').text();
                 if(dinning_prefect15){
-                    alert(dinning_prefect15);
+                    // alert(dinning_prefect15);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -521,7 +521,7 @@
 
                 var dinning_prefect16 = $('.vNum16').text();
                 if(dinning_prefect16){
-                    alert(dinning_prefect16);
+                    // alert(dinning_prefect16);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -537,7 +537,7 @@
 
                 var dinning_prefect17 = $('.vNum17').text();
                 if(dinning_prefect17){
-                    alert(dinning_prefect17);
+                    // alert(dinning_prefect17);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -551,7 +551,7 @@
 
                 var dinning_prefect18 = $('.vNum18').text();
                 if(dinning_prefect18){
-                    alert(dinning_prefect18);
+                    // alert(dinning_prefect18);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -565,7 +565,7 @@
 
                 var dinning_prefect19 = $('.vNum19').text();
                 if(dinning_prefect19){
-                    alert(dinning_prefect19);
+                    // alert(dinning_prefect19);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -579,7 +579,7 @@
 
                 var dinning_prefect20 = $('.vNum20').text();
                 if(dinning_prefect20){
-                    alert(dinning_prefect20);
+                    // alert(dinning_prefect20);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -592,7 +592,7 @@
                  //==================================dinning_PREFECT 21
                 var dinning_prefect21 = $('.vNum21').text();
                 if(dinning_prefect21){
-                   alert(dinning_prefect21);
+                //    alert(dinning_prefect21);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -606,7 +606,7 @@
 
                 var dinning_prefect22 = $('.vNum22').text();
                 if(dinning_prefect22){
-                    alert(dinning_prefect22);
+                    // alert(dinning_prefect22);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -621,7 +621,7 @@
 
                 var dinning_prefect23 = $('.vNum23').text();
                 if(dinning_prefect23){
-                    alert(dinning_prefect23);
+                    // alert(dinning_prefect23);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -635,7 +635,7 @@
 
                 var dinning_prefect24 = $('.vNum24').text();
                 if(dinning_prefect24){
-                    alert(dinning_prefect24);
+                    // alert(dinning_prefect24);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -649,7 +649,7 @@
 
                 var dinning_prefect25 = $('.vNum25').text();
                 if(dinning_prefect25){
-                    alert(dinning_prefect25);
+                    // alert(dinning_prefect25);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -663,7 +663,7 @@
 
                 var dinning_prefect26 = $('.vNum26').text();
                 if(dinning_prefect26){
-                    alert(dinning_prefect26);
+                    // alert(dinning_prefect26);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -679,7 +679,7 @@
 
                 var dinning_prefect27 = $('.vNum27').text();
                 if(dinning_prefect27){
-                    alert(dinning_prefect27);
+                    // alert(dinning_prefect27);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -693,7 +693,7 @@
 
                 var dinning_prefect28 = $('.vNum28').text();
                 if(dinning_prefect28){
-                    alert(dinning_prefect28);
+                    // alert(dinning_prefect28);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -707,7 +707,7 @@
 
                 var dinning_prefect29 = $('.vNum29').text();
                 if(dinning_prefect29){
-                    alert(dinning_prefect29);
+                    // alert(dinning_prefect29);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -721,7 +721,7 @@
 
                 var dinning_prefect30 = $('.vNum30').text();
                 if(dinning_prefect30){
-                    alert(dinning_prefect30);
+                    // alert(dinning_prefect30);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -734,7 +734,7 @@
                  //==================================dinning_PREFECT 31
                 var dinning_prefect31 = $('.vNum31').text();
                 if(dinning_prefect31){
-                   alert(dinning_prefect31);
+                //    alert(dinning_prefect31);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -748,7 +748,7 @@
 
                 var dinning_prefect32 = $('.vNum32').text();
                 if(dinning_prefect32){
-                    alert(dinning_prefect32);
+                    // alert(dinning_prefect32);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -763,7 +763,7 @@
 
                 var dinning_prefect33 = $('.vNum33').text();
                 if(dinning_prefect33){
-                    alert(dinning_prefect33);
+                    // alert(dinning_prefect33);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -777,7 +777,7 @@
 
                 var dinning_prefect34 = $('.vNum34').text();
                 if(dinning_prefect34){
-                    alert(dinning_prefect34);
+                    // alert(dinning_prefect34);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -791,7 +791,7 @@
 
                 var dinning_prefect35 = $('.vNum35').text();
                 if(dinning_prefect35){
-                    alert(dinning_prefect35);
+                    // alert(dinning_prefect35);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -805,7 +805,7 @@
 
                 var dinning_prefect36 = $('.vNum36').text();
                 if(dinning_prefect36){
-                    alert(dinning_prefect36);
+                    // alert(dinning_prefect36);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -821,7 +821,7 @@
 
                 var dinning_prefect37 = $('.vNum37').text();
                 if(dinning_prefect37){
-                    alert(dinning_prefect37);
+                    // alert(dinning_prefect37);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -835,7 +835,7 @@
 
                 var dinning_prefect38 = $('.vNum38').text();
                 if(dinning_prefect38){
-                    alert(dinning_prefect38);
+                    // alert(dinning_prefect38);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -849,7 +849,7 @@
 
                 var dinning_prefect39 = $('.vNum39').text();
                 if(dinning_prefect39){
-                    alert(dinning_prefect39);
+                    // alert(dinning_prefect39);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -863,7 +863,7 @@
 
                 var dinning_prefect40 = $('.vNum40').text();
                 if(dinning_prefect40){
-                    alert(dinning_prefect40);
+                    // alert(dinning_prefect40);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -876,7 +876,7 @@
                  //==================================dinning_PREFECT 41
                 var dinning_prefect41 = $('.vNum41').text();
                 if(dinning_prefect41){
-                   alert(dinning_prefect41);
+                //    alert(dinning_prefect41);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -890,7 +890,7 @@
 
                 var dinning_prefect42 = $('.vNum42').text();
                 if(dinning_prefect42){
-                    alert(dinning_prefect42);
+                    // alert(dinning_prefect42);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -905,7 +905,7 @@
 
                 var dinning_prefect43 = $('.vNum43').text();
                 if(dinning_prefect43){
-                    alert(dinning_prefect43);
+                    // alert(dinning_prefect43);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -919,7 +919,7 @@
 
                 var dinning_prefect44 = $('.vNum44').text();
                 if(dinning_prefect44){
-                    alert(dinning_prefect44);
+                    // alert(dinning_prefect44);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -933,7 +933,7 @@
 
                 var dinning_prefect45 = $('.vNum45').text();
                 if(dinning_prefect45){
-                    alert(dinning_prefect45);
+                    // alert(dinning_prefect45);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -947,7 +947,7 @@
 
                 var dinning_prefect46 = $('.vNum46').text();
                 if(dinning_prefect46){
-                    alert(dinning_prefect46);
+                    // alert(dinning_prefect46);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -963,7 +963,7 @@
 
                 var dinning_prefect47 = $('.vNum47').text();
                 if(dinning_prefect47){
-                    alert(dinning_prefect47);
+                    // alert(dinning_prefect47);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -977,7 +977,7 @@
 
                 var dinning_prefect48 = $('.vNum48').text();
                 if(dinning_prefect48){
-                    alert(dinning_prefect48);
+                    // alert(dinning_prefect48);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -991,7 +991,7 @@
 
                 var dinning_prefect49 = $('.vNum49').text();
                 if(dinning_prefect49){
-                    alert(dinning_prefect49);
+                    // alert(dinning_prefect49);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',
@@ -1005,7 +1005,7 @@
 
                 var dinning_prefect50 = $('.vNum50').text();
                 if(dinning_prefect50){
-                    alert(dinning_prefect50);
+                    // alert(dinning_prefect50);
                     $.ajax({
                         url: 'phpScript/resultPHP/dinningHallResult.php',
                         method: 'POST',

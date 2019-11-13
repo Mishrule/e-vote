@@ -18,10 +18,10 @@
         //==============================| SECOND SCHOOL PREFECT
     if(isset($_POST['prefect2'])){
         $schoolPrefect2 = mysqli_real_escape_string($conn, $_POST['prefect2']);
-        $schoolPrefect2SQL = "SELECT COUNT(school_prefect) AS schoolprefect2 FROM vote WHERE school_prefect = '$schoolPrefect2'";
+        $schoolPrefect2SQL = "SELECT COUNT(school_prefect) AS prefect2 FROM vote WHERE school_prefect = '$schoolPrefect2'";
         $schoolPrefect2RESULT = mysqli_query($conn, $schoolPrefect2SQL);
         while($schoolPrefect2ROW = mysqli_fetch_array($schoolPrefect2RESULT)){
-            echo $schoolPrefect2ROW['schoolprefect2'].' <h6>VOTE(S)</h6>';
+            echo $schoolPrefect2ROW['prefect2'].' <h6>VOTE(S)</h6>';
         }
     }
        //==============================| THIRD SCHOOL PREFECT

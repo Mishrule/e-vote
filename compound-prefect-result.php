@@ -308,7 +308,7 @@
                 //==================================LIBRARY_PREFECT ONE
                 var compound_prefectOne = $('.vNum1').text();
                 if(compound_prefectOne){
-                   alert(compound_prefectOne);
+                //    alert(compound_prefectOne);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -322,7 +322,7 @@
 
                 var compound_prefectTwo = $('.vNum2').text();
                 if(compound_prefectTwo){
-                    alert(compound_prefectTwo);
+                    // alert(compound_prefectTwo);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -337,7 +337,7 @@
 
                 var compound_prefectThree = $('.vNum3').text();
                 if(compound_prefectThree){
-                    alert(compound_prefectThree);
+                    // alert(compound_prefectThree);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -351,7 +351,7 @@
 
                 var compound_prefectFour = $('.vNum4').text();
                 if(compound_prefectFour){
-                    alert(compound_prefectFour);
+                    // alert(compound_prefectFour);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -365,7 +365,7 @@
 
                 var compound_prefectFive = $('.vNum5').text();
                 if(compound_prefectFive){
-                    alert(compound_prefectFive);
+                    // alert(compound_prefectFive);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -379,7 +379,7 @@
 
                 var compound_prefectSix = $('.vNum6').text();
                 if(compound_prefectSix){
-                    alert(compound_prefectSix);
+                    // alert(compound_prefectSix);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -395,7 +395,7 @@
 
                 var compound_prefectSeven = $('.vNum7').text();
                 if(compound_prefectSeven){
-                    alert(compound_prefectSeven);
+                    // alert(compound_prefectSeven);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -409,7 +409,7 @@
 
                 var compound_prefectEight = $('.vNum8').text();
                 if(compound_prefectEight){
-                    alert(compound_prefectEight);
+                    // alert(compound_prefectEight);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -423,7 +423,7 @@
 
                 var compound_prefectNine = $('.vNum9').text();
                 if(compound_prefectNine){
-                    alert(compound_prefectNine);
+                    // alert(compound_prefectNine);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -437,7 +437,7 @@
 
                 var compound_prefectTen = $('.vNum10').text();
                 if(compound_prefectTen){
-                    alert(compound_prefectTen);
+                    // alert(compound_prefectTen);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -450,7 +450,7 @@
                 //==================================LIBRARY_PREFECT 11
                 var compound_prefect11 = $('.vNum11').text();
                 if(compound_prefect11){
-                   alert(compound_prefect11);
+                //    alert(compound_prefect11);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -464,7 +464,7 @@
 
                 var compound_prefect12 = $('.vNum12').text();
                 if(compound_prefect12){
-                    alert(compound_prefect12);
+                    // alert(compound_prefect12);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -479,7 +479,7 @@
 
                 var compound_prefect13 = $('.vNum13').text();
                 if(compound_prefect13){
-                    alert(compound_prefect13);
+                    // alert(compound_prefect13);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -493,7 +493,7 @@
 
                 var compound_prefect14 = $('.vNum14').text();
                 if(compound_prefect14){
-                    alert(compound_prefect14);
+                    // alert(compound_prefect14);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -507,7 +507,7 @@
 
                 var compound_prefect15 = $('.vNum15').text();
                 if(compound_prefect15){
-                    alert(compound_prefect15);
+                    // alert(compound_prefect15);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -521,7 +521,7 @@
 
                 var compound_prefect16 = $('.vNum16').text();
                 if(compound_prefect16){
-                    alert(compound_prefect16);
+                    // alert(compound_prefect16);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -537,7 +537,7 @@
 
                 var compound_prefect17 = $('.vNum17').text();
                 if(compound_prefect17){
-                    alert(compound_prefect17);
+                    // alert(compound_prefect17);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -551,7 +551,7 @@
 
                 var compound_prefect18 = $('.vNum18').text();
                 if(compound_prefect18){
-                    alert(compound_prefect18);
+                    // alert(compound_prefect18);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -565,7 +565,7 @@
 
                 var compound_prefect19 = $('.vNum19').text();
                 if(compound_prefect19){
-                    alert(compound_prefect19);
+                    // alert(compound_prefect19);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -579,7 +579,7 @@
 
                 var compound_prefect20 = $('.vNum20').text();
                 if(compound_prefect20){
-                    alert(compound_prefect20);
+                    // alert(compound_prefect20);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -592,7 +592,7 @@
                 //==================================LIBRARY_PREFECT 21
                 var compound_prefect21 = $('.vNum21').text();
                 if(compound_prefect21){
-                   alert(compound_prefect21);
+                //    alert(compound_prefect21);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -606,7 +606,7 @@
 
                 var compound_prefect22 = $('.vNum22').text();
                 if(compound_prefect22){
-                    alert(compound_prefect22);
+                    // alert(compound_prefect22);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -621,7 +621,7 @@
 
                 var compound_prefect23 = $('.vNum23').text();
                 if(compound_prefect23){
-                    alert(compound_prefect23);
+                    // alert(compound_prefect23);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -635,7 +635,7 @@
 
                 var compound_prefect24 = $('.vNum24').text();
                 if(compound_prefect24){
-                    alert(compound_prefect24);
+                    // alert(compound_prefect24);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -649,7 +649,7 @@
 
                 var compound_prefect25 = $('.vNum25').text();
                 if(compound_prefect25){
-                    alert(compound_prefect25);
+                    // alert(compound_prefect25);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -663,7 +663,7 @@
 
                 var compound_prefect26 = $('.vNum26').text();
                 if(compound_prefect26){
-                    alert(compound_prefect26);
+                    // alert(compound_prefect26);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -679,7 +679,7 @@
 
                 var compound_prefect27 = $('.vNum27').text();
                 if(compound_prefect27){
-                    alert(compound_prefect27);
+                    // alert(compound_prefect27);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -693,7 +693,7 @@
 
                 var compound_prefect28 = $('.vNum28').text();
                 if(compound_prefect28){
-                    alert(compound_prefect28);
+                    // alert(compound_prefect28);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -707,7 +707,7 @@
 
                 var compound_prefect29 = $('.vNum29').text();
                 if(compound_prefect29){
-                    alert(compound_prefect29);
+                    // alert(compound_prefect29);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -721,7 +721,7 @@
 
                 var compound_prefect30 = $('.vNum30').text();
                 if(compound_prefect30){
-                    alert(compound_prefect30);
+                    // alert(compound_prefect30);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -734,7 +734,7 @@
                 //==================================LIBRARY_PREFECT 31
                 var compound_prefect31 = $('.vNum31').text();
                 if(compound_prefect31){
-                   alert(compound_prefect31);
+                //    alert(compound_prefect31);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -748,7 +748,7 @@
 
                 var compound_prefect32 = $('.vNum32').text();
                 if(compound_prefect32){
-                    alert(compound_prefect32);
+                    // alert(compound_prefect32);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -763,7 +763,7 @@
 
                 var compound_prefect33 = $('.vNum33').text();
                 if(compound_prefect33){
-                    alert(compound_prefect33);
+                    // alert(compound_prefect33);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -777,7 +777,7 @@
 
                 var compound_prefect34 = $('.vNum34').text();
                 if(compound_prefect34){
-                    alert(compound_prefect34);
+                    // alert(compound_prefect34);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -791,7 +791,7 @@
 
                 var compound_prefect35 = $('.vNum35').text();
                 if(compound_prefect35){
-                    alert(compound_prefect35);
+                    // alert(compound_prefect35);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -805,7 +805,7 @@
 
                 var compound_prefect36 = $('.vNum36').text();
                 if(compound_prefect36){
-                    alert(compound_prefect36);
+                    // alert(compound_prefect36);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -821,7 +821,7 @@
 
                 var compound_prefect37 = $('.vNum37').text();
                 if(compound_prefect37){
-                    alert(compound_prefect37);
+                    // alert(compound_prefect37);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -835,7 +835,7 @@
 
                 var compound_prefect38 = $('.vNum38').text();
                 if(compound_prefect38){
-                    alert(compound_prefect38);
+                    // alert(compound_prefect38);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -849,7 +849,7 @@
 
                 var compound_prefect39 = $('.vNum39').text();
                 if(compound_prefect39){
-                    alert(compound_prefect39);
+                    // alert(compound_prefect39);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -863,7 +863,7 @@
 
                 var compound_prefect40 = $('.vNum40').text();
                 if(compound_prefect40){
-                    alert(compound_prefect40);
+                    // alert(compound_prefect40);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -876,7 +876,7 @@
                 //==================================LIBRARY_PREFECT 41
                 var compound_prefect41 = $('.vNum41').text();
                 if(compound_prefect41){
-                   alert(compound_prefect41);
+                //    alert(compound_prefect41);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -890,7 +890,7 @@
 
                 var compound_prefect42 = $('.vNum42').text();
                 if(compound_prefect42){
-                    alert(compound_prefect42);
+                    // alert(compound_prefect42);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -905,7 +905,7 @@
 
                 var compound_prefect43 = $('.vNum43').text();
                 if(compound_prefect43){
-                    alert(compound_prefect43);
+                    // alert(compound_prefect43);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -919,7 +919,7 @@
 
                 var compound_prefect44 = $('.vNum44').text();
                 if(compound_prefect44){
-                    alert(compound_prefect44);
+                    // alert(compound_prefect44);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -933,7 +933,7 @@
 
                 var compound_prefect45 = $('.vNum45').text();
                 if(compound_prefect45){
-                    alert(compound_prefect45);
+                    // alert(compound_prefect45);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -947,7 +947,7 @@
 
                 var compound_prefect46 = $('.vNum46').text();
                 if(compound_prefect46){
-                    alert(compound_prefect46);
+                    // alert(compound_prefect46);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -963,7 +963,7 @@
 
                 var compound_prefect47 = $('.vNum47').text();
                 if(compound_prefect47){
-                    alert(compound_prefect47);
+                    // alert(compound_prefect47);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -977,7 +977,7 @@
 
                 var compound_prefect48 = $('.vNum48').text();
                 if(compound_prefect48){
-                    alert(compound_prefect48);
+                    // alert(compound_prefect48);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -991,7 +991,7 @@
 
                 var compound_prefect49 = $('.vNum49').text();
                 if(compound_prefect49){
-                    alert(compound_prefect49);
+                    // alert(compound_prefect49);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',
@@ -1005,7 +1005,7 @@
 
                 var compound_prefect50 = $('.vNum50').text();
                 if(compound_prefect50){
-                    alert(compound_prefect50);
+                    // alert(compound_prefect50);
                     $.ajax({
                         url: 'phpScript/resultPHP/compoundPrefectResult.php',
                         method: 'POST',

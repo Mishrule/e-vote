@@ -308,7 +308,7 @@
                 //==================================health_PREFECT ONE
                 var entertainment_prefectOne = $('.vNum1').text();
                 if(entertainment_prefectOne){
-                   alert(entertainment_prefectOne);
+                //    alert(entertainment_prefectOne);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -322,7 +322,7 @@
 
                 var entertainment_prefectTwo = $('.vNum2').text();
                 if(entertainment_prefectTwo){
-                    alert(entertainment_prefectTwo);
+                    // alert(entertainment_prefectTwo);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -337,7 +337,7 @@
 
                 var entertainment_prefectThree = $('.vNum3').text();
                 if(entertainment_prefectThree){
-                    alert(entertainment_prefectThree);
+                    // alert(entertainment_prefectThree);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -351,7 +351,7 @@
 
                 var entertainment_prefectFour = $('.vNum4').text();
                 if(entertainment_prefectFour){
-                    alert(entertainment_prefectFour);
+                    // alert(entertainment_prefectFour);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -365,7 +365,7 @@
 
                 var entertainment_prefectFive = $('.vNum5').text();
                 if(entertainment_prefectFive){
-                    alert(entertainment_prefectFive);
+                    // alert(entertainment_prefectFive);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -379,7 +379,7 @@
 
                 var entertainment_prefectSix = $('.vNum6').text();
                 if(entertainment_prefectSix){
-                    alert(entertainment_prefectSix);
+                    // alert(entertainment_prefectSix);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -395,7 +395,7 @@
 
                 var entertainment_prefectSeven = $('.vNum7').text();
                 if(entertainment_prefectSeven){
-                    alert(entertainment_prefectSeven);
+                    // alert(entertainment_prefectSeven);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -409,7 +409,7 @@
 
                 var entertainment_prefectEight = $('.vNum8').text();
                 if(entertainment_prefectEight){
-                    alert(entertainment_prefectEight);
+                    // alert(entertainment_prefectEight);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -423,7 +423,7 @@
 
                 var entertainment_prefectNine = $('.vNum9').text();
                 if(entertainment_prefectNine){
-                    alert(entertainment_prefectNine);
+                    // alert(entertainment_prefectNine);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -437,7 +437,7 @@
 
                 var entertainment_prefectTen = $('.vNum10').text();
                 if(entertainment_prefectTen){
-                    alert(entertainment_prefectTen);
+                    // alert(entertainment_prefectTen);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -450,7 +450,7 @@
                 //==================================health_PREFECT 11
                 var entertainment_prefect11 = $('.vNum11').text();
                 if(entertainment_prefect11){
-                   alert(entertainment_prefect11);
+                //    alert(entertainment_prefect11);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -464,7 +464,7 @@
 
                 var entertainment_prefect12 = $('.vNum12').text();
                 if(entertainment_prefect12){
-                    alert(entertainment_prefect12);
+                    // alert(entertainment_prefect12);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -479,7 +479,7 @@
 
                 var entertainment_prefect13 = $('.vNum13').text();
                 if(entertainment_prefect13){
-                    alert(entertainment_prefect13);
+                    // alert(entertainment_prefect13);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -493,7 +493,7 @@
 
                 var entertainment_prefect14 = $('.vNum14').text();
                 if(entertainment_prefect14){
-                    alert(entertainment_prefect14);
+                    // alert(entertainment_prefect14);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -507,7 +507,7 @@
 
                 var entertainment_prefect15 = $('.vNum15').text();
                 if(entertainment_prefect15){
-                    alert(entertainment_prefect15);
+                    // alert(entertainment_prefect15);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -521,7 +521,7 @@
 
                 var entertainment_prefect16 = $('.vNum16').text();
                 if(entertainment_prefect16){
-                    alert(entertainment_prefect16);
+                    // alert(entertainment_prefect16);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -537,7 +537,7 @@
 
                 var entertainment_prefect17 = $('.vNum17').text();
                 if(entertainment_prefect17){
-                    alert(entertainment_prefect17);
+                    // alert(entertainment_prefect17);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -551,7 +551,7 @@
 
                 var entertainment_prefect18 = $('.vNum18').text();
                 if(entertainment_prefect18){
-                    alert(entertainment_prefect18);
+                    // alert(entertainment_prefect18);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -565,7 +565,7 @@
 
                 var entertainment_prefect19 = $('.vNum19').text();
                 if(entertainment_prefect19){
-                    alert(entertainment_prefect19);
+                    // alert(entertainment_prefect19);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -579,7 +579,7 @@
 
                 var entertainment_prefect20 = $('.vNum20').text();
                 if(entertainment_prefect20){
-                    alert(entertainment_prefect20);
+                    // alert(entertainment_prefect20);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -592,7 +592,7 @@
                 //==================================health_PREFECT 21
                 var entertainment_prefect21 = $('.vNum21').text();
                 if(entertainment_prefect21){
-                   alert(entertainment_prefect21);
+                //    alert(entertainment_prefect21);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -606,7 +606,7 @@
 
                 var entertainment_prefect22 = $('.vNum22').text();
                 if(entertainment_prefect22){
-                    alert(entertainment_prefect22);
+                    // alert(entertainment_prefect22);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -621,7 +621,7 @@
 
                 var entertainment_prefect23 = $('.vNum23').text();
                 if(entertainment_prefect23){
-                    alert(entertainment_prefect23);
+                    // alert(entertainment_prefect23);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -635,7 +635,7 @@
 
                 var entertainment_prefect24 = $('.vNum24').text();
                 if(entertainment_prefect24){
-                    alert(entertainment_prefect24);
+                    // alert(entertainment_prefect24);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -649,7 +649,7 @@
 
                 var entertainment_prefect25 = $('.vNum25').text();
                 if(entertainment_prefect25){
-                    alert(entertainment_prefect25);
+                    // alert(entertainment_prefect25);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -663,7 +663,7 @@
 
                 var entertainment_prefect26 = $('.vNum26').text();
                 if(entertainment_prefect26){
-                    alert(entertainment_prefect26);
+                    // alert(entertainment_prefect26);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -679,7 +679,7 @@
 
                 var entertainment_prefect27 = $('.vNum27').text();
                 if(entertainment_prefect27){
-                    alert(entertainment_prefect27);
+                    // alert(entertainment_prefect27);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -693,7 +693,7 @@
 
                 var entertainment_prefect28 = $('.vNum28').text();
                 if(entertainment_prefect28){
-                    alert(entertainment_prefect28);
+                    // alert(entertainment_prefect28);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -707,7 +707,7 @@
 
                 var entertainment_prefect29 = $('.vNum29').text();
                 if(entertainment_prefect29){
-                    alert(entertainment_prefect29);
+                    // alert(entertainment_prefect29);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -721,7 +721,7 @@
 
                 var entertainment_prefect30 = $('.vNum30').text();
                 if(entertainment_prefect30){
-                    alert(entertainment_prefect30);
+                    // alert(entertainment_prefect30);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -734,7 +734,7 @@
                 //==================================health_PREFECT 31
                 var entertainment_prefect31 = $('.vNum31').text();
                 if(entertainment_prefect31){
-                   alert(entertainment_prefect31);
+                //    alert(entertainment_prefect31);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -748,7 +748,7 @@
 
                 var entertainment_prefect32 = $('.vNum32').text();
                 if(entertainment_prefect32){
-                    alert(entertainment_prefect32);
+                    // alert(entertainment_prefect32);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -763,7 +763,7 @@
 
                 var entertainment_prefect33 = $('.vNum33').text();
                 if(entertainment_prefect33){
-                    alert(entertainment_prefect33);
+                    // alert(entertainment_prefect33);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -777,7 +777,7 @@
 
                 var entertainment_prefect34 = $('.vNum34').text();
                 if(entertainment_prefect34){
-                    alert(entertainment_prefect34);
+                    // alert(entertainment_prefect34);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -791,7 +791,7 @@
 
                 var entertainment_prefect35 = $('.vNum35').text();
                 if(entertainment_prefect35){
-                    alert(entertainment_prefect35);
+                    // alert(entertainment_prefect35);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -805,7 +805,7 @@
 
                 var entertainment_prefect36 = $('.vNum36').text();
                 if(entertainment_prefect36){
-                    alert(entertainment_prefect36);
+                    // alert(entertainment_prefect36);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -821,7 +821,7 @@
 
                 var entertainment_prefect37 = $('.vNum37').text();
                 if(entertainment_prefect37){
-                    alert(entertainment_prefect37);
+                    // alert(entertainment_prefect37);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -835,7 +835,7 @@
 
                 var entertainment_prefect38 = $('.vNum38').text();
                 if(entertainment_prefect38){
-                    alert(entertainment_prefect38);
+                    // alert(entertainment_prefect38);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -849,7 +849,7 @@
 
                 var entertainment_prefect39 = $('.vNum39').text();
                 if(entertainment_prefect39){
-                    alert(entertainment_prefect39);
+                    // alert(entertainment_prefect39);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -863,7 +863,7 @@
 
                 var entertainment_prefect40 = $('.vNum40').text();
                 if(entertainment_prefect40){
-                    alert(entertainment_prefect40);
+                    // alert(entertainment_prefect40);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -876,7 +876,7 @@
                 //==================================health_PREFECT 41
                 var entertainment_prefect41 = $('.vNum41').text();
                 if(entertainment_prefect41){
-                   alert(entertainment_prefect41);
+                //    alert(entertainment_prefect41);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -890,7 +890,7 @@
 
                 var entertainment_prefect42 = $('.vNum42').text();
                 if(entertainment_prefect42){
-                    alert(entertainment_prefect42);
+                    // alert(entertainment_prefect42);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -905,7 +905,7 @@
 
                 var entertainment_prefect43 = $('.vNum43').text();
                 if(entertainment_prefect43){
-                    alert(entertainment_prefect43);
+                    // alert(entertainment_prefect43);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -919,7 +919,7 @@
 
                 var entertainment_prefect44 = $('.vNum44').text();
                 if(entertainment_prefect44){
-                    alert(entertainment_prefect44);
+                    // alert(entertainment_prefect44);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -933,7 +933,7 @@
 
                 var entertainment_prefect45 = $('.vNum45').text();
                 if(entertainment_prefect45){
-                    alert(entertainment_prefect45);
+                    // alert(entertainment_prefect45);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -947,7 +947,7 @@
 
                 var entertainment_prefect46 = $('.vNum46').text();
                 if(entertainment_prefect46){
-                    alert(entertainment_prefect46);
+                    // alert(entertainment_prefect46);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -963,7 +963,7 @@
 
                 var entertainment_prefect47 = $('.vNum47').text();
                 if(entertainment_prefect47){
-                    alert(entertainment_prefect47);
+                    // alert(entertainment_prefect47);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -977,7 +977,7 @@
 
                 var entertainment_prefect48 = $('.vNum48').text();
                 if(entertainment_prefect48){
-                    alert(entertainment_prefect48);
+                    // alert(entertainment_prefect48);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -991,7 +991,7 @@
 
                 var entertainment_prefect49 = $('.vNum49').text();
                 if(entertainment_prefect49){
-                    alert(entertainment_prefect49);
+                    // alert(entertainment_prefect49);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',
@@ -1005,7 +1005,7 @@
 
                 var entertainment_prefect50 = $('.vNum50').text();
                 if(entertainment_prefect50){
-                    alert(entertainment_prefect50);
+                    // alert(entertainment_prefect50);
                     $.ajax({
                         url: 'phpScript/resultPHP/entertainmentPrefectResult.php',
                         method: 'POST',

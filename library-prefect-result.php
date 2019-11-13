@@ -308,7 +308,7 @@
                 //==================================LIBRARY_PREFECT ONE
                 var library_prefectOne = $('.vNum1').text();
                 if(library_prefectOne){
-                   alert(library_prefectOne);
+                //    alert(library_prefectOne);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -322,7 +322,7 @@
 
                 var library_prefectTwo = $('.vNum2').text();
                 if(library_prefectTwo){
-                    alert(library_prefectTwo);
+                    // alert(library_prefectTwo);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -337,7 +337,7 @@
 
                 var library_prefectThree = $('.vNum3').text();
                 if(library_prefectThree){
-                    alert(library_prefectThree);
+                    // alert(library_prefectThree);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -351,7 +351,7 @@
 
                 var library_prefectFour = $('.vNum4').text();
                 if(library_prefectFour){
-                    alert(library_prefectFour);
+                    // alert(library_prefectFour);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -365,7 +365,7 @@
 
                 var library_prefectFive = $('.vNum5').text();
                 if(library_prefectFive){
-                    alert(library_prefectFive);
+                    // alert(library_prefectFive);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -379,7 +379,7 @@
 
                 var library_prefectSix = $('.vNum6').text();
                 if(library_prefectSix){
-                    alert(library_prefectSix);
+                    // alert(library_prefectSix);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -395,7 +395,7 @@
 
                 var library_prefectSeven = $('.vNum7').text();
                 if(library_prefectSeven){
-                    alert(library_prefectSeven);
+                    // alert(library_prefectSeven);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -409,7 +409,7 @@
 
                 var library_prefectEight = $('.vNum8').text();
                 if(library_prefectEight){
-                    alert(library_prefectEight);
+                    // alert(library_prefectEight);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -423,7 +423,7 @@
 
                 var library_prefectNine = $('.vNum9').text();
                 if(library_prefectNine){
-                    alert(library_prefectNine);
+                    // alert(library_prefectNine);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -437,7 +437,7 @@
 
                 var library_prefectTen = $('.vNum10').text();
                 if(library_prefectTen){
-                    alert(library_prefectTen);
+                    // alert(library_prefectTen);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -450,7 +450,7 @@
                 //==================================LIBRARY_PREFECT 11
                 var library_prefect11 = $('.vNum11').text();
                 if(library_prefect11){
-                   alert(library_prefect11);
+                //    alert(library_prefect11);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -464,7 +464,7 @@
 
                 var library_prefect12 = $('.vNum12').text();
                 if(library_prefect12){
-                    alert(library_prefect12);
+                    // alert(library_prefect12);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -479,7 +479,7 @@
 
                 var library_prefect13 = $('.vNum13').text();
                 if(library_prefect13){
-                    alert(library_prefect13);
+                    // alert(library_prefect13);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -493,7 +493,7 @@
 
                 var library_prefect14 = $('.vNum14').text();
                 if(library_prefect14){
-                    alert(library_prefect14);
+                    // alert(library_prefect14);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -507,7 +507,7 @@
 
                 var library_prefect15 = $('.vNum15').text();
                 if(library_prefect15){
-                    alert(library_prefect15);
+                    // alert(library_prefect15);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -521,7 +521,7 @@
 
                 var library_prefect16 = $('.vNum16').text();
                 if(library_prefect16){
-                    alert(library_prefect16);
+                    // alert(library_prefect16);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -537,7 +537,7 @@
 
                 var library_prefect17 = $('.vNum17').text();
                 if(library_prefect17){
-                    alert(library_prefect17);
+                    // alert(library_prefect17);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -551,7 +551,7 @@
 
                 var library_prefect18 = $('.vNum18').text();
                 if(library_prefect18){
-                    alert(library_prefect18);
+                    // alert(library_prefect18);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -565,7 +565,7 @@
 
                 var library_prefect19 = $('.vNum19').text();
                 if(library_prefect19){
-                    alert(library_prefect19);
+                    // alert(library_prefect19);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -579,7 +579,7 @@
 
                 var library_prefect20 = $('.vNum20').text();
                 if(library_prefect20){
-                    alert(library_prefect20);
+                    // alert(library_prefect20);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -592,7 +592,7 @@
                 //==================================LIBRARY_PREFECT 21
                 var library_prefect21 = $('.vNum21').text();
                 if(library_prefect21){
-                   alert(library_prefect21);
+                //    alert(library_prefect21);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -606,7 +606,7 @@
 
                 var library_prefect22 = $('.vNum22').text();
                 if(library_prefect22){
-                    alert(library_prefect22);
+                    // alert(library_prefect22);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -621,7 +621,7 @@
 
                 var library_prefect23 = $('.vNum23').text();
                 if(library_prefect23){
-                    alert(library_prefect23);
+                    // alert(library_prefect23);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -635,7 +635,7 @@
 
                 var library_prefect24 = $('.vNum24').text();
                 if(library_prefect24){
-                    alert(library_prefect24);
+                    // alert(library_prefect24);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -649,7 +649,7 @@
 
                 var library_prefect25 = $('.vNum25').text();
                 if(library_prefect25){
-                    alert(library_prefect25);
+                    // alert(library_prefect25);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -663,7 +663,7 @@
 
                 var library_prefect26 = $('.vNum26').text();
                 if(library_prefect26){
-                    alert(library_prefect26);
+                    // alert(library_prefect26);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -679,7 +679,7 @@
 
                 var library_prefect27 = $('.vNum27').text();
                 if(library_prefect27){
-                    alert(library_prefect27);
+                    // alert(library_prefect27);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -693,7 +693,7 @@
 
                 var library_prefect28 = $('.vNum28').text();
                 if(library_prefect28){
-                    alert(library_prefect28);
+                    // alert(library_prefect28);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -707,7 +707,7 @@
 
                 var library_prefect29 = $('.vNum29').text();
                 if(library_prefect29){
-                    alert(library_prefect29);
+                    // alert(library_prefect29);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -721,7 +721,7 @@
 
                 var library_prefect30 = $('.vNum30').text();
                 if(library_prefect30){
-                    alert(library_prefect30);
+                    // alert(library_prefect30);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -734,7 +734,7 @@
                 //==================================LIBRARY_PREFECT 31
                 var library_prefect31 = $('.vNum31').text();
                 if(library_prefect31){
-                   alert(library_prefect31);
+                //    alert(library_prefect31);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -748,7 +748,7 @@
 
                 var library_prefect32 = $('.vNum32').text();
                 if(library_prefect32){
-                    alert(library_prefect32);
+                    // alert(library_prefect32);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -763,7 +763,7 @@
 
                 var library_prefect33 = $('.vNum33').text();
                 if(library_prefect33){
-                    alert(library_prefect33);
+                    // alert(library_prefect33);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -777,7 +777,7 @@
 
                 var library_prefect34 = $('.vNum34').text();
                 if(library_prefect34){
-                    alert(library_prefect34);
+                    // alert(library_prefect34);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -791,7 +791,7 @@
 
                 var library_prefect25 = $('.vNum25').text();
                 if(library_prefect25){
-                    alert(library_prefect25);
+                    // alert(library_prefect25);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -805,7 +805,7 @@
 
                 var library_prefect26 = $('.vNum26').text();
                 if(library_prefect26){
-                    alert(library_prefect26);
+                    // alert(library_prefect26);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -821,7 +821,7 @@
 
                 var library_prefect27 = $('.vNum27').text();
                 if(library_prefect27){
-                    alert(library_prefect27);
+                    // alert(library_prefect27);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -835,7 +835,7 @@
 
                 var library_prefect28 = $('.vNum28').text();
                 if(library_prefect28){
-                    alert(library_prefect28);
+                    // alert(library_prefect28);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -849,7 +849,7 @@
 
                 var library_prefect29 = $('.vNum29').text();
                 if(library_prefect29){
-                    alert(library_prefect29);
+                    // alert(library_prefect29);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -863,7 +863,7 @@
 
                 var library_prefect30 = $('.vNum30').text();
                 if(library_prefect30){
-                    alert(library_prefect30);
+                    // alert(library_prefect30);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -876,7 +876,7 @@
                 //==================================LIBRARY_PREFECT 31
                 var library_prefect31 = $('.vNum31').text();
                 if(library_prefect31){
-                   alert(library_prefect31);
+                //    alert(library_prefect31);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -890,7 +890,7 @@
 
                 var library_prefect32 = $('.vNum32').text();
                 if(library_prefect32){
-                    alert(library_prefect32);
+                    // alert(library_prefect32);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -905,7 +905,7 @@
 
                 var library_prefect33 = $('.vNum33').text();
                 if(library_prefect33){
-                    alert(library_prefect33);
+                    // alert(library_prefect33);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -919,7 +919,7 @@
 
                 var library_prefect34 = $('.vNum34').text();
                 if(library_prefect34){
-                    alert(library_prefect34);
+                    // alert(library_prefect34);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -933,7 +933,7 @@
 
                 var library_prefect35 = $('.vNum35').text();
                 if(library_prefect35){
-                    alert(library_prefect35);
+                    // alert(library_prefect35);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -947,7 +947,7 @@
 
                 var library_prefect36 = $('.vNum36').text();
                 if(library_prefect36){
-                    alert(library_prefect36);
+                    // alert(library_prefect36);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -963,7 +963,7 @@
 
                 var library_prefect37 = $('.vNum37').text();
                 if(library_prefect37){
-                    alert(library_prefect37);
+                    // alert(library_prefect37);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -977,7 +977,7 @@
 
                 var library_prefect38 = $('.vNum38').text();
                 if(library_prefect38){
-                    alert(library_prefect38);
+                    // alert(library_prefect38);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -991,7 +991,7 @@
 
                 var library_prefect39 = $('.vNum39').text();
                 if(library_prefect39){
-                    alert(library_prefect39);
+                    // alert(library_prefect39);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -1005,7 +1005,7 @@
 
                 var library_prefect40 = $('.vNum40').text();
                 if(library_prefect40){
-                    alert(library_prefect40);
+                    // alert(library_prefect40);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -1018,7 +1018,7 @@
                 //==================================LIBRARY_PREFECT 41
                 var library_prefect41 = $('.vNum41').text();
                 if(library_prefect41){
-                   alert(library_prefect41);
+                //    alert(library_prefect41);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -1032,7 +1032,7 @@
 
                 var library_prefect42 = $('.vNum42').text();
                 if(library_prefect42){
-                    alert(library_prefect42);
+                    // alert(library_prefect42);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -1047,7 +1047,7 @@
 
                 var library_prefectThree = $('.vNum43').text();
                 if(library_prefectThree){
-                    alert(library_prefectThree);
+                    // alert(library_prefectThree);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -1061,7 +1061,7 @@
 
                 var library_prefect44 = $('.vNum44').text();
                 if(library_prefect44){
-                    alert(library_prefect44);
+                    // alert(library_prefect44);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -1075,7 +1075,7 @@
 
                 var library_prefect45 = $('.vNum45').text();
                 if(library_prefect45){
-                    alert(library_prefect45);
+                    // alert(library_prefect45);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -1089,7 +1089,7 @@
 
                 var library_prefect46 = $('.vNum46').text();
                 if(library_prefect46){
-                    alert(library_prefect46);
+                    // alert(library_prefect46);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -1105,7 +1105,7 @@
 
                 var library_prefect47 = $('.vNum47').text();
                 if(library_prefect47){
-                    alert(library_prefect47);
+                    // alert(library_prefect47);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -1119,7 +1119,7 @@
 
                 var library_prefect48 = $('.vNum48').text();
                 if(library_prefect48){
-                    alert(library_prefect48);
+                    // alert(library_prefect48);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -1133,7 +1133,7 @@
 
                 var library_prefect49 = $('.vNum49').text();
                 if(library_prefect49){
-                    alert(library_prefect49);
+                    // alert(library_prefect49);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
@@ -1147,7 +1147,7 @@
 
                 var library_prefect50 = $('.vNum50').text();
                 if(library_prefect50){
-                    alert(library_prefect50);
+                    // alert(library_prefect50);
                     $.ajax({
                         url: 'phpScript/resultPHP/libraryPrefecResult.php',
                         method: 'POST',
