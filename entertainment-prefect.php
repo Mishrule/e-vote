@@ -187,20 +187,23 @@
 
 </html>
 <script>
-    $(document).ready(function(){
-        $(document).on('click', '.vote', function(){
-            var entertainment_id = $(this).attr('id');
-            var entertainmentSession = document.getElementById('entertainment_session').textContent;
-            // alert(entertainmentSession);
-            $.ajax({
-                url:'phpScript/voteScript.php',
-                method:'POST',
-                data:{entertainment_id:entertainment_id, entertainmentSession:entertainmentSession},
-                success:function(data){
-                    // alert(data);
-                    window.location = 'prep-prefect.php' ;
-                }
-            })
-        });
+$(document).ready(function() {
+    $(document).on('click', '.vote', function() {
+        var entertainment_id = $(this).attr('id');
+        var entertainmentSession = document.getElementById('entertainment_session').textContent;
+        // alert(entertainmentSession);
+        $.ajax({
+            url: 'phpScript/voteScript.php',
+            method: 'POST',
+            data: {
+                entertainment_id: entertainment_id,
+                entertainmentSession: entertainmentSession
+            },
+            success: function(data) {
+                // alert(data);
+                window.location = 'prep-prefect.php';
+            }
+        })
     });
+});
 </script>

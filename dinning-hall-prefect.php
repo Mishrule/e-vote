@@ -127,58 +127,7 @@
                             }
                             echo $dinningHallPrefectDisplayOUTPUT;
                         ?>
-                        <!-- <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="health-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="health-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="health-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="health-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div> -->
+                       
                     </div>
                 </div>
                 <!--end container-->

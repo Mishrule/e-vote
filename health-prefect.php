@@ -127,58 +127,7 @@
                             }
                             echo $healthPrefectDisplayOUTPUT;
                         ?>
-                        <!-- <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="entertainment-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="entertainment-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="entertainment-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="entertainment-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div> -->
+                        
                     </div>
                 </div>
                 <!--end container-->
@@ -238,20 +187,23 @@
 
 </html>
 <script>
-    $(document).ready(function(){
-        $(document).on('click', '.vote', function(){
-            var health_id = $(this).attr('id');
-            var healthSession = document.getElementById('health_session').textContent;
-            // alert(healthSession);
-            $.ajax({
-                url:'phpScript/voteScript.php',
-                method:'POST',
-                data:{health_id:health_id, healthSession:healthSession},
-                success:function(data){
-                    // alert(data);
-                    window.location = 'entertainment-prefect.php' ;
-                }
-            })
-        });
+$(document).ready(function() {
+    $(document).on('click', '.vote', function() {
+        var health_id = $(this).attr('id');
+        var healthSession = document.getElementById('health_session').textContent;
+        // alert(healthSession);
+        $.ajax({
+            url: 'phpScript/voteScript.php',
+            method: 'POST',
+            data: {
+                health_id: health_id,
+                healthSession: healthSession
+            },
+            success: function(data) {
+                // alert(data);
+                window.location = 'entertainment-prefect.php';
+            }
+        })
     });
+});
 </script>

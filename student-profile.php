@@ -1,5 +1,6 @@
 <?php
     include_once('phpScript/votedb.php');
+    include('userSession.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -106,17 +107,17 @@
                                     <li class="divider"></li>
                                     <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a>
                                     </li>
-                                    <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
+                                    <li><a href="user-logout.php"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
                                     </li>
                                 </ul>
                                 <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn"
-                                    href="#" data-activates="profile-dropdown">Kyei Ernest<i
+                                    href="#" data-activates="profile-dropdown">Welcome <?php echo $login_user; ?><i
                                         class="mdi-navigation-arrow-drop-down right"></i></a>
                                 <p class="user-roal">Administrator</p>
                             </div>
                         </div>
                     </li>
-                    <li class="bold"><a href="dashboard.html" class="waves-effect waves-cyan"><i
+                    <li class="bold"><a href="dashboard.php" class="waves-effect waves-cyan"><i
                                 class="mdi-action-dashboard"></i> Dashboard</a>
                     </li>
                     <li class="no-padding">
@@ -125,16 +126,16 @@
                                         class="mdi-action-view-carousel"></i> REGISTRATIONS</a>
                                 <div class="collapsible-body">
                                     <ul>
-                                        <li><a href="student-registration.html">STUDENT</a>
+                                        <li><a href="student-registration.php">STUDENT</a>
                                         </li>
-                                        <li><a href="prefect-registration.html">PREFECT</a>
+                                        <li><a href="prefect-registration.php">PREFECT</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                         </ul>
                     </li>
-                    <li class="bold"><a href="position.html" class="waves-effect waves-cyan"><i
+                    <li class="bold"><a href="position.php" class="waves-effect waves-cyan"><i
                                 class="mdi-communication-email"></i> CREATE POSITIONS
                             <!--<span class="new badge">4</span>--></a>
                     </li>
@@ -161,7 +162,7 @@
                                         </li>
                                         <li><a href="auth.php" target="_blank">AUTHENTICATION</a>
                                         </li>
-                                        
+
 
                                     </ul>
                                 </div>
@@ -171,17 +172,17 @@
                                     <!--<span class="new badge"></span>--></a>
                                 <div class="collapsible-body">
                                     <ul>
-                                        <li><a href="vote-progress.html" target="_blank">VOTE PROGRESS</a>
+                                        <li><a href="vote-progress.php" target="_blank">VOTE PROGRESS</a>
                                         </li>
                                         <li><a href="school-prefect-result.php" target="_blank">DISPLAY RESULT</a>
                                         </li>
-                                        
+
                                     </ul>
                                 </div>
                             </li>
 
 
-                            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i
+                            <!--<li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i
                                         class="mdi-editor-insert-chart"></i> RESULT CHARTS</a>
                                 <div class="collapsible-body">
                                     <ul>
@@ -190,7 +191,7 @@
 
                                     </ul>
                                 </div>
-                            </li>
+                            </li>-->
                         </ul>
                     </li>
                     <li class="li-hover">
@@ -199,11 +200,11 @@
                     <li class="li-hover">
                         <p class="ultra-small margin more-text">USER ACCOUNT</p>
                     </li>
-                    <li><a href="user-registration.html"><i class="mdi-action-verified-user"></i> CREATE USER </a>
+                    <li><a href="user-registration.php"><i class="mdi-action-verified-user"></i> CREATE USER </a>
                     </li>
-                    <li><a href="user-profile.html"><i class="mdi-image-grid-on"></i> USER PROFILE</a>
+                    <li><a href="user-profile.php"><i class="mdi-image-grid-on"></i> USER PROFILE</a>
                     </li>
-                    <li><a href="manage-user.html"><i class="mdi-editor-format-color-fill"></i>MANAGE USERS</a>
+                    <li><a href="manage-user.php"><i class="mdi-editor-format-color-fill"></i>MANAGE USERS</a>
                     </li>
 
                 </ul>
@@ -238,7 +239,8 @@
                                                     <tr>
                                                         <td>
                                                             <div class="input-field col s12 m12 l12">
-                                                                <input id="searchByAccountNo" name="searchByAccountNo"  type="text">
+                                                                <input id="searchByAccountNo" name="searchByAccountNo"
+                                                                    type="text">
                                                                 <label for="searchByAccountNo">Search By Account
                                                                     No.</label>
                                                             </div>
@@ -246,7 +248,8 @@
                                                         <td>
                                                             <div class="input-field col s12 m6 l6">
                                                                 <button class="btn cyan waves-effect waves-light right"
-                                                                    type="button" id="action" name="action" value="action">Search
+                                                                    type="button" id="action" name="action"
+                                                                    value="action">Search
                                                                     <i class="mdi-content-send right"></i>
                                                                 </button>
                                                             </div>
@@ -254,9 +257,9 @@
                                                     </tr>
                                                 </table>
                                             </div>
-                                             
+
                                             <div class="col s12 m4 l4">
-                                               
+
                                                 <div class="input-field col s12">
                                                     <select id="profileLimit" name="profileLimit">
                                                         <option value="10">10</option>
@@ -270,12 +273,18 @@
                                             </div>
                                         </div>
                                         <div class="col s12 m12 l12">
-                                            <div align="center"><p><span><marquee><h4 style="color:red;" id="delVoter"></h4></marquee></span></p></div>
+                                            <div align="center">
+                                                <p><span>
+                                                        <marquee>
+                                                            <h4 style="color:red;" id="delVoter"></h4>
+                                                        </marquee>
+                                                    </span></p>
+                                            </div>
                                             <div class="row">
-                
-                                                    <div id="showTable"></div>
- 
-                                                    </tbody>
+
+                                                <div id="showTable"></div>
+
+                                                </tbody>
                                                 </table>
                                             </div>
                                         </div>
@@ -360,73 +369,84 @@
 
 </html>
 <script>
-    $(document).ready(function(){
-        
-        let show_Table = document.querySelector('#showTable');
-        displayProfile();
-        // limitShow();
-        function displayProfile(){
-            let profile_Limit = document.querySelector('#profileLimit').value;
-            let show = "showProfile";
-            $.ajax({
-                url:'phpScript/studentProfile.php',
-                method:'POST',
-                data:{profile_Limit:profile_Limit, show:show},
-                success:function(data){
-                    show_Table.innerHTML= data;
-                }
-            });
-        };
-//==============================SET LIMIT
-        $(document).on('change','#profileLimit', function(){
-           let selectLimit = document.querySelector('#profileLimit').value;
-           $.ajax({
-                url:'phpScript/studentProfile.php',
-                method:'POST',
-                data:{selectLimit:selectLimit},
-                success:function(data){
-                    show_Table.innerHTML= data;
-                }
-            });
-        });
+$(document).ready(function() {
 
-//==============================SEARCH
-        document.querySelector('#action').addEventListener('click', function(){
+    let show_Table = document.querySelector('#showTable');
+    displayProfile();
+    // limitShow();
+    function displayProfile() {
+        let profile_Limit = document.querySelector('#profileLimit').value;
+        let show = "showProfile";
+        $.ajax({
+            url: 'phpScript/studentProfile.php',
+            method: 'POST',
+            data: {
+                profile_Limit: profile_Limit,
+                show: show
+            },
+            success: function(data) {
+                show_Table.innerHTML = data;
+            }
+        });
+    };
+    //==============================SET LIMIT
+    $(document).on('change', '#profileLimit', function() {
+        let selectLimit = document.querySelector('#profileLimit').value;
+        $.ajax({
+            url: 'phpScript/studentProfile.php',
+            method: 'POST',
+            data: {
+                selectLimit: selectLimit
+            },
+            success: function(data) {
+                show_Table.innerHTML = data;
+            }
+        });
+    });
+
+    //==============================SEARCH
+    document.querySelector('#action').addEventListener('click', function() {
         //    let profileLimits = document.querySelector('#profileLimit').value;
-           let profileAction = document.querySelector('#action').value;
-           let profileSearch = document.querySelector('#searchByAccountNo').value;
+        let profileAction = document.querySelector('#action').value;
+        let profileSearch = document.querySelector('#searchByAccountNo').value;
 
-          $.ajax({
-                url:'phpScript/studentProfile.php',
-                method:'POST',
-                data:{profileAction:profileAction, profileSearch:profileSearch},
-                success:function(data){
-                    show_Table.innerHTML= data;
-                }
-            })
-            
-        });
-//==============================| DELETE
-        $(document).on('click', '.delete', function(){
-            var id= $(this).attr("id");
-            var actionDel = 'delete';
-            // alert(id);
-            if(confirm('ARE YOU SURE YOU WANT TO DELETE THE VOTER')){
-                $.ajax({
-                    url:'phpScript/studentProfile.php',
-                    method:'POST',
-                    data:{id:id, actionDel:actionDel},
-                    success:function(data){
-                        document.querySelector('#delVoter').innerHTML = data;
-                        displayProfile();
-                        setTimeout(()=>{
-                            document.querySelector('#delVoter').remove();
-                        }, 5000)
-                    }
-                });
-            }else{
-                return false;
+        $.ajax({
+            url: 'phpScript/studentProfile.php',
+            method: 'POST',
+            data: {
+                profileAction: profileAction,
+                profileSearch: profileSearch
+            },
+            success: function(data) {
+                show_Table.innerHTML = data;
             }
         })
+
+    });
+    //==============================| DELETE
+    $(document).on('click', '.delete', function() {
+        var id = $(this).attr("id");
+        var actionDel = 'delete';
+        // alert(id);
+        if (confirm('ARE YOU SURE YOU WANT TO DELETE THE VOTER')) {
+            $.ajax({
+                url: 'phpScript/studentProfile.php',
+                method: 'POST',
+                data: {
+                    id: id,
+                    actionDel: actionDel
+                },
+                success: function(data) {
+                    document.querySelector('#delVoter').innerHTML = data;
+                    displayProfile();
+                    setTimeout(() => {
+                        document.querySelector('#delVoter').remove();
+                    }, 5000)
+                }
+            });
+        } else {
+            return false;
+        }
     })
+})
 </script>

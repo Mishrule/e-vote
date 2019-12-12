@@ -1,6 +1,7 @@
 <?php
     $msg = '';
     include_once('phpScript/votedb.php');
+    include('userSession.php');
     if(isset($_POST['action'])){
         // $voterID = mysqli_real_escape_string($conn, $_POST['voterID']);
         $first_nameText = mysqli_real_escape_string($conn, $_POST['first_name']);
@@ -98,7 +99,7 @@
                                     Voting System</span></h1>
                         </li>
                     </ul>
-                   
+
                 </div>
             </nav>
         </div>
@@ -132,17 +133,17 @@
                                     <li class="divider"></li>
                                     <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a>
                                     </li>
-                                    <li><a href="vote-logout.php"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
+                                    <li><a href="user-logout.php"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
                                     </li>
                                 </ul>
                                 <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn"
-                                    href="#" data-activates="profile-dropdown">Kyei Ernest<i
+                                    href="#" data-activates="profile-dropdown">Welcome <?php echo $login_user; ?><i
                                         class="mdi-navigation-arrow-drop-down right"></i></a>
                                 <p class="user-roal">Administrator</p>
                             </div>
                         </div>
                     </li>
-                    <li class="bold"><a href="dashboard.html" class="waves-effect waves-cyan"><i
+                    <li class="bold"><a href="dashboard.php" class="waves-effect waves-cyan"><i
                                 class="mdi-action-dashboard"></i> Dashboard</a>
                     </li>
                     <li class="no-padding">
@@ -151,16 +152,16 @@
                                         class="mdi-action-view-carousel"></i> REGISTRATIONS</a>
                                 <div class="collapsible-body">
                                     <ul>
-                                        <li><a href="student-registration.html">STUDENT</a>
+                                        <li><a href="student-registration.php">STUDENT</a>
                                         </li>
-                                        <li class="active"><a href="prefect-registration.html">PREFECT</a>
+                                        <li class="active"><a href="prefect-registration.php">PREFECT</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                         </ul>
                     </li>
-                    <li class="bold"><a href="position.html" class="waves-effect waves-cyan"><i
+                    <li class="bold"><a href="position.php" class="waves-effect waves-cyan"><i
                                 class="mdi-communication-email"></i> CREATE POSITIONS
                             <!--<span class="new badge">4</span>--></a>
                     </li>
@@ -187,7 +188,7 @@
                                         </li>
                                         <li><a href="auth.php" target="_blank">AUTHENTICATION</a>
                                         </li>
-                                        
+
 
                                     </ul>
                                 </div>
@@ -197,18 +198,18 @@
                                     <!--<span class="new badge"></span>--></a>
                                 <div class="collapsible-body">
                                     <ul>
-                                        <li><a href="vote-progress.html" target="_blank">VOTE PROGRESS</a>
+                                        <li><a href="vote-progress.php" target="_blank">VOTE PROGRESS</a>
                                         </li>
                                         <li><a href="school-prefect-result.php" target="_blank">DISPLAY RESULT</a>
                                         </li>
-                                        
+
 
                                     </ul>
                                 </div>
                             </li>
 
 
-                            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i
+                            <!-- <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i
                                         class="mdi-editor-insert-chart"></i> RESULT CHARTS</a>
                                 <div class="collapsible-body">
                                     <ul>
@@ -217,7 +218,7 @@
 
                                     </ul>
                                 </div>
-                            </li>
+                            </li>-->
                         </ul>
                     </li>
                     <li class="li-hover">
@@ -226,11 +227,11 @@
                     <li class="li-hover">
                         <p class="ultra-small margin more-text">USER ACCOUNT</p>
                     </li>
-                    <li><a href="user-registration.html"><i class="mdi-action-verified-user"></i> CREATE USER </a>
+                    <li><a href="user-registration.php"><i class="mdi-action-verified-user"></i> CREATE USER </a>
                     </li>
-                    <li><a href="user-profile.html"><i class="mdi-image-grid-on"></i> USER PROFILE</a>
+                    <li><a href="user-profile.php"><i class="mdi-image-grid-on"></i> USER PROFILE</a>
                     </li>
-                    <li><a href="manage-user.html"><i class="mdi-editor-format-color-fill"></i>MANAGE USERS</a>
+                    <li><a href="manage-user.php"><i class="mdi-editor-format-color-fill"></i>MANAGE USERS</a>
                     </li>
 
                 </ul>
@@ -262,13 +263,14 @@
                                         <a class="btn-floating btn-move-up waves-effect waves-light darken-2 right"><i
                                                 class="mdi-content-add activator"></i></a>
                                         <div class="col s12 m12 l12">
-                                           <h4 id="removeStatus" style="color: red;"><?php  echo $msg; ?></h4>
+                                            <h4 id="removeStatus" style="color: red;"><?php  echo $msg; ?></h4>
                                         </div>
                                         <div class="col s12 m12 l12">
-                                           
+
                                             <div class="row">
-                                                <form class="col s12" action="<?php $_PHP_SELF ?>" id="prefectForm"  method="POST" enctype="multipart/form-data">
-                                                <div class="row">
+                                                <form class="col s12" action="<?php $_PHP_SELF ?>" id="prefectForm"
+                                                    method="POST" enctype="multipart/form-data">
+                                                    <div class="row">
                                                         <!-- <div class="input-field col s12">
                                                             <input id="voterID" name="voterID" type="text" required>
                                                             <label for="voterID">Voter ID</label>
@@ -276,13 +278,15 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="input-field col s12">
-                                                            <input id="first_name" name="first_name" type="text" required>
+                                                            <input id="first_name" name="first_name" type="text"
+                                                                required>
                                                             <label for="first_name">FullName (Surname first)</label>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="input-field col s12">
-                                                            <input id="accountNumber" name="accountNumber" type="text" required>
+                                                            <input id="accountNumber" name="accountNumber" type="text"
+                                                                required>
                                                             <label for="accountNumber">Account NO.</label>
                                                         </div>
                                                     </div>
@@ -292,12 +296,15 @@
                                                                 <option selected>Select your Position
                                                                 </option>
                                                                 <option value="school_prefect">School Prefect</option>
-                                                                <option value="dinning_hall_prefect">Dinning Hall Prefect</option>
+                                                                <option value="dinning_hall_prefect">Dinning Hall
+                                                                    Prefect</option>
                                                                 <option value="health_prefect">Health Prefect</option>
-                                                                <option value="entertainment_prefect">Entertainment Prefect</option>
+                                                                <option value="entertainment_prefect">Entertainment
+                                                                    Prefect</option>
                                                                 <option value="prep_prefect">Prep Prefect</option>
                                                                 <option value="library_prefect">Library Prefect</option>
-                                                                <option value="compound_prefect">Compound Prefect </option>
+                                                                <option value="compound_prefect">Compound Prefect
+                                                                </option>
 
                                                             </select>
                                                             <label>Positions</label>
@@ -305,7 +312,8 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="input-field col s12">
-                                                            <input id="form_class" name="form_class" type="text" required>
+                                                            <input id="form_class" name="form_class" type="text"
+                                                                required>
                                                             <label for="form_class">Form/Class</label>
                                                         </div>
                                                     </div>
@@ -329,10 +337,12 @@
                                                         <div class="file-field input-field">
                                                             <div class="btn">
                                                                 <span>File</span>
-                                                                <input id="prefectImage" name="prefectImage" type="file" required>
+                                                                <input id="prefectImage" name="prefectImage" type="file"
+                                                                    required>
                                                             </div>
                                                             <div class="file-path-wrapper">
-                                                                <input class="file-path validate" id="prefectImage" name="prefectImage" type="text">
+                                                                <input class="file-path validate" id="prefectImage"
+                                                                    name="prefectImage" type="text">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -341,7 +351,8 @@
                                                         <!-- <div class="row"> -->
                                                         <div class="input-field col s12">
                                                             <button class="btn cyan waves-effect waves-light right"
-                                                                type="submit" id="action" name="action" value="action" >Register Prefect
+                                                                type="submit" id="action" name="action"
+                                                                value="action">Register Prefect
                                                                 <i class="mdi-content-send right"></i>
                                                             </button>
                                                         </div>
@@ -403,7 +414,7 @@
                                                     }
                                                 ?>
                                                 <?php echo $displayRegisteredStudent; ?>
-                                                
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -425,7 +436,8 @@
                                                                 }
                                                                 
                                                             ?>
-                                            <p class="margin white-text">List of Prefect (Total:<?php echo $totalPrefectSHOW;?> Registed Candidates)</p>
+                                            <p class="margin white-text">List of Prefect
+                                                (Total:<?php echo $totalPrefectSHOW;?> Registed Candidates)</p>
                                             <!-- <canvas id="trending-radar-chart" height="114"></canvas> -->
                                         </div>
                                     </div>
@@ -505,7 +517,7 @@
                                                         <td>5.</td>
                                                         <td>Prep Prefect</td>
                                                         <td>
-                                                             <?php
+                                                            <?php
                                                                 $prepPrefectMSG='prep_prefect'; $prepPrefectSHOW='';
                                                                 $prepPrefectSQL = "SELECT COUNT(position) AS preppos FROM candidate_registration WHERE position= '$prepPrefectMSG'";
                                                                 $prepPrefectRESULT = mysqli_query($conn, $prepPrefectSQL);
@@ -550,7 +562,7 @@
                                             </table>
                                         </div>
                                     </div>
-                                   
+
                                 </div>
                             </div>
                         </div>
@@ -569,7 +581,7 @@
 
 
 
-                    
+
 
                 </div>
                 <!--end container-->
@@ -764,24 +776,24 @@
 
 </html>
 <script>
-    $(document).ready(function(){
-        let cleaStatusBTN = document.getElementById('removeStatus');
-         
-        clearStatus();
-       
-       function clearStatus(){
-           cleaStatusBTN.addEventListener('click', clearPrefect);
- 
-            function clearPrefect(){
-                // e.preventDefault();
-                 document.querySelector('#removeStatus').remove();
+$(document).ready(function() {
+    let cleaStatusBTN = document.getElementById('removeStatus');
+
+    clearStatus();
+
+    function clearStatus() {
+        cleaStatusBTN.addEventListener('click', clearPrefect);
+
+        function clearPrefect() {
+            // e.preventDefault();
+            document.querySelector('#removeStatus').remove();
             //    setTimeout(() => {
             //        document.querySelector('#removeStatus').remove();
             //    }, 5000);
-               
-            }
 
-       }
+        }
 
-    })
+    }
+
+})
 </script>

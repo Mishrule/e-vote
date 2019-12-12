@@ -1,5 +1,6 @@
 <?php
     include_once('phpScript/votedb.php');
+    include('userSession.php');
 ?>
 
 <!DOCTYPE html>
@@ -106,11 +107,11 @@
                                     <li class="divider"></li>
                                     <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a>
                                     </li>
-                                    <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
+                                    <li><a href="user-logout.php"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
                                     </li>
                                 </ul>
                                 <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn"
-                                    href="#" data-activates="profile-dropdown">Kyei Ernest<i
+                                    href="#" data-activates="profile-dropdown">Welcome <?php echo $login_user; ?><i
                                         class="mdi-navigation-arrow-drop-down right"></i></a>
                                 <p class="user-roal">Administrator</p>
                             </div>
@@ -141,8 +142,7 @@
                     <li class="bold"><a href="compound-prefect-result.php" class="waves-effect waves-cyan"><i
                                 class="mdi-action-assignment"></i> COMPOUND PREFECT RESULTS</a>
                     </li>
-                    <!-- <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> PROCEED TO VOTE</a>
-                </li> -->
+                    
 
                     <li class="li-hover">
                         <div class="divider"></div>
@@ -151,7 +151,7 @@
                         <p class="ultra-small margin more-text">USER LOGOUT</p>
                     </li>
 
-                    <li><a href="manage-user.html"><i class="mdi-editor-format-color-fill"></i>LOGOUT</a>
+                    <li><a href="user-logout.php"><i class="mdi-editor-format-color-fill"></i>LOGOUT</a>
                     </li>
 
                 </ul>
@@ -190,7 +190,7 @@
                                             <div class="card">
                                                 <div class="card-image">
                                                     <img src="images/'.$library_PrefectVoteResultROW['image'].'" width="100%">
-                                                    <span class="card-title" style="color: black; font-weight: bold; font-size: 15px;">LIBRARY PREFECT</span>
+                                                    <span class="card-title" style="color: red; font-weight: bold; font-size: 15px;">LIBRARY PREFECT</span>
                                                 </div>
                                                 <div class="card-content">
                                                     <h5>'.$library_PrefectVoteResultROW['full_name'].'</h5>
@@ -238,7 +238,7 @@
 
     </div>
     <!-- END MAIN -->
-
+<br><br>
 
 
     <!-- //////////////////////////////////////////////////////////////////////////// -->

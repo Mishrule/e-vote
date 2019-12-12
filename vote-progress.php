@@ -64,7 +64,7 @@
                 <div class="nav-wrapper">
                     <ul class="left">
                         <li>
-                            <h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img
+                            <h1 class="logo-wrapper"><a href="#" class="brand-logo darken-1"><img
                                         src="images/materialize-logo.png" alt="materialize logo"></a> <span
                                     class="logo-text">Electronic Voting System</span></h1>
                         </li>
@@ -104,7 +104,7 @@
                     <h4 id="voteState" style="font-size: 110px;">400</h4>
                     <h4 style="font-size: 100px;">OUT OF</h4>
                     <h4 style="font-size: 110px;">
-                    <?php
+                        <?php
                         $totalVotersSQL = "SELECT COUNT(account_number) AS totalCount FROM student_registration";
                         $totalVoterResult = mysqli_query($conn, $totalVotersSQL);
 
@@ -112,7 +112,7 @@
                             echo $totalVolterRow['totalCount'];
                         }
                     ?>
-                   
+
                     </h4>
                     <h4 style="font-size: 80px;"> Vote(s)</h4>
 
@@ -174,18 +174,21 @@
 
 </html>
 <script>
-    $(document).ready(function () {
-        showVoteProgress();
-        function showVoteProgress() {
-            var state = "Yes";
-            $.ajax({
-                url: 'phpScript/voteProgress.php',
-                method: 'POST',
-                data: { state: state },
-                success: function (data) {
-                    document.getElementById('voteState').textContent = data;
-                }
-            })
-        }
-    });
+$(document).ready(function() {
+    showVoteProgress();
+
+    function showVoteProgress() {
+        var state = "Yes";
+        $.ajax({
+            url: 'phpScript/voteProgress.php',
+            method: 'POST',
+            data: {
+                state: state
+            },
+            success: function(data) {
+                document.getElementById('voteState').textContent = data;
+            }
+        })
+    }
+});
 </script>

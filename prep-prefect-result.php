@@ -1,5 +1,6 @@
 <?php
     include_once('phpScript/votedb.php');
+    include('userSession.php');
 ?>
 
 <!DOCTYPE html>
@@ -110,7 +111,7 @@
                                     </li>
                                 </ul>
                                 <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn"
-                                    href="#" data-activates="profile-dropdown">Kyei Ernest<i
+                                    href="#" data-activates="profile-dropdown">Welcome <?php echo $login_user; ?><i
                                         class="mdi-navigation-arrow-drop-down right"></i></a>
                                 <p class="user-roal">Administrator</p>
                             </div>
@@ -141,8 +142,7 @@
                     <li class="bold"><a href="compound-prefect-result.php" class="waves-effect waves-cyan"><i
                                 class="mdi-action-assignment"></i> COMPOUND PREFECT RESULTS</a>
                     </li>
-                    <!-- <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> PROCEED TO VOTE</a>
-                </li> -->
+
 
                     <li class="li-hover">
                         <div class="divider"></div>
@@ -151,7 +151,7 @@
                         <p class="ultra-small margin more-text">USER LOGOUT</p>
                     </li>
 
-                    <li><a href="manage-user.html"><i class="mdi-editor-format-color-fill"></i>LOGOUT</a>
+                    <li><a href="user-logout.php"><i class="mdi-editor-format-color-fill"></i>LOGOUT</a>
                     </li>
 
                 </ul>
@@ -190,7 +190,7 @@
                                             <div class="card">
                                                 <div class="card-image">
                                                     <img src="images/'.$prep_PrefectVoteResultROW['image'].'" width="100%">
-                                                    <span class="card-title" style="color: black; font-weight: bold; font-size: 15px;">PREP PREFECT</span>
+                                                    <span class="card-title" style="color: red; font-weight: bold; font-size: 15px;">PREP PREFECT</span>
                                                 </div>
                                                 <div class="card-content">
                                                     <h5>'.$prep_PrefectVoteResultROW['full_name'].'</h5>
@@ -212,14 +212,14 @@
                             }
                             echo $prep_PrefectVoteResultSHOW ;
                         ?>
-                        
+
                     </div>
-                    
+
                     <hr size="2">
                     <!--card stats end-->
                     <!-- //////////////////////////////////////////////////////////////////////////// -->
 
-                   
+
                     <!-- //////////////////////////////////////////////////////////////////////////// -->
 
 
@@ -238,7 +238,7 @@
 
     </div>
     <!-- END MAIN -->
-
+    <br><br>
 
 
     <!-- //////////////////////////////////////////////////////////////////////////// -->
@@ -283,740 +283,841 @@
 
 </html>
 <script>
-    $(document).ready(function () {
-       
-        /************
-            COUNT THE NUMBER OF CANDIDATE PER VOTES
+$(document).ready(function() {
 
-        */
-        showSchoolPrefectTotalVotes();
-        function showSchoolPrefectTotalVotes() {
-            $(window).on('load', function () {
-                // //==================================health_PREFECT ZERO
-                //  var health_prefectZero = $('.vNum0').text();
-                // if(health_prefectZero){
-                //    alert(health_prefectZero);
-                //     $.ajax({
-                //         url: 'phpScript/resultPHP/prepPrefectResult.php',
-                //         method: 'POST',
-                //         data: { health_prefectZero: health_prefectZero },
-                //         success: function (data) {
-                //             document.getElementById('health_Vote1').innerHTML = data;
-                //         }
-                //     });
-                // }
-                //==================================health_PREFECT ONE
-                var prep_prefectOne = $('.vNum1').text();
-                if(prep_prefectOne){
+    /************
+        COUNT THE NUMBER OF CANDIDATE PER VOTES
+
+    */
+    showSchoolPrefectTotalVotes();
+
+    function showSchoolPrefectTotalVotes() {
+        $(window).on('load', function() {
+            // //==================================health_PREFECT ZERO
+            //  var health_prefectZero = $('.vNum0').text();
+            // if(health_prefectZero){
+            //    alert(health_prefectZero);
+            //     $.ajax({
+            //         url: 'phpScript/resultPHP/prepPrefectResult.php',
+            //         method: 'POST',
+            //         data: { health_prefectZero: health_prefectZero },
+            //         success: function (data) {
+            //             document.getElementById('health_Vote1').innerHTML = data;
+            //         }
+            //     });
+            // }
+            //==================================health_PREFECT ONE
+            var prep_prefectOne = $('.vNum1').text();
+            if (prep_prefectOne) {
                 //    alert(prep_prefectOne);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefectOne: prep_prefectOne },
-                        success: function (data) {
-                            document.getElementById('prep_Vote1').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT TWO
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefectOne: prep_prefectOne
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote1').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT TWO
 
-                var prep_prefectTwo = $('.vNum2').text();
-                if(prep_prefectTwo){
-                    // alert(prep_prefectTwo);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefectTwo: prep_prefectTwo },
-                        success: function (data) {
-                            document.getElementById('prep_Vote2').innerHTML = data;
-                        }
-                    });
-                }                
+            var prep_prefectTwo = $('.vNum2').text();
+            if (prep_prefectTwo) {
+                // alert(prep_prefectTwo);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefectTwo: prep_prefectTwo
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote2').innerHTML = data;
+                    }
+                });
+            }
 
-                //==================================prep_PREFECT THREE
+            //==================================prep_PREFECT THREE
 
-                var prep_prefectThree = $('.vNum3').text();
-                if(prep_prefectThree){
-                    // alert(prep_prefectThree);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefectThree: prep_prefectThree },
-                        success: function (data) {
-                            document.getElementById('prep_Vote3').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT FOUR
+            var prep_prefectThree = $('.vNum3').text();
+            if (prep_prefectThree) {
+                // alert(prep_prefectThree);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefectThree: prep_prefectThree
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote3').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT FOUR
 
-                var prep_prefectFour = $('.vNum4').text();
-                if(prep_prefectFour){
-                    // alert(prep_prefectFour);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefectFour: prep_prefectFour },
-                        success: function (data) {
-                            document.getElementById('prep_Vote4').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT FIVE
+            var prep_prefectFour = $('.vNum4').text();
+            if (prep_prefectFour) {
+                // alert(prep_prefectFour);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefectFour: prep_prefectFour
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote4').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT FIVE
 
-                var prep_prefectFive = $('.vNum5').text();
-                if(prep_prefectFive){
-                    // alert(prep_prefectFive);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefectFive: prep_prefectFive },
-                        success: function (data) {
-                            document.getElementById('prep_Vote5').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT SIX
+            var prep_prefectFive = $('.vNum5').text();
+            if (prep_prefectFive) {
+                // alert(prep_prefectFive);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefectFive: prep_prefectFive
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote5').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT SIX
 
-                var prep_prefectSix = $('.vNum6').text();
-                if(prep_prefectSix){
-                    // alert(prep_prefectSix);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefectSix: prep_prefectSix },
-                        success: function (data) {
-                            document.getElementById('prep_Vote6').innerHTML = data;
-                        }
-                    });
-                }
-                
-                
-                // //==================================prep_PREFECT SEVEN
+            var prep_prefectSix = $('.vNum6').text();
+            if (prep_prefectSix) {
+                // alert(prep_prefectSix);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefectSix: prep_prefectSix
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote6').innerHTML = data;
+                    }
+                });
+            }
 
-                var prep_prefectSeven = $('.vNum7').text();
-                if(prep_prefectSeven){
-                    // alert(prep_prefectSeven);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefectSeven: prep_prefectSeven },
-                        success: function (data) {
-                            document.getElementById('prep_Vote7').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT EIGHT
 
-                var prep_prefectEight = $('.vNum8').text();
-                if(prep_prefectEight){
-                    // alert(prep_prefectEight);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefectEight: prep_prefectEight },
-                        success: function (data) {
-                            document.getElementById('prep_Vote8').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT NINE
+            // //==================================prep_PREFECT SEVEN
 
-                var prep_prefectNine = $('.vNum9').text();
-                if(prep_prefectNine){
-                    // alert(prep_prefectNine);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefectNine: prep_prefectNine },
-                        success: function (data) {
-                            document.getElementById('prep_Vote9').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT TEN
+            var prep_prefectSeven = $('.vNum7').text();
+            if (prep_prefectSeven) {
+                // alert(prep_prefectSeven);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefectSeven: prep_prefectSeven
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote7').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT EIGHT
 
-                var prep_prefectTen = $('.vNum10').text();
-                if(prep_prefectTen){
-                    // alert(prep_prefectTen);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefectTen: prep_prefectTen },
-                        success: function (data) {
-                            document.getElementById('prep_Vote10').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================health_PREFECT 11
-                var prep_prefect11 = $('.vNum11').text();
-                if(prep_prefect11){
+            var prep_prefectEight = $('.vNum8').text();
+            if (prep_prefectEight) {
+                // alert(prep_prefectEight);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefectEight: prep_prefectEight
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote8').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT NINE
+
+            var prep_prefectNine = $('.vNum9').text();
+            if (prep_prefectNine) {
+                // alert(prep_prefectNine);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefectNine: prep_prefectNine
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote9').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT TEN
+
+            var prep_prefectTen = $('.vNum10').text();
+            if (prep_prefectTen) {
+                // alert(prep_prefectTen);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefectTen: prep_prefectTen
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote10').innerHTML = data;
+                    }
+                });
+            }
+            //==================================health_PREFECT 11
+            var prep_prefect11 = $('.vNum11').text();
+            if (prep_prefect11) {
                 //    alert(prep_prefect11);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect11: prep_prefect11 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote11').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 12
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect11: prep_prefect11
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote11').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 12
 
-                var prep_prefect12 = $('.vNum12').text();
-                if(prep_prefect12){
-                    // alert(prep_prefect12);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect12: prep_prefect12 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote12').innerHTML = data;
-                        }
-                    });
-                }                
+            var prep_prefect12 = $('.vNum12').text();
+            if (prep_prefect12) {
+                // alert(prep_prefect12);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect12: prep_prefect12
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote12').innerHTML = data;
+                    }
+                });
+            }
 
-                //==================================prep_PREFECT 13
+            //==================================prep_PREFECT 13
 
-                var prep_prefect13 = $('.vNum13').text();
-                if(prep_prefect13){
-                    // alert(prep_prefect13);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect13: prep_prefect13 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote13').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 14
+            var prep_prefect13 = $('.vNum13').text();
+            if (prep_prefect13) {
+                // alert(prep_prefect13);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect13: prep_prefect13
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote13').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 14
 
-                var prep_prefect14 = $('.vNum14').text();
-                if(prep_prefect14){
-                    // alert(prep_prefect14);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect14: prep_prefect14 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote14').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 15
+            var prep_prefect14 = $('.vNum14').text();
+            if (prep_prefect14) {
+                // alert(prep_prefect14);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect14: prep_prefect14
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote14').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 15
 
-                var prep_prefect15 = $('.vNum15').text();
-                if(prep_prefect15){
-                    // alert(prep_prefect15);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect15: prep_prefect15 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote15').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 16
+            var prep_prefect15 = $('.vNum15').text();
+            if (prep_prefect15) {
+                // alert(prep_prefect15);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect15: prep_prefect15
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote15').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 16
 
-                var prep_prefect16 = $('.vNum16').text();
-                if(prep_prefect16){
-                    // alert(prep_prefect16);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect16: prep_prefect16 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote16').innerHTML = data;
-                        }
-                    });
-                }
-                
-                
-                // //==================================prep_PREFECT 17
+            var prep_prefect16 = $('.vNum16').text();
+            if (prep_prefect16) {
+                // alert(prep_prefect16);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect16: prep_prefect16
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote16').innerHTML = data;
+                    }
+                });
+            }
 
-                var prep_prefect17 = $('.vNum17').text();
-                if(prep_prefect17){
-                    // alert(prep_prefect17);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect17: prep_prefect17 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote17').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 18
 
-                var prep_prefect18 = $('.vNum18').text();
-                if(prep_prefect18){
-                    // alert(prep_prefect18);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect18: prep_prefect18 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote18').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 19
+            // //==================================prep_PREFECT 17
 
-                var prep_prefect19 = $('.vNum19').text();
-                if(prep_prefect19){
-                    // alert(prep_prefect19);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect19: prep_prefect19 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote19').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 20
+            var prep_prefect17 = $('.vNum17').text();
+            if (prep_prefect17) {
+                // alert(prep_prefect17);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect17: prep_prefect17
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote17').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 18
 
-                var prep_prefect20 = $('.vNum20').text();
-                if(prep_prefect20){
-                    // alert(prep_prefect20);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect20: prep_prefect20 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote20').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================health_PREFECT 21
-                var prep_prefect21 = $('.vNum21').text();
-                if(prep_prefect21){
+            var prep_prefect18 = $('.vNum18').text();
+            if (prep_prefect18) {
+                // alert(prep_prefect18);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect18: prep_prefect18
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote18').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 19
+
+            var prep_prefect19 = $('.vNum19').text();
+            if (prep_prefect19) {
+                // alert(prep_prefect19);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect19: prep_prefect19
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote19').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 20
+
+            var prep_prefect20 = $('.vNum20').text();
+            if (prep_prefect20) {
+                // alert(prep_prefect20);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect20: prep_prefect20
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote20').innerHTML = data;
+                    }
+                });
+            }
+            //==================================health_PREFECT 21
+            var prep_prefect21 = $('.vNum21').text();
+            if (prep_prefect21) {
                 //    alert(prep_prefect21);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect21: prep_prefect21 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote21').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 22
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect21: prep_prefect21
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote21').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 22
 
-                var prep_prefect22 = $('.vNum22').text();
-                if(prep_prefect22){
-                    // alert(prep_prefect22);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect22: prep_prefect22 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote22').innerHTML = data;
-                        }
-                    });
-                }                
+            var prep_prefect22 = $('.vNum22').text();
+            if (prep_prefect22) {
+                // alert(prep_prefect22);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect22: prep_prefect22
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote22').innerHTML = data;
+                    }
+                });
+            }
 
-                //==================================prep_PREFECT 23
+            //==================================prep_PREFECT 23
 
-                var prep_prefect23 = $('.vNum23').text();
-                if(prep_prefect23){
-                    // alert(prep_prefect23);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect23: prep_prefect23 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote23').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 24
+            var prep_prefect23 = $('.vNum23').text();
+            if (prep_prefect23) {
+                // alert(prep_prefect23);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect23: prep_prefect23
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote23').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 24
 
-                var prep_prefect24 = $('.vNum24').text();
-                if(prep_prefect24){
-                    // alert(prep_prefect24);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect24: prep_prefect24 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote24').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 25
+            var prep_prefect24 = $('.vNum24').text();
+            if (prep_prefect24) {
+                // alert(prep_prefect24);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect24: prep_prefect24
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote24').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 25
 
-                var prep_prefect25 = $('.vNum25').text();
-                if(prep_prefect25){
-                    // alert(prep_prefect25);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect25: prep_prefect25 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote25').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 26
+            var prep_prefect25 = $('.vNum25').text();
+            if (prep_prefect25) {
+                // alert(prep_prefect25);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect25: prep_prefect25
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote25').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 26
 
-                var prep_prefect26 = $('.vNum26').text();
-                if(prep_prefect26){
-                    // alert(prep_prefect26);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect26: prep_prefect26 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote26').innerHTML = data;
-                        }
-                    });
-                }
-                
-                
-                // //==================================prep_PREFECT 27
+            var prep_prefect26 = $('.vNum26').text();
+            if (prep_prefect26) {
+                // alert(prep_prefect26);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect26: prep_prefect26
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote26').innerHTML = data;
+                    }
+                });
+            }
 
-                var prep_prefect27 = $('.vNum27').text();
-                if(prep_prefect27){
-                    // alert(prep_prefect27);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect27: prep_prefect27 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote27').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 28
 
-                var prep_prefect28 = $('.vNum28').text();
-                if(prep_prefect28){
-                    // alert(prep_prefect28);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect28: prep_prefect28 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote28').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 29
+            // //==================================prep_PREFECT 27
 
-                var prep_prefect29 = $('.vNum29').text();
-                if(prep_prefect29){
-                    // alert(prep_prefect29);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect29: prep_prefect29 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote29').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 30
+            var prep_prefect27 = $('.vNum27').text();
+            if (prep_prefect27) {
+                // alert(prep_prefect27);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect27: prep_prefect27
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote27').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 28
 
-                var prep_prefect30 = $('.vNum30').text();
-                if(prep_prefect30){
-                    // alert(prep_prefect30);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect30: prep_prefect30 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote30').innerHTML = data;
-                        }
-                    });
-                }
-                 //==================================health_PREFECT 31
-                var prep_prefect31 = $('.vNum31').text();
-                if(prep_prefect31){
+            var prep_prefect28 = $('.vNum28').text();
+            if (prep_prefect28) {
+                // alert(prep_prefect28);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect28: prep_prefect28
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote28').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 29
+
+            var prep_prefect29 = $('.vNum29').text();
+            if (prep_prefect29) {
+                // alert(prep_prefect29);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect29: prep_prefect29
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote29').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 30
+
+            var prep_prefect30 = $('.vNum30').text();
+            if (prep_prefect30) {
+                // alert(prep_prefect30);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect30: prep_prefect30
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote30').innerHTML = data;
+                    }
+                });
+            }
+            //==================================health_PREFECT 31
+            var prep_prefect31 = $('.vNum31').text();
+            if (prep_prefect31) {
                 //    alert(prep_prefect31);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect31: prep_prefect31 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote31').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 32
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect31: prep_prefect31
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote31').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 32
 
-                var prep_prefect32 = $('.vNum32').text();
-                if(prep_prefect32){
-                    // alert(prep_prefect32);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect32: prep_prefect32 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote32').innerHTML = data;
-                        }
-                    });
-                }                
+            var prep_prefect32 = $('.vNum32').text();
+            if (prep_prefect32) {
+                // alert(prep_prefect32);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect32: prep_prefect32
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote32').innerHTML = data;
+                    }
+                });
+            }
 
-                //==================================prep_PREFECT 33
+            //==================================prep_PREFECT 33
 
-                var prep_prefect33 = $('.vNum33').text();
-                if(prep_prefect33){
-                    // alert(prep_prefect33);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect33: prep_prefect33 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote33').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 34
+            var prep_prefect33 = $('.vNum33').text();
+            if (prep_prefect33) {
+                // alert(prep_prefect33);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect33: prep_prefect33
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote33').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 34
 
-                var prep_prefect34 = $('.vNum34').text();
-                if(prep_prefect34){
-                    // alert(prep_prefect34);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect34: prep_prefect34 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote34').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 35
+            var prep_prefect34 = $('.vNum34').text();
+            if (prep_prefect34) {
+                // alert(prep_prefect34);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect34: prep_prefect34
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote34').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 35
 
-                var prep_prefect35 = $('.vNum35').text();
-                if(prep_prefect35){
-                    // alert(prep_prefect35);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect35: prep_prefect35 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote35').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 36
+            var prep_prefect35 = $('.vNum35').text();
+            if (prep_prefect35) {
+                // alert(prep_prefect35);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect35: prep_prefect35
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote35').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 36
 
-                var prep_prefect36 = $('.vNum36').text();
-                if(prep_prefect36){
-                    // alert(prep_prefect36);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect36: prep_prefect36 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote36').innerHTML = data;
-                        }
-                    });
-                }
-                
-                
-                // //==================================prep_PREFECT 37
+            var prep_prefect36 = $('.vNum36').text();
+            if (prep_prefect36) {
+                // alert(prep_prefect36);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect36: prep_prefect36
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote36').innerHTML = data;
+                    }
+                });
+            }
 
-                var prep_prefect37 = $('.vNum37').text();
-                if(prep_prefect37){
-                    // alert(prep_prefect37);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect37: prep_prefect37 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote37').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 38
 
-                var prep_prefect38 = $('.vNum38').text();
-                if(prep_prefect38){
-                    // alert(prep_prefect38);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect38: prep_prefect38 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote38').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 39
+            // //==================================prep_PREFECT 37
 
-                var prep_prefect39 = $('.vNum39').text();
-                if(prep_prefect39){
-                    // alert(prep_prefect39);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect39: prep_prefect39 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote39').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 40
+            var prep_prefect37 = $('.vNum37').text();
+            if (prep_prefect37) {
+                // alert(prep_prefect37);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect37: prep_prefect37
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote37').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 38
 
-                var prep_prefect40 = $('.vNum40').text();
-                if(prep_prefect40){
-                    // alert(prep_prefect40);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect40: prep_prefect40 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote40').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================health_PREFECT 41
-                var prep_prefect41 = $('.vNum41').text();
-                if(prep_prefect41){
+            var prep_prefect38 = $('.vNum38').text();
+            if (prep_prefect38) {
+                // alert(prep_prefect38);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect38: prep_prefect38
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote38').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 39
+
+            var prep_prefect39 = $('.vNum39').text();
+            if (prep_prefect39) {
+                // alert(prep_prefect39);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect39: prep_prefect39
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote39').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 40
+
+            var prep_prefect40 = $('.vNum40').text();
+            if (prep_prefect40) {
+                // alert(prep_prefect40);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect40: prep_prefect40
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote40').innerHTML = data;
+                    }
+                });
+            }
+            //==================================health_PREFECT 41
+            var prep_prefect41 = $('.vNum41').text();
+            if (prep_prefect41) {
                 //    alert(prep_prefect41);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect41: prep_prefect41 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote41').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 42
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect41: prep_prefect41
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote41').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 42
 
-                var prep_prefect42 = $('.vNum42').text();
-                if(prep_prefect42){
-                    // alert(prep_prefect42);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect42: prep_prefect42 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote42').innerHTML = data;
-                        }
-                    });
-                }                
+            var prep_prefect42 = $('.vNum42').text();
+            if (prep_prefect42) {
+                // alert(prep_prefect42);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect42: prep_prefect42
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote42').innerHTML = data;
+                    }
+                });
+            }
 
-                //==================================prep_PREFECT 43
+            //==================================prep_PREFECT 43
 
-                var prep_prefect43 = $('.vNum43').text();
-                if(prep_prefect43){
-                    // alert(prep_prefect43);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect43: prep_prefect43 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote43').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 44
+            var prep_prefect43 = $('.vNum43').text();
+            if (prep_prefect43) {
+                // alert(prep_prefect43);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect43: prep_prefect43
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote43').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 44
 
-                var prep_prefect44 = $('.vNum44').text();
-                if(prep_prefect44){
-                    // alert(prep_prefect44);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect44: prep_prefect44 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote44').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 45
+            var prep_prefect44 = $('.vNum44').text();
+            if (prep_prefect44) {
+                // alert(prep_prefect44);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect44: prep_prefect44
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote44').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 45
 
-                var prep_prefect45 = $('.vNum45').text();
-                if(prep_prefect45){
-                    // alert(prep_prefect45);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect45: prep_prefect45 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote45').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 46
+            var prep_prefect45 = $('.vNum45').text();
+            if (prep_prefect45) {
+                // alert(prep_prefect45);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect45: prep_prefect45
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote45').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 46
 
-                var prep_prefect46 = $('.vNum46').text();
-                if(prep_prefect46){
-                    // alert(prep_prefect46);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect46: prep_prefect46 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote46').innerHTML = data;
-                        }
-                    });
-                }
-                
-                
-                // //==================================prep_PREFECT 47
+            var prep_prefect46 = $('.vNum46').text();
+            if (prep_prefect46) {
+                // alert(prep_prefect46);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect46: prep_prefect46
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote46').innerHTML = data;
+                    }
+                });
+            }
 
-                var prep_prefect47 = $('.vNum47').text();
-                if(prep_prefect47){
-                    // alert(prep_prefect47);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect47: prep_prefect47 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote47').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 48
 
-                var prep_prefect48 = $('.vNum48').text();
-                if(prep_prefect48){
-                    // alert(prep_prefect48);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect48: prep_prefect48 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote48').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 49
+            // //==================================prep_PREFECT 47
 
-                var prep_prefect49 = $('.vNum49').text();
-                if(prep_prefect49){
-                    // alert(prep_prefect49);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect49: prep_prefect49 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote49').innerHTML = data;
-                        }
-                    });
-                }
-                //==================================prep_PREFECT 50
+            var prep_prefect47 = $('.vNum47').text();
+            if (prep_prefect47) {
+                // alert(prep_prefect47);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect47: prep_prefect47
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote47').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 48
 
-                var prep_prefect50 = $('.vNum50').text();
-                if(prep_prefect50){
-                    // alert(prep_prefect50);
-                    $.ajax({
-                        url: 'phpScript/resultPHP/prepPrefectResult.php',
-                        method: 'POST',
-                        data: { prep_prefect50: prep_prefect50 },
-                        success: function (data) {
-                            document.getElementById('prep_Vote50').innerHTML = data;
-                        }
-                    });
-                }
-            })
-        };
+            var prep_prefect48 = $('.vNum48').text();
+            if (prep_prefect48) {
+                // alert(prep_prefect48);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect48: prep_prefect48
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote48').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 49
 
-    })
+            var prep_prefect49 = $('.vNum49').text();
+            if (prep_prefect49) {
+                // alert(prep_prefect49);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect49: prep_prefect49
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote49').innerHTML = data;
+                    }
+                });
+            }
+            //==================================prep_PREFECT 50
+
+            var prep_prefect50 = $('.vNum50').text();
+            if (prep_prefect50) {
+                // alert(prep_prefect50);
+                $.ajax({
+                    url: 'phpScript/resultPHP/prepPrefectResult.php',
+                    method: 'POST',
+                    data: {
+                        prep_prefect50: prep_prefect50
+                    },
+                    success: function(data) {
+                        document.getElementById('prep_Vote50').innerHTML = data;
+                    }
+                });
+            }
+        })
+    };
+
+})
 </script>

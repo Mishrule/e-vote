@@ -21,7 +21,7 @@
         content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
     <meta name="keywords"
         content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-    <title>SCHOOL-PREFECT VOTE  | ELECTRONIC VOTING APP</title>
+    <title>SCHOOL-PREFECT VOTE | ELECTRONIC VOTING APP</title>
     <!-- Favicons-->
     <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
     <!-- Favicons-->
@@ -95,7 +95,7 @@
                 <!--start container-->
                 <div class="container">
                     <div class="section">
-                        <div class="right" id="student_session" ><?php echo $login_session; ?></div>
+                        <div class="right" id="student_session"><?php echo $login_session; ?></div>
                         <p class="caption text-center"><strong>SCHOOL PREFECT VOTE PAGE</strong></p>
                         <p>Please note all actions are irreversible. To vote simply click on the image</p>
 
@@ -126,46 +126,8 @@
                             }
                             echo $schoolPrefectDisplayOUTPUT;
                         ?>
-                        
-                        <!-- <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="dinning-hall-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
 
-                            </div>
-                        </div>
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="dinning-hall-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
 
-                            </div>
-                        </div>
-                        <div class="col s12 m3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <a href="dinning-hall-prefect.html"><img src="images/sample-1.jpg"></a>
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <h6><strong>Name Of Prefect Here</strong></h6>
-                                    <p>Program</p>
-                                </div>
-
-                            </div>
-                        </div> -->
                     </div>
                 </div>
                 <!--end container-->
@@ -225,20 +187,23 @@
 
 </html>
 <script>
-    $(document).ready(function(){
-        $(document).on('click', '.vote', function(){
-            var student_id = $(this).attr('id');
-            var studentSession = document.getElementById('student_session').textContent;
-            // alert(studentSession);
-            $.ajax({
-                url:'phpScript/voteScript.php',
-                method:'POST',
-                data:{student_id:student_id, studentSession:studentSession},
-                success:function(data){
-                    // alert(data);
-                    window.location = 'dinning-hall-prefect.php' ;
-                }
-            })
-        });
+$(document).ready(function() {
+    $(document).on('click', '.vote', function() {
+        var student_id = $(this).attr('id');
+        var studentSession = document.getElementById('student_session').textContent;
+        // alert(studentSession);
+        $.ajax({
+            url: 'phpScript/voteScript.php',
+            method: 'POST',
+            data: {
+                student_id: student_id,
+                studentSession: studentSession
+            },
+            success: function(data) {
+                // alert(data);
+                window.location = 'dinning-hall-prefect.php';
+            }
+        })
     });
+});
 </script>
